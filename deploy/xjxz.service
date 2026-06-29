@@ -1,0 +1,24 @@
+[Unit]
+Description=xjxz character wiki API (FastAPI/uvicorn)
+After=network.target
+
+[Service]
+Type=simple
+User=xjxz
+Group=xjxz
+WorkingDirectory=/srv/xjxz/backend
+EnvironmentFile=/srv/xjxz/backend/.env
+# Single worker: SQLite + WAL + busy_timeout assume one writer process.
+ExecStart=/srv/xjxz/backend/.venv/bin/uvicorn app.main:app \
+    --host 127.0.0.1 --port 8000 --workers 1
+Restart=on-failure
+RestartSec=3
+
+# Hardening
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+ProtectHome=true
+
+[Install]
+WantedBy=multi-user.target
