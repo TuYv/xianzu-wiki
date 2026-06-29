@@ -39,7 +39,7 @@ describe('ImportExport', () => {
   it('export click downloads a JSON blob containing the data', async () => {
     setAdmin(true);
     mockedExport.mockResolvedValue({
-      characters: [{ id: 1, name: 'A', aliases: [], gender: 'unknown', generation: null, realm: null, affiliation: null, status: 'alive', avatar_url: null, bio: null }],
+      characters: [{ id: 1, name: 'A', aliases: [], gender: 'unknown', generation: null, realm: null, affiliation: null, status: 'alive', avatar_url: null, bio: null, notes: '私密备注XYZ', created_at: '2026-01-01T00:00:00Z', updated_at: '2026-01-01T00:00:00Z' }],
       relationships: [],
     } satisfies ExportPayload);
 
@@ -56,7 +56,12 @@ describe('ImportExport', () => {
     expect(createUrl).toHaveBeenCalledTimes(1);
     const blob = createUrl.mock.calls[0][0] as Blob;
     expect(blob).toBeInstanceOf(Blob);
-    await expect(blob.text()).resolves.toContain('"name": "A"');
+    const text = await blob.text();
+    expect(text).toContain('"name": "A"');
+    // 发布用 data.json 必须剥离私密 notes 与时间戳
+    expect(text).not.toContain('私密备注XYZ');
+    expect(text).not.toContain('"notes"');
+    expect(text).not.toContain('created_at');
     expect(clickSpy).toHaveBeenCalledTimes(1);
     expect(revokeUrl).toHaveBeenCalledWith('blob:mock');
 

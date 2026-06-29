@@ -2,6 +2,26 @@ import { useRef, useState, type ChangeEvent, type JSX } from 'react';
 import { useAuth } from '../state/auth';
 import { exportData, importData } from '../api/io';
 import type { ImportPayload } from '../types';
+import type { SiteData } from '../api/staticData';
+
+/** 导出为发布用 data.json 的形状:只保留公开字段,剥离 notes 与时间戳。 */
+function toPublishData(exp: Awaited<ReturnType<typeof exportData>>): SiteData {
+  return {
+    characters: exp.characters.map((c) => ({
+      id: c.id,
+      name: c.name,
+      aliases: c.aliases,
+      gender: c.gender,
+      generation: c.generation,
+      realm: c.realm,
+      affiliation: c.affiliation,
+      status: c.status,
+      avatar_url: c.avatar_url,
+      bio: c.bio,
+    })),
+    relationships: exp.relationships,
+  };
+}
 
 export function ImportExport(): JSX.Element | null {
   const { isAdmin } = useAuth();
@@ -15,12 +35,13 @@ export function ImportExport(): JSX.Element | null {
   async function handleExport(): Promise<void> {
     setMessage('');
     try {
-      const data = await exportData();
+      const data = toPublishData(await exportData());
       const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
       const url = URL.createObjectURL(blob);
       const anchor = document.createElement('a');
       anchor.href = url;
-      anchor.download = `xjxz-export-${new Date().toISOString().slice(0, 10)}.json`;
+      // 直接用 data.json 命名:覆盖 frontend/public/data.json 即可发布。
+      anchor.download = 'data.json';
       document.body.appendChild(anchor);
       anchor.click();
       anchor.remove();
