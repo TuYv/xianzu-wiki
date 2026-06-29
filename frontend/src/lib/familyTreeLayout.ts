@@ -32,6 +32,7 @@ export function buildFamilyGraph(
   relationships: Relationship[],
   focusId: number,
   depth: number,
+  whole = false,
 ): { nodes: FlowNode[]; edges: FlowEdge[] } {
   const byId = new Map<number, Character>();
   for (const c of characters) byId.set(c.id, c);
@@ -49,35 +50,58 @@ export function buildFamilyGraph(
     }
   }
 
-  // BFS 上/下各 depth 代;visited 防环
+  // 收集要展示的人物集合;visited 兼防环。
   const visited = new Set<number>();
   if (byId.has(focusId)) visited.add(focusId);
 
-  let frontier = byId.has(focusId) ? [focusId] : [];
-  for (let i = 0; i < depth && frontier.length; i++) {
-    const next: number[] = [];
-    for (const id of frontier) {
-      for (const p of parentsOf.get(id) ?? []) {
-        if (byId.has(p) && !visited.has(p)) {
-          visited.add(p);
-          next.push(p);
+  if (whole) {
+    // 整族:经 parent(任意方向)/spouse 相连的整个连通家族,不限代数。
+    const adj = new Map<number, number[]>();
+    const link = (a: number, b: number) => {
+      (adj.get(a) ?? adj.set(a, []).get(a)!).push(b);
+      (adj.get(b) ?? adj.set(b, []).get(b)!).push(a);
+    };
+    for (const r of relationships) {
+      if (r.type === 'parent' || r.type === 'spouse') link(r.from_id, r.to_id);
+    }
+    const queue = byId.has(focusId) ? [focusId] : [];
+    while (queue.length) {
+      const x = queue.shift()!;
+      for (const y of adj.get(x) ?? []) {
+        if (byId.has(y) && !visited.has(y)) {
+          visited.add(y);
+          queue.push(y);
         }
       }
     }
-    frontier = next;
-  }
-  frontier = byId.has(focusId) ? [focusId] : [];
-  for (let i = 0; i < depth && frontier.length; i++) {
-    const next: number[] = [];
-    for (const id of frontier) {
-      for (const c of childrenOf.get(id) ?? []) {
-        if (byId.has(c) && !visited.has(c)) {
-          visited.add(c);
-          next.push(c);
+  } else {
+    // 以当前人物为中心:沿 parent 边上(祖先)/下(后代)各 depth 代。
+    let frontier = byId.has(focusId) ? [focusId] : [];
+    for (let i = 0; i < depth && frontier.length; i++) {
+      const next: number[] = [];
+      for (const id of frontier) {
+        for (const p of parentsOf.get(id) ?? []) {
+          if (byId.has(p) && !visited.has(p)) {
+            visited.add(p);
+            next.push(p);
+          }
         }
       }
+      frontier = next;
     }
-    frontier = next;
+    frontier = byId.has(focusId) ? [focusId] : [];
+    for (let i = 0; i < depth && frontier.length; i++) {
+      const next: number[] = [];
+      for (const id of frontier) {
+        for (const c of childrenOf.get(id) ?? []) {
+          if (byId.has(c) && !visited.has(c)) {
+            visited.add(c);
+            next.push(c);
+          }
+        }
+      }
+      frontier = next;
+    }
   }
 
   // 把已收集者的配偶补进来(同代),保证 union 两端都渲染

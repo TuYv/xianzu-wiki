@@ -19,6 +19,8 @@ interface FamilyTreeProps {
   relationships: Relationship[];
   focusId: number;
   depth: number;
+  /** true = 显示整个连通家族;false = 以当前人物为中心的直系。 */
+  whole?: boolean;
 }
 
 /** 婚姻连接点(玉珏):配偶连入、子女引出;不可见的连接桩让 edge 锚定。 */
@@ -40,13 +42,14 @@ export function FamilyTree({
   relationships,
   focusId,
   depth,
+  whole = false,
 }: FamilyTreeProps) {
   const navigate = useNavigate();
 
   // 布局 memoize,仅输入变化时重算(spec §4.3)
   const { nodes, edges } = useMemo(
-    () => buildFamilyGraph(characters, relationships, focusId, depth),
-    [characters, relationships, focusId, depth],
+    () => buildFamilyGraph(characters, relationships, focusId, depth, whole),
+    [characters, relationships, focusId, depth, whole],
   );
 
   const rfNodes: Node[] = useMemo(

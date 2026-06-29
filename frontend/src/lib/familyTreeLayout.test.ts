@@ -31,6 +31,27 @@ const unionNodes = (nodes: { id: string }[]) =>
   nodes.filter((n) => n.id.startsWith('union:'));
 
 describe('buildFamilyGraph', () => {
+  it('整族模式收集整个连通家族(含兄弟与姻亲),直系模式不含兄弟', () => {
+    const chars = [1, 2, 3, 4, 5, 6].map((i) => char(i, `P${i}`));
+    const rels = [
+      parent(1, 1, 3),
+      parent(2, 2, 3),
+      parent(3, 1, 4),
+      parent(4, 2, 4), // 1、2 是 3、4 的父母 → 3、4 互为兄弟
+      spouse(5, 3, 5), // 3 与 5 成婚
+      parent(6, 6, 5), // 6 是 5 的父(姻亲家)
+    ];
+    const ids = (whole: boolean) =>
+      personNodes(buildFamilyGraph(chars, rels, 3, 3, whole).nodes)
+        .map((n) => n.id)
+        .sort();
+    // 以 3 为中心的直系:不含兄弟 4、不含姻亲 6
+    expect(ids(false)).not.toContain('4');
+    expect(ids(false)).not.toContain('6');
+    // 整族:整个连通分量全部收进来
+    expect(ids(true)).toEqual(['1', '2', '3', '4', '5', '6']);
+  });
+
   it('一对配偶生成一个可见的 union 连接节点并各连一条边', () => {
     const chars = [char(1, 'A'), char(2, 'B')];
     const rels = [spouse(1, 1, 2)];

@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import type { Character, Relationship } from '../types';
 import { listCharacters } from '../api/characters';
 import { listRelationships } from '../api/relationships';
 import { FamilyTree } from '../components/FamilyTree';
 
 const DEFAULT_DEPTH = 3; // 默认以当前人物为中心,上下各 3 代(spec §4.3)
-const WHOLE_DEPTH = 999; // “查看整族”:不截断
 
 export function TreePage() {
   const { id } = useParams<{ id: string }>();
@@ -14,7 +13,9 @@ export function TreePage() {
 
   const [characters, setCharacters] = useState<Character[]>([]);
   const [relationships, setRelationships] = useState<Relationship[]>([]);
-  const [whole, setWhole] = useState(false);
+  // 初始视图可由 ?whole=1 指定(便于分享"整族"链接);之后按钮切换。
+  const [searchParams] = useSearchParams();
+  const [whole, setWhole] = useState(searchParams.get('whole') === '1');
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
 
@@ -58,7 +59,8 @@ export function TreePage() {
           characters={characters}
           relationships={relationships}
           focusId={focusId}
-          depth={whole ? WHOLE_DEPTH : DEFAULT_DEPTH}
+          depth={DEFAULT_DEPTH}
+          whole={whole}
         />
       </div>
     </div>
