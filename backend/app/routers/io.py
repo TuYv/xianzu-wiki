@@ -37,6 +37,10 @@ def import_data(
     payload: ImportPayload,
     session: Session = Depends(get_session),
 ) -> dict[str, int]:
+    # 零写入保证(400 校验路径)是隐式的、非结构性的:本函数对人物只做 session.flush()
+    # 取自增 id、并不 commit;一旦后续关系校验抛 HTTPException,请求级 session(get_session
+    # 的 with 块)退出时会连同未提交的 flush 一起回滚,故任何 400 都不会落库。
+    # 若日后改动提交时机(如提前 commit),需重新评估此保证。
     # 1) payload 内重名 → 400(名字是关系引用的主键,重名无法消歧)
     names = [c.name for c in payload.characters]
     seen: set[str] = set()
