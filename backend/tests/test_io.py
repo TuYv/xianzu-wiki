@@ -66,3 +66,39 @@ def test_import_duplicate_names_returns_400(client, admin_token):
     r = client.post("/api/import", json=payload, headers=h)
     assert r.status_code == 400
     assert client.get("/api/characters").json() == []
+
+
+def test_import_normalized_duplicate_relationship_returns_409(client, admin_token):
+    h = {"Authorization": f"Bearer {admin_token}"}
+    # spouse A→B and spouse B→A normalize to the same (min,max) key → 409
+    payload = {
+        "characters": [{"name": "甲"}, {"name": "乙"}],
+        "relationships": [
+            {"from_name": "甲", "to_name": "乙", "type": "spouse"},
+            {"from_name": "乙", "to_name": "甲", "type": "spouse"},
+        ],
+    }
+    r = client.post("/api/import", json=payload, headers=h)
+    assert r.status_code == 409
+    # rollback → characters も落库しない
+    assert client.get("/api/characters").json() == []
+
+
+def test_import_relationship_referencing_existing_db_character(client, admin_token):
+    h = {"Authorization": f"Bearer {admin_token}"}
+    # 先建一个已有人物
+    client.post("/api/characters", json={"name": "前辈"}, headers=h)
+
+    # 导入一个新人物,并引用已有的 "前辈"
+    payload = {
+        "characters": [{"name": "新人"}],
+        "relationships": [{"from_name": "前辈", "to_name": "新人", "type": "parent", "parent_role": "father"}],
+    }
+    r = client.post("/api/import", json=payload, headers=h)
+    assert r.status_code == 200
+    assert r.json()["imported_relationships"] == 1
+
+    exp = client.get("/api/export", headers=h).json()
+    by_name = {c["name"]: c for c in exp["characters"]}
+    assert "前辈" in by_name and "新人" in by_name
+    assert len(exp["relationships"]) == 1

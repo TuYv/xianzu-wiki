@@ -1,6 +1,7 @@
 """批量导入/导出(spec §5/§11)。导出为 import 的逆对称,兼作人类可读二级备份。"""
 
 from fastapi import APIRouter, Depends, HTTPException
+from sqlalchemy.exc import IntegrityError
 from sqlmodel import Session, select
 
 from app.auth import require_admin
@@ -50,17 +51,7 @@ def import_data(
             detail=f"duplicate character names in payload: {sorted(duplicates)}",
         )
 
-    # 2) 关系引用必须落在本批人物内(先校验,后写入 → 失败零落库)
-    name_set = set(names)
-    for r in payload.relationships:
-        missing = [x for x in (r.from_name, r.to_name) if x not in name_set]
-        if missing:
-            raise HTTPException(
-                status_code=400,
-                detail=f"relationship references unknown character name(s): {missing}",
-            )
-
-    # 3) 插入人物,flush 取 id,建立 name -> id 映射
+    # 2) 插入人物,flush 取 id,建立 name -> id 映射
     name_to_id: dict[str, int] = {}
     for c in payload.characters:
         obj = Character(**c.model_dump(exclude_unset=True))
@@ -68,8 +59,25 @@ def import_data(
         session.flush()  # 拿到自增 id,尚未提交
         name_to_id[c.name] = obj.id
 
-    # 4) 插入关系:对称类型归一为 (min, max)
-    imported_rel = 0
+    # 3) 补全映射:关系中引用了 payload 外的已有人物名 → 从 DB 查
+    all_rel_names = {n for r in payload.relationships for n in (r.from_name, r.to_name)}
+    unresolved = all_rel_names - set(name_to_id)
+    if unresolved:
+        for ch in session.exec(
+            select(Character).where(Character.name.in_(unresolved))
+        ).all():
+            name_to_id[ch.name] = ch.id
+
+    # 4) 校验关系引用(payload + DB 均查不到 → 400)
+    for r in payload.relationships:
+        missing = [x for x in (r.from_name, r.to_name) if x not in name_to_id]
+        if missing:
+            raise HTTPException(
+                status_code=400,
+                detail=f"relationship references unknown character name(s): {missing}",
+            )
+
+    # 5) 插入关系:对称类型归一为 (min, max)
     for r in payload.relationships:
         from_id, to_id = normalize_symmetric(
             name_to_id[r.from_name], name_to_id[r.to_name], r.type
@@ -83,10 +91,18 @@ def import_data(
                 note=r.note,
             )
         )
-        imported_rel += 1
 
-    session.commit()
+    # 6) 提交;UNIQUE 冲突(归一后重复关系)→ 409
+    try:
+        session.commit()
+    except IntegrityError:
+        session.rollback()
+        raise HTTPException(
+            status_code=409,
+            detail="duplicate relationship in payload after normalization",
+        )
+
     return {
         "imported_characters": len(payload.characters),
-        "imported_relationships": imported_rel,
+        "imported_relationships": len(payload.relationships),
     }
