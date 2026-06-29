@@ -8,6 +8,9 @@ import { useAuth } from '../state/auth'
 import { CharacterForm } from '../components/CharacterForm'
 import { RelationshipPanel } from '../components/RelationshipPanel'
 
+const GENDER_LABEL: Record<Character['gender'], string> = { male: '男', female: '女', unknown: '未知' }
+const STATUS_LABEL: Record<Character['status'], string> = { alive: '在世', dead: '已故', unknown: '未知' }
+
 /**
  * 公开人物详情页(spec §6 百科页)。
  * 数据来自公开接口 CharacterDetail(显式不含 notes):
@@ -52,6 +55,14 @@ export function DetailPage() {
   const nameById: Record<number, string> = {}
   for (const c of characters) nameById[c.id] = c.name
 
+  const attributes: Array<[string, string]> = [
+    ['性别', GENDER_LABEL[character.gender]],
+    ['状态', STATUS_LABEL[character.status]],
+    ...(character.generation ? [['辈分', character.generation] as [string, string]] : []),
+    ...(character.realm ? [['境界', character.realm] as [string, string]] : []),
+    ...(character.affiliation ? [['势力', character.affiliation] as [string, string]] : []),
+  ]
+
   return (
     <article className="detail">
       <header className="detail-header">
@@ -65,28 +76,12 @@ export function DetailPage() {
       </header>
 
       <dl className="attributes">
-        <dt>性别</dt>
-        <dd>{character.gender}</dd>
-        <dt>状态</dt>
-        <dd>{character.status}</dd>
-        {character.generation && (
-          <>
-            <dt>辈分</dt>
-            <dd>{character.generation}</dd>
-          </>
-        )}
-        {character.realm && (
-          <>
-            <dt>境界</dt>
-            <dd>{character.realm}</dd>
-          </>
-        )}
-        {character.affiliation && (
-          <>
-            <dt>势力</dt>
-            <dd>{character.affiliation}</dd>
-          </>
-        )}
+        {attributes.map(([k, v]) => (
+          <div className="attr" key={k}>
+            <dt>{k}</dt>
+            <dd>{v}</dd>
+          </div>
+        ))}
       </dl>
 
       {character.bio && (

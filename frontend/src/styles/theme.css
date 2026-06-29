@@ -217,17 +217,13 @@ input:focus, select:focus, textarea:focus {
 
 /* attributes grid */
 .detail .attributes {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1px; background: var(--line); border: 1px solid var(--line);
   border-radius: var(--radius); overflow: hidden; margin: 1rem 0 1.6rem;
 }
-.detail .attributes > div, .detail .attributes dt, .detail .attributes dd { background: var(--ink-2); }
-.detail .attributes dt {
-  padding: .55rem .9rem 0; font-size: .72rem; letter-spacing: .2em; color: var(--faint);
-}
-.detail .attributes dd {
-  margin: 0; padding: .1rem .9rem .6rem; font-size: 1.05rem; color: var(--paper);
-}
+.detail .attributes .attr { background: var(--ink-2); padding: .55rem .9rem .65rem; }
+.detail .attributes dt { margin: 0 0 .15rem; font-size: .72rem; letter-spacing: .2em; color: var(--faint); }
+.detail .attributes dd { margin: 0; font-size: 1.05rem; color: var(--paper); }
 
 /* markdown bio — 卷 */
 .detail .bio {
