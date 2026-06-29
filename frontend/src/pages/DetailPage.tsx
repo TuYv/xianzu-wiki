@@ -20,14 +20,16 @@ export function DetailPage() {
 
   useEffect(() => {
     if (!id) return
+    let cancelled = false
     const cid = Number(id)
     setCharacter(null)
     setError(null)
     getCharacter(cid)
-      .then(setCharacter)
-      .catch(() => setError('加载失败'))
+      .then((c) => { if (!cancelled) setCharacter(c) })
+      .catch(() => { if (!cancelled) setError('加载失败') })
     listCharacters()
       .then((cs) => {
+        if (cancelled) return
         const map: Record<number, string> = {}
         for (const c of cs) map[c.id] = c.name
         setNames(map)
@@ -35,6 +37,7 @@ export function DetailPage() {
       .catch(() => {
         /* 名称解析失败不阻塞详情渲染,链接降级为 #id */
       })
+    return () => { cancelled = true }
   }, [id])
 
   if (error) return <p role="alert">{error}</p>

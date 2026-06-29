@@ -85,6 +85,14 @@ describe('DetailPage', () => {
     expect(screen.getByRole('heading', { name: '生平' })).toBeTruthy()
   })
 
+  it('shows error UI when getCharacter rejects', async () => {
+    mockGet.mockRejectedValue(new Error('404'))
+    mockList.mockResolvedValue([])
+    renderAt(99)
+    await screen.findByRole('alert')
+    expect(screen.getByRole('alert').textContent).toBeTruthy()
+  })
+
   it('does not render notes (public detail has no notes field)', async () => {
     mockGet.mockResolvedValue(makeDetail({ bio: '正文' }))
     mockList.mockResolvedValue([])
