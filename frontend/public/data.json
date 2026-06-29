@@ -1,0 +1,200 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "叶天玄",
+      "aliases": [
+        "玄鉴老祖"
+      ],
+      "gender": "male",
+      "generation": "天字辈",
+      "realm": "化神",
+      "affiliation": "玄鉴仙族",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "玄鉴仙族**当代族长**,执掌镇族至宝『玄鉴』。以稳健布局立族,数百年间使家族在险恶修仙界屹立不倒。\n\n> 「家族之道,不在一人之强,而在世代不绝。」"
+    },
+    {
+      "id": 2,
+      "name": "苏婉清",
+      "aliases": [
+        "清漪仙子"
+      ],
+      "gender": "female",
+      "generation": "天字辈",
+      "realm": "元婴",
+      "affiliation": "玄鉴仙族",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "叶天玄之**道侣**,出身丹道世家,执掌家族丹房。"
+    },
+    {
+      "id": 3,
+      "name": "叶清歌",
+      "aliases": [],
+      "gender": "female",
+      "generation": "清字辈",
+      "realm": "金丹",
+      "affiliation": "玄鉴仙族",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "叶天玄长女,擅御剑,性烈。"
+    },
+    {
+      "id": 4,
+      "name": "叶承乾",
+      "aliases": [
+        "承乾公子"
+      ],
+      "gender": "male",
+      "generation": "清字辈",
+      "realm": "元婴",
+      "affiliation": "玄鉴仙族",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "叶天玄之子,**家族下一任族长继承人**,沉稳持重。"
+    },
+    {
+      "id": 5,
+      "name": "柳沉香",
+      "aliases": [],
+      "gender": "female",
+      "generation": "清字辈",
+      "realm": "金丹",
+      "affiliation": "柳氏药谷",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "叶承乾之妻,柳氏药谷之女,联姻入族。"
+    },
+    {
+      "id": 6,
+      "name": "叶星河",
+      "aliases": [
+        "小星河"
+      ],
+      "gender": "male",
+      "generation": "星字辈",
+      "realm": "筑基",
+      "affiliation": "玄鉴仙族",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "叶承乾幼子,天资卓绝,拜入玄鉴真人门下。家族未来的希望。"
+    },
+    {
+      "id": 7,
+      "name": "叶星澜",
+      "aliases": [],
+      "gender": "female",
+      "generation": "星字辈",
+      "realm": "练气",
+      "affiliation": "玄鉴仙族",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "叶星河之姊,温婉聪慧。"
+    },
+    {
+      "id": 8,
+      "name": "玄鉴真人",
+      "aliases": [
+        "鉴真上人"
+      ],
+      "gender": "male",
+      "generation": "—",
+      "realm": "大乘",
+      "affiliation": "玄鉴仙族",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "家族供奉的**大乘期老怪**,寿元将尽,收叶星河为关门弟子。"
+    }
+  ],
+  "relationships": [
+    {
+      "id": 1,
+      "from_id": 1,
+      "to_id": 2,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "道侣"
+    },
+    {
+      "id": 2,
+      "from_id": 1,
+      "to_id": 3,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 3,
+      "from_id": 2,
+      "to_id": 3,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 4,
+      "from_id": 1,
+      "to_id": 4,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 5,
+      "from_id": 2,
+      "to_id": 4,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 6,
+      "from_id": 4,
+      "to_id": 5,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "联姻"
+    },
+    {
+      "id": 7,
+      "from_id": 4,
+      "to_id": 6,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 8,
+      "from_id": 5,
+      "to_id": 6,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 9,
+      "from_id": 4,
+      "to_id": 7,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 10,
+      "from_id": 5,
+      "to_id": 7,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 11,
+      "from_id": 8,
+      "to_id": 6,
+      "type": "master",
+      "parent_role": null,
+      "note": "关门弟子"
+    }
+  ]
+}

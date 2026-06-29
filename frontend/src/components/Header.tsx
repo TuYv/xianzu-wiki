@@ -1,7 +1,12 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../state/auth';
+import { STATIC_DATA } from '../api/staticData';
 
-/** 站点页眉:标题回首页;访客见“登录”,管理员见“退出”。 */
+/**
+ * 站点页眉:标题回首页。
+ * 本地编辑器(连后端)下访客见“登录”、管理员见“退出”;
+ * 部署的静态站为只读、无后端,不显示登录入口。
+ */
 export function Header() {
   const { isAdmin, logout } = useAuth();
   return (
@@ -10,7 +15,7 @@ export function Header() {
         玄鉴仙族
       </Link>
       <nav className="site-header__nav">
-        {isAdmin ? (
+        {STATIC_DATA ? null : isAdmin ? (
           <button type="button" onClick={logout}>
             退出
           </button>
