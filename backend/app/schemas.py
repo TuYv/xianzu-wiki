@@ -76,3 +76,27 @@ class RelationshipCreate(BaseModel):
     type: RelType
     parent_role: ParentRole | None = None
     note: str | None = None
+
+
+class CharacterImport(CharacterCreate):
+    """导入用人物:字段同 CharacterCreate(含可选 notes),按 name 引用。"""
+
+
+class RelationshipImport(BaseModel):
+    """导入用关系:用人物名引用,导入时解析为 id。"""
+
+    from_name: str
+    to_name: str
+    type: RelType
+    parent_role: ParentRole | None = None
+    note: str | None = None
+
+
+class ImportPayload(BaseModel):
+    characters: list[CharacterImport] = []
+    relationships: list[RelationshipImport] = []
+
+
+class ExportPayload(BaseModel):
+    characters: list[AdminCharacter] = []
+    relationships: list[RelationshipRead] = []

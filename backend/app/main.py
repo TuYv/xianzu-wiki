@@ -8,6 +8,7 @@ from sqlmodel import SQLModel
 from app.auth import limiter
 from app.config import get_settings
 from app.db import engine
+from app.routers import io
 from app.routers.auth import router as auth_router
 from app.routers.characters import router as characters_router
 from app.routers.relationships import router as relationships_router
@@ -31,6 +32,7 @@ app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 app.include_router(auth_router)
 app.include_router(characters_router)
 app.include_router(relationships_router)
+app.include_router(io.router)
 
 
 @app.get("/api/health")
