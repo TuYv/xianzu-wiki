@@ -114,6 +114,13 @@ export function DetailPage() {
         </section>
       )}
 
+      {character.chronicle && (
+        <section className="chronicle">
+          <h2>人物志</h2>
+          <Markdown>{character.chronicle}</Markdown>
+        </section>
+      )}
+
       <section className="relationships">
         <h2>关系</h2>
         {character.relationships.length === 0 ? (

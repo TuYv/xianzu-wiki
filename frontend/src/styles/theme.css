@@ -237,6 +237,35 @@ input:focus, select:focus, textarea:focus {
 }
 .detail .bio p { margin: .4rem 0; }
 
+/* 人物志 — 鎏金碑传 */
+.detail .chronicle {
+  margin: 1.8rem 0;
+  padding: 1.4rem 1.7rem;
+  background:
+    linear-gradient(180deg, rgba(217, 184, 107, 0.05), transparent 45%),
+    var(--ink-2);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+}
+.detail .chronicle > h2:first-of-type::before { content: '卷 · '; }
+.detail .chronicle p { margin: .7rem 0; line-height: 2; color: var(--paper); }
+.detail .chronicle strong { color: var(--gold-soft); }
+.detail .chronicle blockquote {
+  margin: 1rem 0; padding-left: 1rem; border-left: 2px solid var(--gold);
+  color: var(--muted); font-style: italic;
+}
+/* 正文内的小标题:朱金小题,不带「卷·」前缀、不画分隔线 */
+.detail .chronicle h2:not(:first-of-type),
+.detail .chronicle h3,
+.detail .chronicle h4 {
+  font-size: 1rem; letter-spacing: .12em; color: var(--gold);
+  border: none; padding: 0; margin: 1.3rem 0 .2rem;
+}
+.detail .chronicle h2:not(:first-of-type)::before,
+.detail .chronicle h3::before,
+.detail .chronicle h4::before { content: none; }
+
 /* relationships */
 .detail .relationships { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: .5rem; }
 .detail .relationships li {

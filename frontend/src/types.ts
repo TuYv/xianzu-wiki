@@ -14,6 +14,8 @@ export interface Character {
   status: Status;
   avatar_url: string | null;
   bio: string | null;
+  /** 人物志:逝者的列传体长传(Markdown);仅部分人物有。 */
+  chronicle?: string | null;
   notes?: string | null;
   created_at?: string;
   updated_at?: string;

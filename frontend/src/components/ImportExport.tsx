@@ -17,6 +17,7 @@ function toPublishData(exp: ExportPayload): ExportPayload {
       status: c.status,
       avatar_url: c.avatar_url,
       bio: c.bio,
+      chronicle: c.chronicle ?? null,
     })),
     relationships: exp.relationships,
   };
