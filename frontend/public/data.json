@@ -3,26 +3,32 @@
     {
       "id": 1,
       "name": "陆江仙",
-      "aliases": ["鉴子", "镜灵"],
+      "aliases": [
+        "鉴子",
+        "镜灵"
+      ],
       "gender": "male",
       "generation": null,
-      "realm": "器灵·月华初凝",
-      "affiliation": "玄鉴本体",
+      "realm": "器灵·月华(吞玉石后神识二十丈)",
+      "affiliation": "黎泾村·李家(器灵)",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "现代社畜陆江仙猝死后,神魂寄于一面**灰青色的破镜**(村人称『鉴子』),落在黎泾村眉尺河底。靠**吞吐月华**缓慢凝聚力量,能发微光、模糊感知周遭与他人心绪。被李项平徒手摸鱼时捡起,带回李家。隐隐感到**北方大湖**方向有『自己的一部分』。\n\n> 「这便是现在的我了吧。」"
+      "bio": "现代加班族猝死后，神魂寄附于眉尺河底一面灰青破镜，化为修『月华』的器灵，被李项平打捞回李家。吞下卡在望月湖石缝的玉石后，习得《太阴吐纳养轮经》与本命《玄珠祀灵术》，神识扩张能探人心思、可凝玄珠符种助人修行。心思谨慎自嘲，藏起灵智暗中谋划属于自己的仙路。",
+      "avatar_url": null
     },
     {
       "id": 2,
       "name": "李木田",
-      "aliases": [],
+      "aliases": [
+        "木田叔",
+        "李叔"
+      ],
       "gender": "male",
-      "generation": "李家·家主",
+      "generation": "黎泾村李家·家主",
       "realm": "凡人",
       "affiliation": "黎泾村·李家",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "黎泾村**唯一出过远门**的人,从过军、杀过人,四十余岁用军饷买地、成了村中大户。性子刚硬,恨铁不成钢,盼儿子读书从军而非困于田亩。见鉴子映出月华异象,当即警觉,招四子持刀戒备。"
+      "bio": "年近六十的退伍老兵，黎泾村李家家主。十三岁离乡沿古黎道从军，被杨将军征去攻打山越，杀人无数后带军饷回乡置地成大户。刚硬果决、城府极深，得鉴子后立祠堂、建大院、定家规，谋借仙缘兴族，又怕招祸灭门，急着为儿子定亲传嗣。",
+      "avatar_url": null
     },
     {
       "id": 3,
@@ -33,8 +39,8 @@
       "realm": "凡人",
       "affiliation": "黎泾村·李家",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "李木田之妻,李家四兄弟的母亲。操持家务,笑看一桌儿郎。"
+      "bio": "李木田之妻，李家四兄弟的生母。温和持家，戏份多在灶台与家宴之间，是李家安稳的后方。",
+      "avatar_url": null
     },
     {
       "id": 4,
@@ -42,11 +48,11 @@
       "aliases": [],
       "gender": "male",
       "generation": "李家·长子",
-      "realm": "凡人",
+      "realm": "凡人(习《接引法》白毫三寸，待接引符种)",
       "affiliation": "黎泾村·李家",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "李家**长子**,十七岁,嘴上已生胡须,性情温和持重,处处照拂幼弟。"
+      "bio": "李家长子，十七岁已蓄须，处事圆滑、为人宽厚，被父亲视为承嗣之选，已娶任家次女为妻。修习《接引法》仅显白毫三寸，与玄珠符种契合度最低。",
+      "avatar_url": null
     },
     {
       "id": 5,
@@ -54,84 +60,351 @@
       "aliases": [],
       "gender": "male",
       "generation": "李家·次子",
-      "realm": "凡人",
+      "realm": "凡人(习《接引法》白毫六寸，待接引符种)",
       "affiliation": "黎泾村·李家",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "李家**次子**,性情阴郁果决。仇家上门之际,第一个翻身取刀披甲,镇定布置防卫。"
+      "bio": "李家次子，十八岁仍未娶妻，勇敢果决、敢打敢拼又识字明理。曾泅水入望月湖取回玉石，一度主张灭口李叶盛以绝后患；白毫六寸，立志踏上修仙之路。",
+      "avatar_url": null
     },
     {
       "id": 6,
       "name": "李项平",
-      "aliases": [],
+      "aliases": [
+        "项平哥"
+      ],
       "gender": "male",
       "generation": "李家·三子",
-      "realm": "凡人",
+      "realm": "凡人(习《接引法》白毫五寸，待接引符种)",
       "affiliation": "黎泾村·李家",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "李家**三子**,约十三岁,眉眼清秀、眼神狡黠。在眉尺河徒手摸鱼时**捡到鉴子**(陆江仙本体),揣回家中,无意间将这缕外来神魂引入李家。"
+      "bio": "李家三子，眉清目秀、机灵狡黠却读书不成。在眉尺河捡到破镜鉴子，是引动全家仙缘的关键人物。与田芸两情相悦，第十章由父亲提雁纳采定下婚约；白毫五寸。",
+      "avatar_url": null
     },
     {
       "id": 7,
       "name": "李尺泾",
-      "aliases": [],
+      "aliases": [
+        "泾儿"
+      ],
       "gender": "male",
       "generation": "李家·幼子",
-      "realm": "凡人",
+      "realm": "胎息·月华养轮(白毫八寸，将凝玄景轮)",
       "affiliation": "黎泾村·李家",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "李家**幼子**(四弟),顽皮机灵。后山摘桑养蚕时顺手逮了一窝肥田鼠回来,惹得父亲大悦。"
+      "bio": "李家幼子，约九岁，聪慧俊美、读书最多。李家第一个接引玄珠符种、跨入修仙之门者，借鉴子月华加速吞纳，将凝成第一轮玄景轮；白毫八寸，契合度最高。",
+      "avatar_url": null
     },
     {
       "id": 8,
       "name": "田芸",
-      "aliases": [],
+      "aliases": [
+        "芸妹"
+      ],
       "gender": "female",
-      "generation": null,
+      "generation": "田家·女",
       "realm": "凡人",
       "affiliation": "黎泾村·田家",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "黎泾村女孩,十一岁,脸蛋圆圆、笑意盈盈,发育早、个头已高过同辈。按黎泾村男女十三五成婚的乡俗,心中**早已属意李项平为夫君**。父亲是村中最厚道的田叔。"
+      "bio": "田守水之女，圆脸朴实、笑容讨喜的村姑，自幼便认定李项平为夫君。第十章李木田提着大雁上门纳采，与李项平正式定亲。",
+      "avatar_url": null
     },
     {
       "id": 9,
-      "name": "田叔",
-      "aliases": [],
+      "name": "田守水",
+      "aliases": [
+        "田叔"
+      ],
       "gender": "male",
-      "generation": null,
+      "generation": "田家·家主",
       "realm": "凡人",
       "affiliation": "黎泾村·田家",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "田芸之父,黎泾村**最厚道**的村民,与李木田相熟,常羡李家四子有出息。"
+      "bio": "田芸之父，黎泾村出名厚道的农户，也是李木田的军中结义兄弟——五岁起便跟在李木田身后，十二岁与任平安一同从军，三人抱团求生。回乡后与李家休戚与共，曾参与诛灭元家，连李长湖都是他亲手带大。",
+      "avatar_url": null
     },
     {
       "id": 10,
       "name": "李叶生",
-      "aliases": ["叶弟儿"],
+      "aliases": [
+        "叶弟儿"
+      ],
+      "gender": "male",
+      "generation": "李家堂支·弟",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家(堂支)",
+      "status": "alive",
+      "bio": "放鸭少年，李项平的玩伴，李家堂亲子弟。性子怯懦胆小，常被兄长李叶盛打骂驱使，被逼去李家偷瓜探虚实。",
+      "avatar_url": null
+    },
+    {
+      "id": 11,
+      "name": "李叶盛",
+      "aliases": [
+        "叶盛",
+        "叶盛哥"
+      ],
+      "gender": "male",
+      "generation": "李家堂支·兄",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家(堂支)",
+      "status": "alive",
+      "bio": "李家堂亲子弟，好吃懒做、薄情张扬，常到李家打秋风。半夜偷瓜被李木田当场从瓜田拎出，因恐撞见鉴子之秘险些被李通崖灭口；事后反生贪念，惦记李木田家财，指使弟弟李叶生再去偷瓜探虚实。",
+      "avatar_url": null
+    },
+    {
+      "id": 12,
+      "name": "韩文许",
+      "aliases": [
+        "韩先生",
+        "先生"
+      ],
       "gender": "male",
       "generation": null,
       "realm": "凡人",
       "affiliation": "黎泾村",
       "status": "alive",
-      "avatar_url": null,
-      "bio": "黎泾村放鸭少年,与李项平相熟,项平唤其『叶弟儿』。上有一位严厉的兄长。\n\n> 注:第四章以『李叶盛』为题,或即此人。"
+      "bio": "黎泾村塾师，李家子弟的启蒙先生。十二岁那年亲见仙人到镇上挑选开窍幼童带走，自此对仙缘念念不忘、怅惘半生；与李木田交好。",
+      "avatar_url": null
+    },
+    {
+      "id": 13,
+      "name": "陈二牛",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "黎泾村·陈家",
+      "status": "alive",
+      "bio": "黎泾村农户，幼年因梨川口大旱逃难至此，被李根水收留并娶其庶女为妻，故是李家姻亲兼租户。妻子卧病使他为生计与医药忧心，携子小泽赴李家赴宴。",
+      "avatar_url": null
+    },
+    {
+      "id": 14,
+      "name": "小泽",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "黎泾村·陈家",
+      "status": "alive",
+      "bio": "陈二牛之子，论辈分唤李家男丁作舅舅，随父到李家做客，着墨不多。",
+      "avatar_url": null
+    },
+    {
+      "id": 15,
+      "name": "李根水",
+      "aliases": [],
+      "gender": "male",
+      "generation": "李家·祖辈(李木田之父)",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家",
+      "status": "dead",
+      "bio": "黎泾村老农，李木田之父。精明能干却花心，娶妻又纳二妾，子女众多。晚年嫡幼子暴毙，家产遭庶子与元家觊觎，已故；其遗产之争引出李木田提刀归乡的旧事。",
+      "avatar_url": null
+    },
+    {
+      "id": 16,
+      "name": "任氏",
+      "aliases": [
+        "任家次女"
+      ],
+      "gender": "female",
+      "generation": "李家·长媳",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家(原任家)",
+      "status": "alive",
+      "bio": "任家次女，李长湖之妻，已风光嫁入李家。为人稳重守口，李木田盼她早诞子嗣以续李家香火。",
+      "avatar_url": null
+    },
+    {
+      "id": 17,
+      "name": "叶承福",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "黎泾村·叶家",
+      "status": "alive",
+      "bio": "黎泾村村民，李木田口中的侄子，憨厚老实又嘴巧会说话。叶姓为村中第一大姓，占村民三成以上。",
+      "avatar_url": null
+    },
+    {
+      "id": 18,
+      "name": "任平安",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": null,
+      "status": "unknown",
+      "bio": "李木田与田守水的军中结义兄弟。三人当年一同沿古黎道从军、在军中抱团求生，后各自返乡；其下落原文未详。",
+      "avatar_url": null
+    },
+    {
+      "id": 19,
+      "name": "杨将军",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "越国朝廷军",
+      "status": "unknown",
+      "bio": "奉朝廷之命征讨山越的将领，在古黎道征兵时收走无处容身的李木田。治军严明却与士卒同食同住、亲如一家，传授了易学难精的越兵战法。",
+      "avatar_url": null
     }
   ],
   "relationships": [
-    { "id": 1, "from_id": 2, "to_id": 3, "type": "spouse", "parent_role": null, "note": "结发夫妻" },
-    { "id": 2, "from_id": 2, "to_id": 4, "type": "parent", "parent_role": "father", "note": null },
-    { "id": 3, "from_id": 2, "to_id": 5, "type": "parent", "parent_role": "father", "note": null },
-    { "id": 4, "from_id": 2, "to_id": 6, "type": "parent", "parent_role": "father", "note": null },
-    { "id": 5, "from_id": 2, "to_id": 7, "type": "parent", "parent_role": "father", "note": null },
-    { "id": 6, "from_id": 3, "to_id": 4, "type": "parent", "parent_role": "mother", "note": null },
-    { "id": 7, "from_id": 3, "to_id": 5, "type": "parent", "parent_role": "mother", "note": null },
-    { "id": 8, "from_id": 3, "to_id": 6, "type": "parent", "parent_role": "mother", "note": null },
-    { "id": 9, "from_id": 3, "to_id": 7, "type": "parent", "parent_role": "mother", "note": null },
-    { "id": 10, "from_id": 9, "to_id": 8, "type": "parent", "parent_role": "father", "note": null },
-    { "id": 11, "from_id": 6, "to_id": 8, "type": "spouse", "parent_role": null, "note": "乡俗早定,田芸属意项平为未来夫君(尚未成婚)" }
+    {
+      "id": 1,
+      "from_id": 2,
+      "to_id": 4,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 2,
+      "from_id": 3,
+      "to_id": 4,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 3,
+      "from_id": 2,
+      "to_id": 5,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 4,
+      "from_id": 3,
+      "to_id": 5,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 5,
+      "from_id": 2,
+      "to_id": 6,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 6,
+      "from_id": 3,
+      "to_id": 6,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 7,
+      "from_id": 2,
+      "to_id": 7,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 8,
+      "from_id": 3,
+      "to_id": 7,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 9,
+      "from_id": 15,
+      "to_id": 2,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "李木田为其嫡子，离家从军后提刀归乡分产"
+    },
+    {
+      "id": 10,
+      "from_id": 9,
+      "to_id": 8,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 11,
+      "from_id": 13,
+      "to_id": 14,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "小泽随父到李家做客"
+    },
+    {
+      "id": 12,
+      "from_id": 2,
+      "to_id": 3,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "已成婚，育四子"
+    },
+    {
+      "id": 13,
+      "from_id": 4,
+      "to_id": 16,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "已成婚，任家次女嫁入李家"
+    },
+    {
+      "id": 14,
+      "from_id": 6,
+      "to_id": 8,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "已定亲(第十章纳采提亲)，尚未成婚"
+    },
+    {
+      "id": 15,
+      "from_id": 11,
+      "to_id": 10,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "叶盛为兄、叶生为弟，李家堂支；共同父母原文未具名"
+    },
+    {
+      "id": 16,
+      "from_id": 12,
+      "to_id": 4,
+      "type": "master",
+      "parent_role": null,
+      "note": "黎泾村塾师，启蒙授字(非修行师承)"
+    },
+    {
+      "id": 17,
+      "from_id": 12,
+      "to_id": 5,
+      "type": "master",
+      "parent_role": null,
+      "note": "幼时往先生处识字(非修行师承)"
+    },
+    {
+      "id": 18,
+      "from_id": 12,
+      "to_id": 6,
+      "type": "master",
+      "parent_role": null,
+      "note": "少时随兄入塾，调皮未成学(非修行师承)"
+    },
+    {
+      "id": 19,
+      "from_id": 12,
+      "to_id": 7,
+      "type": "master",
+      "parent_role": null,
+      "note": "李家子弟中读书最多，村中唯一塾师启蒙(非修行师承)"
+    }
   ]
 }
