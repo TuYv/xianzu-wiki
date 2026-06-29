@@ -68,3 +68,11 @@ class RelationshipRead(BaseModel):
 
 class CharacterDetail(PublicCharacter):
     relationships: list[RelationshipRead] = []
+
+
+class RelationshipCreate(BaseModel):
+    from_id: int
+    to_id: int
+    type: RelType
+    parent_role: ParentRole | None = None
+    note: str | None = None

@@ -30,6 +30,10 @@ config.get_settings.cache_clear()
 # 用 create_db_engine 构造，确保测试引擎应用与生产「完全相同」的 PRAGMA。
 test_engine = create_db_engine(f"sqlite:///{os.environ['XJXZ_DB_PATH']}")
 
+# 提前建好所有表(含 Relationship),使 _clean_db autouse 安全运行
+from sqlmodel import SQLModel as _SQLModel  # noqa: E402
+_SQLModel.metadata.create_all(test_engine)
+
 
 def _get_session_override() -> Generator[Session, None, None]:
     with Session(test_engine) as session:
@@ -40,6 +44,18 @@ def _get_session_override() -> Generator[Session, None, None]:
 def _reset_limiter() -> None:
     """每个用例前清空内存限流计数,避免跨用例污染。"""
     limiter.reset()
+
+
+@pytest.fixture(autouse=True)
+def _clean_db() -> Generator[None, None, None]:
+    """每个用例结束后清空所有表,保证测试之间 DB 隔离。"""
+    yield
+    from sqlalchemy import text
+    with Session(test_engine) as session:
+        # 关系表先删(有 FK),再删人物表
+        session.execute(text("DELETE FROM relationships"))
+        session.execute(text("DELETE FROM characters"))
+        session.commit()
 
 
 @pytest.fixture
