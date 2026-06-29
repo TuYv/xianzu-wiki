@@ -13,7 +13,7 @@ export type FlowEdge = { id: string; source: string; target: string };
 
 const NODE_WIDTH = 160;
 const NODE_HEIGHT = 56;
-const UNION_SIZE = 1;
+const UNION_SIZE = 16;
 
 const isUnion = (id: string): boolean => id.startsWith('union:');
 
@@ -23,8 +23,9 @@ function unionId(a: number, b: number): string {
 
 /**
  * 以 focusId 为中心,沿 parent 边上/下各 depth 代 BFS 收集人物,
- * 为每组 spouse 生成不可见 union 节点(配偶→union、union→子女、单亲直连),
+ * 为每组 spouse 生成一个可见的 union 连接节点(配偶→union、union→子女、单亲直连),
  * 用 dagre rankdir=TB 计算坐标。visited 去重防环死循环。
+ * 注意:union 节点必须可见(type='union'),否则 React Flow 会隐藏连到它的所有边。
  */
 export function buildFamilyGraph(
   characters: Character[],
@@ -101,7 +102,7 @@ export function buildFamilyGraph(
     nodes.push({ id: String(id), data: { label: c.name, character: c }, position: { x: 0, y: 0 } });
   }
   for (const [uid] of couples) {
-    nodes.push({ id: uid, data: {}, position: { x: 0, y: 0 }, hidden: true });
+    nodes.push({ id: uid, data: {}, position: { x: 0, y: 0 }, type: 'union' });
   }
 
   // 边(去重)
@@ -137,7 +138,7 @@ export function buildFamilyGraph(
     }
   }
 
-  // dagre 布局(union 节点 hidden 但参与排版)
+  // dagre 布局(union 节点占一个小尺寸的中间 rank,作为连接桩)
   const g = new dagre.graphlib.Graph();
   g.setGraph({ rankdir: 'TB', nodesep: 40, ranksep: 60 });
   g.setDefaultEdgeLabel(() => ({}));

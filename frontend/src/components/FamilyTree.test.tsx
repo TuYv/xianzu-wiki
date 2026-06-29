@@ -60,11 +60,14 @@ describe('FamilyTree', () => {
 
     // 画布渲染成功
     expect(container.querySelector('.react-flow')).not.toBeNull();
-    // 三个人物节点都在 DOM,且隐藏的 union 节点不可点击渲染
+    // 三个人物节点都在 DOM
     expect(container.querySelector('[data-id="1"]')).not.toBeNull();
     expect(container.querySelector('[data-id="2"]')).not.toBeNull();
     expect(container.querySelector('[data-id="3"]')).not.toBeNull();
-    expect(container.querySelector('[data-id="union:1-2"]')).toBeNull();
+    // union 连接节点现在是可见的(玉珏),渲染为非人物节点;它存在但不导航
+    const union = container.querySelector('[data-id="union:1-2"]');
+    expect(union).not.toBeNull();
+    expect(union?.querySelector('.union-node')).not.toBeNull();
   });
 
   it('clicking a character node navigates to its detail page', () => {

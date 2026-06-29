@@ -31,7 +31,7 @@ const unionNodes = (nodes: { id: string }[]) =>
   nodes.filter((n) => n.id.startsWith('union:'));
 
 describe('buildFamilyGraph', () => {
-  it('一对配偶生成一个不可见 union 节点并各连一条边', () => {
+  it('一对配偶生成一个可见的 union 连接节点并各连一条边', () => {
     const chars = [char(1, 'A'), char(2, 'B')];
     const rels = [spouse(1, 1, 2)];
 
@@ -40,7 +40,9 @@ describe('buildFamilyGraph', () => {
     const unions = unionNodes(nodes);
     expect(unions).toHaveLength(1);
     expect(unions[0].id).toBe('union:1-2');
-    expect((unions[0] as { hidden?: boolean }).hidden).toBe(true);
+    // union 节点是可见的连接桩(type='union'),不再 hidden,否则连到它的边会被 React Flow 隐藏
+    expect((unions[0] as { type?: string }).type).toBe('union');
+    expect((unions[0] as { hidden?: boolean }).hidden).toBeUndefined();
     expect(edges.some((e) => e.source === '1' && e.target === 'union:1-2')).toBe(true);
     expect(edges.some((e) => e.source === '2' && e.target === 'union:1-2')).toBe(true);
   });

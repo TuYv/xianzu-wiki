@@ -3,8 +3,11 @@ import {
   ReactFlow,
   Background,
   Controls,
+  Handle,
+  Position,
   type Node,
   type Edge,
+  type NodeTypes,
 } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
 import { useNavigate } from 'react-router-dom';
@@ -17,6 +20,20 @@ interface FamilyTreeProps {
   focusId: number;
   depth: number;
 }
+
+/** 婚姻连接点(玉珏):配偶连入、子女引出;不可见的连接桩让 edge 锚定。 */
+function UnionNode() {
+  return (
+    <div className="union-node" aria-hidden="true">
+      <Handle type="target" position={Position.Top} isConnectable={false} />
+      <Handle type="source" position={Position.Bottom} isConnectable={false} />
+    </div>
+  );
+}
+
+const nodeTypes: NodeTypes = { union: UnionNode };
+
+const defaultEdgeOptions = { type: 'smoothstep' as const };
 
 export function FamilyTree({
   characters,
@@ -38,8 +55,8 @@ export function FamilyTree({
         id: n.id,
         data: { label: n.data.label ?? '' },
         position: n.position,
-        hidden: n.hidden,
         type: n.type,
+        selectable: n.type !== 'union',
         draggable: false,
       })),
     [nodes],
@@ -63,15 +80,19 @@ export function FamilyTree({
       <ReactFlow
         nodes={rfNodes}
         edges={rfEdges}
+        nodeTypes={nodeTypes}
+        defaultEdgeOptions={defaultEdgeOptions}
         onNodeClick={onNodeClick}
         fitView
+        fitViewOptions={{ padding: 0.25 }}
         panOnScroll={false}
         nodesDraggable={false}
         nodesConnectable={false}
         elementsSelectable
         minZoom={0.2}
+        proOptions={{ hideAttribution: true }}
       >
-        <Background />
+        <Background gap={26} />
         <Controls showInteractive={false} />
       </ReactFlow>
     </div>
