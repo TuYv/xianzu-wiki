@@ -9,6 +9,7 @@ dependencies = [
     "uvicorn[standard]>=0.29",
     "pyjwt>=2.8",
     "passlib[bcrypt]>=1.7.4",
+    "bcrypt>=3.0,<4.0",
     "slowapi>=0.1.9",
     "python-multipart>=0.0.9",
 ]

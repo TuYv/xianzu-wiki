@@ -7,6 +7,7 @@ from sqlmodel import SQLModel
 
 from app.auth import limiter
 from app.db import engine
+from app.routers.auth import router as auth_router
 
 
 @asynccontextmanager
@@ -21,6 +22,9 @@ app = FastAPI(title="玄鉴仙族 character wiki", lifespan=lifespan)
 # slowapi 接线：限流装饰器依赖 app.state.limiter + 异常处理器。
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
+
+
+app.include_router(auth_router)
 
 
 @app.get("/api/health")
