@@ -12,7 +12,7 @@ vi.mock('../state/auth', () => ({
 import { exportData, importData } from '../api/io';
 import { useAuth } from '../state/auth';
 import { ImportExport } from './ImportExport';
-import type { ImportPayload } from '../types';
+import type { ExportPayload, ImportPayload } from '../types';
 
 const mockedExport = vi.mocked(exportData);
 const mockedImport = vi.mocked(importData);
@@ -41,7 +41,7 @@ describe('ImportExport', () => {
     mockedExport.mockResolvedValue({
       characters: [{ id: 1, name: 'A', aliases: [], gender: 'unknown', generation: null, realm: null, affiliation: null, status: 'alive', avatar_url: null, bio: null }],
       relationships: [],
-    } as never);
+    } satisfies ExportPayload);
 
     const createUrl = vi.fn((_blob: Blob) => 'blob:mock');
     const revokeUrl = vi.fn();
@@ -74,6 +74,31 @@ describe('ImportExport', () => {
     fireEvent.change(input, { target: { files: [file] } });
 
     await waitFor(() => expect(mockedImport).toHaveBeenCalledWith(payload));
+  });
+
+  it('import shows error when file contains malformed JSON', async () => {
+    setAdmin(true);
+    render(<ImportExport />);
+    const input = screen.getByTestId('import-input') as HTMLInputElement;
+    const file = new File(['not json'], 'bad.json', { type: 'application/json' });
+    fireEvent.change(input, { target: { files: [file] } });
+
+    await waitFor(() => screen.getByRole('status'));
+    expect(screen.getByRole('status').textContent).toMatch(/导入失败/);
+  });
+
+  it('import shows error when importData rejects', async () => {
+    setAdmin(true);
+    mockedImport.mockRejectedValue(new Error('500'));
+    const payload: ImportPayload = { characters: [{ name: 'A' }], relationships: [] };
+
+    render(<ImportExport />);
+    const input = screen.getByTestId('import-input') as HTMLInputElement;
+    const file = new File([JSON.stringify(payload)], 'data.json', { type: 'application/json' });
+    fireEvent.change(input, { target: { files: [file] } });
+
+    await waitFor(() => screen.getByRole('status'));
+    expect(screen.getByRole('status').textContent).toContain('导入失败');
   });
 
   afterEach(() => {
