@@ -2,6 +2,7 @@
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Response, status
+from sqlalchemy import delete as sql_delete
 from sqlmodel import Session, select
 
 from app.auth import require_admin
@@ -26,6 +27,15 @@ def _get_or_404(session: Session, character_id: int) -> Character:
     return character
 
 
+def _fetch_relationships(session: Session, character_id: int) -> list[Relationship]:
+    return session.exec(
+        select(Relationship).where(
+            (Relationship.from_id == character_id)
+            | (Relationship.to_id == character_id)
+        )
+    ).all()
+
+
 @router.get("/characters", response_model=list[PublicCharacter])
 def list_characters(
     limit: int = Query(500, ge=1, le=500),
@@ -40,12 +50,7 @@ def get_character(
     session: Session = Depends(get_session),
 ) -> CharacterDetail:
     character = _get_or_404(session, character_id)
-    rels = session.exec(
-        select(Relationship).where(
-            (Relationship.from_id == character_id)
-            | (Relationship.to_id == character_id)
-        )
-    ).all()
+    rels = _fetch_relationships(session, character_id)
     detail = CharacterDetail.model_validate(character)
     detail.relationships = [RelationshipRead.model_validate(r) for r in rels]
     return detail
@@ -97,14 +102,15 @@ def delete_character(
     session: Session = Depends(get_session),
 ) -> Response:
     character = _get_or_404(session, character_id)
-    rels = session.exec(
-        select(Relationship).where(
+    # Bulk-delete matching relationships before the character row to avoid FK
+    # constraint conflicts when PRAGMA foreign_keys is OFF, and to prevent
+    # the ORM double-delete warning that arises when FK cascade also fires.
+    session.exec(
+        sql_delete(Relationship).where(
             (Relationship.from_id == character_id)
             | (Relationship.to_id == character_id)
         )
-    ).all()
-    for rel in rels:
-        session.delete(rel)
+    )
     session.delete(character)
     session.commit()
     return Response(status_code=status.HTTP_204_NO_CONTENT)

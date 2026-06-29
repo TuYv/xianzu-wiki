@@ -1,4 +1,7 @@
 # backend/tests/test_characters.py
+from sqlmodel import Session
+
+from app.models import RelType, Relationship
 from app.schemas import (
     AdminCharacter,
     CharacterCreate,
@@ -109,19 +112,28 @@ def test_get_missing_returns_404(client):
     assert client.get("/api/characters/999999").status_code == 404
 
 
-def test_delete_cascades_relationships(client, admin_token):
+def test_unauthenticated_put_is_401(client, admin_token):
+    cid = _make(client, admin_token, name="人物").json()["id"]
+    assert client.put(f"/api/characters/{cid}", json={"name": "改"}).status_code == 401
+
+
+def test_unauthenticated_delete_is_401(client, admin_token):
+    cid = _make(client, admin_token, name="人物").json()["id"]
+    assert client.delete(f"/api/characters/{cid}").status_code == 401
+
+
+def test_delete_cascades_relationships(client, admin_token, db_engine):
     h = {"Authorization": f"Bearer {admin_token}"}
     a = _make(client, admin_token, name="师父").json()["id"]
     b = _make(client, admin_token, name="徒弟").json()["id"]
-    rel = client.post(
-        "/api/relationships",
-        json={"from_id": a, "to_id": b, "type": "master"},
-        headers=h,
-    )
-    assert rel.status_code == 200
+    # Insert relationship directly via DB session — no dependency on Task 5 router
+    with Session(db_engine) as s:
+        rel = Relationship(from_id=a, to_id=b, type=RelType.master)
+        s.add(rel)
+        s.commit()
+        rel_id = rel.id
 
-    d = client.delete(f"/api/characters/{a}", headers=h)
-    assert d.status_code == 204
+    assert client.delete(f"/api/characters/{a}", headers=h).status_code == 204
 
-    remaining = client.get("/api/relationships").json()
-    assert all(r["from_id"] != a and r["to_id"] != a for r in remaining)
+    with Session(db_engine) as s:
+        assert s.get(Relationship, rel_id) is None
