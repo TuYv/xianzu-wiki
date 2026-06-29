@@ -31,3 +31,21 @@ export interface Relationship {
 export interface CharacterDetail extends Character {
   relationships: Relationship[];
 }
+
+export interface RelationshipImport {
+  from_name: string;
+  to_name: string;
+  type: RelType;
+  parent_role?: ParentRole | null;
+  note?: string | null;
+}
+
+export interface ImportPayload {
+  characters: Partial<Character>[];
+  relationships: RelationshipImport[];
+}
+
+export interface ExportPayload {
+  characters: Character[];
+  relationships: Relationship[];
+}
