@@ -1,6 +1,7 @@
 import { apiFetch } from './client';
 import type { Character, CharacterDetail } from '../types';
-import { STATIC_DATA, loadSiteData, buildDetail, staticReadOnly } from './staticData';
+import { STATIC_DATA } from '../env';
+import { loadSiteData, buildDetail, staticReadOnly } from './staticData';
 
 const JSON_HEADERS = { 'Content-Type': 'application/json' } as const;
 

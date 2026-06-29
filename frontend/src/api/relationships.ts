@@ -1,6 +1,7 @@
 import { apiFetch } from './client';
 import type { Relationship } from '../types';
-import { STATIC_DATA, loadSiteData, staticReadOnly } from './staticData';
+import { STATIC_DATA } from '../env';
+import { loadSiteData, staticReadOnly } from './staticData';
 
 // ---- 读:静态站读 data.json,本地开发读后端 ----
 

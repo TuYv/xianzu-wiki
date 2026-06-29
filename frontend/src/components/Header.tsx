@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useAuth } from '../state/auth';
-import { STATIC_DATA } from '../api/staticData';
+import { STATIC_DATA } from '../env';
 
 /**
  * 站点页眉:标题回首页。
@@ -15,13 +15,14 @@ export function Header() {
         玄鉴仙族
       </Link>
       <nav className="site-header__nav">
-        {STATIC_DATA ? null : isAdmin ? (
-          <button type="button" onClick={logout}>
-            退出
-          </button>
-        ) : (
-          <Link to="/login">登录</Link>
-        )}
+        {!STATIC_DATA &&
+          (isAdmin ? (
+            <button type="button" onClick={logout}>
+              退出
+            </button>
+          ) : (
+            <Link to="/login">登录</Link>
+          ))}
       </nav>
     </header>
   );

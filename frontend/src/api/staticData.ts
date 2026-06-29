@@ -1,17 +1,7 @@
-import type { Character, CharacterDetail, Relationship } from '../types';
+import type { CharacterDetail, ExportPayload } from '../types';
 
-/**
- * 数据源模式。
- * - 生产构建(部署的静态站):唯一数据源是仓库里的 `public/data.json`,无后端。
- * - 本地开发(`npm run dev`):读后端 API,便于用管理员编辑器实时增删改。
- * 切换依据 Vite 的 `import.meta.env.PROD`(test 与 dev 下为 false → 走 API)。
- */
-export const STATIC_DATA = import.meta.env.PROD;
-
-export interface SiteData {
-  characters: Character[];
-  relationships: Relationship[];
-}
+// data.json 的形状即导出的形状(characters + relationships)。
+export type SiteData = ExportPayload;
 
 let cache: Promise<SiteData> | null = null;
 

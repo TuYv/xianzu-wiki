@@ -1,11 +1,10 @@
 import { useRef, useState, type ChangeEvent, type JSX } from 'react';
 import { useAuth } from '../state/auth';
 import { exportData, importData } from '../api/io';
-import type { ImportPayload } from '../types';
-import type { SiteData } from '../api/staticData';
+import type { ExportPayload, ImportPayload } from '../types';
 
 /** 导出为发布用 data.json 的形状:只保留公开字段,剥离 notes 与时间戳。 */
-function toPublishData(exp: Awaited<ReturnType<typeof exportData>>): SiteData {
+function toPublishData(exp: ExportPayload): ExportPayload {
   return {
     characters: exp.characters.map((c) => ({
       id: c.id,

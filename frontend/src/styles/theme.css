@@ -60,7 +60,7 @@ body::before {
 a { color: var(--jade); text-decoration: none; transition: color .18s ease; }
 a:hover { color: var(--jade-soft); }
 
-h1, h2, h3 { font-family: var(--serif); font-weight: 700; line-height: 1.3; margin: 0; }
+h1, h2, h3 { font-weight: 700; line-height: 1.3; margin: 0; }
 
 button, input, select, textarea { font-family: var(--serif); font-size: 1rem; }
 
@@ -81,14 +81,14 @@ main, .app-main {
   padding: 1.6rem 1.5rem 1.1rem;
   border-bottom: 1px solid var(--line);
 }
-.site-header__title {
+a.site-header__title {
   font-family: var(--brush);
   font-size: 2.5rem;
   letter-spacing: 0.18em;
-  color: var(--paper) !important;
+  color: var(--paper);
   text-shadow: 0 0 22px var(--jade-glow);
 }
-.site-header__title:hover { color: var(--jade-soft) !important; }
+a.site-header__title:hover { color: var(--jade-soft); }
 .site-header__nav { display: flex; gap: 1rem; align-items: center; }
 .site-header__nav a,
 .site-header__nav button {
@@ -164,7 +164,7 @@ input:focus, select:focus, textarea:focus {
 .character-card:hover::after { opacity: 1; }
 
 .character-card__avatar {
-  width: 56px; height: 56px; flex: 0 0 56px;
+  height: 56px; flex: 0 0 56px;
   border-radius: 50%; object-fit: cover;
   border: 1px solid var(--line-2);
 }
@@ -303,10 +303,11 @@ form label { display: flex; flex-direction: column; gap: .25rem; }
   padding: .9rem 1.5rem; border-bottom: 1px solid var(--line);
   max-width: var(--maxw); margin: 0 auto; width: 100%;
 }
-.tree-page__canvas, .tree-page > div:last-child { flex: 1; min-height: 0; }
+.tree-page__canvas { flex: 1; min-height: 0; }
+.tree-page__msg { padding: 2rem 1.5rem; color: var(--muted); }
+.tree-page__msg--error { color: var(--cinnabar); }
 
 .react-flow { background: transparent !important; }
-.react-flow__background { color: var(--line); }
 .react-flow__background path,
 .react-flow__background circle { color: rgba(120,200,170,.10); }
 

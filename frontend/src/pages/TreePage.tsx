@@ -40,20 +40,20 @@ export function TreePage() {
     };
   }, []);
 
-  if (loading) return <div style={{ padding: 16 }}>加载中…</div>;
-  if (error) return <div style={{ padding: 16, color: 'crimson' }}>加载失败:{error}</div>;
+  if (loading) return <div className="tree-page__msg">加载中…</div>;
+  if (error) return <div className="tree-page__msg tree-page__msg--error">加载失败:{error}</div>;
   if (!Number.isFinite(focusId) || !characters.some((c) => c.id === focusId)) {
-    return <div style={{ padding: 16 }}>未找到该人物</div>;
+    return <div className="tree-page__msg">未找到该人物</div>;
   }
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-      <div style={{ padding: '8px 16px', borderBottom: '1px solid #eee' }}>
+    <div className="tree-page">
+      <div className="tree-page__bar">
         <button type="button" onClick={() => setWhole((w) => !w)}>
           {whole ? '回到以当前人物为中心' : '查看整族'}
         </button>
       </div>
-      <div style={{ flex: 1, minHeight: 0 }}>
+      <div className="tree-page__canvas">
         <FamilyTree
           characters={characters}
           relationships={relationships}
