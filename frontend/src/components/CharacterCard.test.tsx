@@ -17,9 +17,11 @@ const base: Character = {
   bio: null,
 };
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true };
+
 function renderCard(c: Character) {
   return render(
-    <MemoryRouter>
+    <MemoryRouter future={routerFuture}>
       <CharacterCard character={c} />
     </MemoryRouter>,
   );
@@ -43,7 +45,7 @@ describe('CharacterCard', () => {
     expect(screen.getByRole('img')).toHaveAttribute('src', 'http://img/a.png');
 
     rerender(
-      <MemoryRouter>
+      <MemoryRouter future={routerFuture}>
         <CharacterCard character={{ ...base, avatar_url: 'javascript:alert(1)' }} />
       </MemoryRouter>,
     );

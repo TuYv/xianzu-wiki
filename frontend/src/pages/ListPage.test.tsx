@@ -14,9 +14,11 @@ const SAMPLE: Character[] = [
   { id: 3, name: '萧无极', aliases: [], gender: 'male', generation: '一代', realm: '化神', affiliation: '萧家', status: 'alive', avatar_url: null, bio: null },
 ];
 
+const routerFuture = { v7_startTransition: true, v7_relativeSplatPath: true };
+
 function renderPage() {
   return render(
-    <MemoryRouter>
+    <MemoryRouter future={routerFuture}>
       <ListPage />
     </MemoryRouter>,
   );
@@ -37,8 +39,8 @@ describe('filterCharacters', () => {
 
 describe('ListPage', () => {
   beforeEach(() => {
-    (listCharacters as any).mockReset();
-    (listCharacters as any).mockResolvedValue(SAMPLE);
+    vi.mocked(listCharacters).mockReset();
+    vi.mocked(listCharacters).mockResolvedValue(SAMPLE);
   });
 
   it('renders all characters after load', async () => {
@@ -63,5 +65,23 @@ describe('ListPage', () => {
     fireEvent.change(screen.getByLabelText('状态'), { target: { value: 'dead' } });
     expect(screen.getByText('柳沉香')).toBeInTheDocument();
     expect(screen.queryByText('萧寒')).not.toBeInTheDocument();
+  });
+
+  it('filters by affiliation', async () => {
+    renderPage();
+    await screen.findByText('萧寒');
+    fireEvent.change(screen.getByLabelText('势力'), { target: { value: '萧家' } });
+    expect(screen.getByText('萧寒')).toBeInTheDocument();
+    expect(screen.getByText('萧无极')).toBeInTheDocument();
+    expect(screen.queryByText('柳沉香')).not.toBeInTheDocument();
+  });
+
+  it('filters by realm', async () => {
+    renderPage();
+    await screen.findByText('萧寒');
+    fireEvent.change(screen.getByLabelText('境界'), { target: { value: '化神' } });
+    expect(screen.getByText('萧无极')).toBeInTheDocument();
+    expect(screen.queryByText('萧寒')).not.toBeInTheDocument();
+    expect(screen.queryByText('柳沉香')).not.toBeInTheDocument();
   });
 });
