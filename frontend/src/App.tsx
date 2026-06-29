@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './state/auth';
 import { LoginPage } from './pages/LoginPage';
+import { ListPage } from './pages/ListPage';
 
 export function App() {
   return (
@@ -8,7 +9,7 @@ export function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
-          <Route path="/" element={<main>玄鉴仙族 · 人物百科</main>} />
+          <Route path="/" element={<ListPage />} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
