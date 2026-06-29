@@ -1,5 +1,8 @@
 # 玄鉴仙族 Wiki — 前端实现计划
 
+> ⚠️ **历史存档。** 本计划里前端通过后端 API 读写数据;现已改为:**生产读静态 `frontend/public/data.json`,
+> 仅本地开发连后端编辑器**。读取层见 `frontend/src/api/staticData.ts`。当前架构以根目录 [README](../../../README.md) 为准。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 > **前置依赖:** 本计划消费后端计划(`2026-06-29-xjxz-backend.md`)产出的 API。可与后端并行开发(dev 走 vite proxy 到 `localhost:8000`),但集成测试需后端可用。

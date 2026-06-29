@@ -1,59 +1,42 @@
-# 部署与恢复
+# 运行与部署
 
-## 首次部署
+数据是仓库文件(`frontend/public/data.json`),站点是纯静态的。下面三件事互相独立。
 
-1. 后端
-   ```bash
-   cd /srv/xjxz/backend
-   python -m venv .venv && .venv/bin/pip install -e .
-   cp .env.example .env       # 填真实值，见文件内生成命令
-   chmod 600 .env
-   ```
-2. 前端
-   ```bash
-   cd /srv/xjxz/frontend && npm ci && npm run build   # 产物在 dist/
-   ```
-3. 服务与反代
-   ```bash
-   sudo cp /srv/xjxz/deploy/xjxz.service /etc/systemd/system/xjxz.service
-   sudo cp /srv/xjxz/deploy/nginx.conf /etc/nginx/sites-available/xjxz
-   sudo ln -sf /etc/nginx/sites-available/xjxz /etc/nginx/sites-enabled/xjxz
-   sudo systemctl daemon-reload && sudo systemctl enable --now xjxz
-   sudo nginx -t && sudo systemctl reload nginx
-   ```
-4. 健康检查：`curl -s http://127.0.0.1:8000/api/health` 应返回 `{"status":"ok"}`。
+## 1. 发布站点(GitHub Pages,自动)
 
-## 备份
+`.github/workflows/deploy.yml` 已配置:**push 到 `main` 即自动**构建前端并发布到 GitHub Pages。
 
-- 定时任务（每日 03:00）：
-  ```cron
-  0 3 * * * /srv/xjxz/scripts/backup.sh /srv/xjxz/backend/xjxz.db /srv/xjxz/backups >> /var/log/xjxz-backup.log 2>&1
-  ```
-- 保留最近 7 份；至少一份 `rsync` 异地（取消 `backup.sh` 末尾 rsync 注释并设置 `REMOTE`）。
-- `xjxz.db` 是全项目唯一不在 git 的资产，备份是第一道防线。
+一次性开启:仓库 **Settings → Pages → Build and deployment → Source 选 "GitHub Actions"**。
+之后每次推送(包括只改 `frontend/public/data.json`)都会自动重新部署。
 
-## 恢复演练（停服务 → 替换 db → 清 WAL → 重启）
+- 站点地址:`https://<用户名>.github.io/xianzu-wiki/`
+- 子路径由 workflow 里的 `VITE_BASE: /xianzu-wiki/` 决定;**改仓库名要同步改它**。
+- 部署产物含 `data.json` 与 `404.html`(深链回退)。换托管到 Vercel / Netlify 也可:根目录 `frontend`、构建 `npm run build`、产物 `dist`、开启 SPA 回退、`VITE_BASE` 留空。
 
-> WAL 模式下若只换 `xjxz.db` 而残留旧 `-wal`/`-shm`，会污染数据，必须一并删除。
+## 2. 编辑数据
+
+见 [README](../README.md#怎么编辑数据)。最简单是直接改 `frontend/public/data.json` 提交;数据多时用本地编辑器(下一节)。
+
+### 本地编辑器(可选后端)
+
+`backend/` 是仅本地使用的编辑器,帮你有表单地改数据、避免手写 JSON 出错。
 
 ```bash
-# 1. 停服务（释放对 db 的写锁）
-sudo systemctl stop xjxz
+cd backend
+python -m venv .venv && source .venv/bin/activate
+pip install -e ".[dev]"
 
-# 2. 备份当前现场（演练翻车也能回到操作前）
-cp /srv/xjxz/backend/xjxz.db /srv/xjxz/backend/xjxz.db.prerestore 2>/dev/null || true
+# 生成密钥(仅本地编辑用)
+export JWT_SECRET="$(openssl rand -hex 32)"
+export ADMIN_PASSWORD_HASH="$(python -c "from passlib.hash import bcrypt; print(bcrypt.hash('你设的密码'))")"
 
-# 3. 用快照替换主库
-cp /srv/xjxz/backups/xjxz-<YYYY-MM-DD-HHMMSS>.db /srv/xjxz/backend/xjxz.db
-
-# 4. 清理旧 WAL/SHM 边车文件（关键）
-rm -f /srv/xjxz/backend/xjxz.db-wal /srv/xjxz/backend/xjxz.db-shm
-
-# 5. 完整性自检
-sqlite3 /srv/xjxz/backend/xjxz.db "PRAGMA integrity_check;"   # 期望 ok
-
-# 6. 重启并验证
-sudo systemctl start xjxz
-curl -s http://127.0.0.1:8000/api/health                     # {"status":"ok"}
+uvicorn app.main:app --port 8000        # 本地编辑器后端
 ```
-确认数据正确后再删除 `xjxz.db.prerestore`。
+
+另起前端 `cd frontend && npm run dev`(dev 模式连后端,改动实时可见),登录后用表单增删改 → 点"导出" → 把得到的 JSON 覆盖 `frontend/public/data.json` → 提交推送。
+
+> 本地编辑器的 SQLite 库(`backend/xjxz.db`)只是编辑过程的临时存储,**不是数据源**,不进 git;真正的数据源始终是 `frontend/public/data.json`。
+
+## 3. (可选,进阶)自托管一个常驻后端
+
+只有当你想要"线上随时在线编辑"(而非本地编辑后提交)时才需要。`deploy/` 下有 `xjxz.service`(systemd)与 `nginx.conf`,`scripts/backup.sh` 做 SQLite 一致性备份。这条路要自己管服务器、鉴权与备份;对单人维护的只读站点通常**不必要**,默认走上面的静态方案即可。

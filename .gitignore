@@ -3,7 +3,7 @@
 .env.*
 !.env.example
 
-# === SQLite database (唯一不在 git 的资产,单独备份见设计文档 §9) ===
+# === 本地编辑器的 SQLite 临时库(不是数据源;数据源是 frontend/public/data.json)===
 *.db
 *.db-wal
 *.db-shm

@@ -1,5 +1,9 @@
 # 玄鉴仙族 Wiki — 后端实现计划
 
+> ⚠️ **历史存档。** 本计划描述的后端(FastAPI + SQLite + 鉴权 + 服务器部署)原本是数据源,
+> 现已改为**可选的本地编辑器**;线上数据源是静态 `frontend/public/data.json`。
+> 当前架构以根目录 [README](../../../README.md) 为准。
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** 构建 FastAPI + SQLModel + SQLite 后端:人物/关系 CRUD、单管理员 JWT 鉴权、批量导入导出,公开只读接口脱敏。
