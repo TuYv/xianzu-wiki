@@ -1,6 +1,6 @@
-import importlib
-
 import pytest
+from fastapi import HTTPException
+from fastapi.testclient import TestClient
 
 
 def test_get_settings_reads_env(monkeypatch):
@@ -12,6 +12,7 @@ def test_get_settings_reads_env(monkeypatch):
     settings = config.get_settings()
     assert settings.JWT_SECRET == "x" * 32
     assert settings.ADMIN_PASSWORD_HASH.startswith("$2b$")
+    config.get_settings.cache_clear()  # teardown: don't leak test values into cache
 
 
 def test_get_settings_fail_fast_when_missing(monkeypatch):
@@ -25,7 +26,28 @@ def test_get_settings_fail_fast_when_missing(monkeypatch):
     config.get_settings.cache_clear()
 
 
-from fastapi import HTTPException
+def test_get_settings_enforces_jwt_secret_min_length(monkeypatch):
+    monkeypatch.setenv("JWT_SECRET", "tooshort")
+    monkeypatch.setenv("ADMIN_PASSWORD_HASH", "$2b$12$abcdefghijklmnopqrstuv")
+    from app import config
+
+    config.get_settings.cache_clear()
+    with pytest.raises(RuntimeError, match="32 bytes"):
+        config.get_settings()
+    config.get_settings.cache_clear()
+
+
+def test_startup_fails_when_env_missing(monkeypatch):
+    """Lifespan calls get_settings(); a missing JWT_SECRET aborts startup."""
+    from app import config
+    from app.main import app as main_app
+
+    monkeypatch.delenv("JWT_SECRET", raising=False)
+    config.get_settings.cache_clear()
+    with pytest.raises(RuntimeError):
+        with TestClient(main_app):
+            pass
+    config.get_settings.cache_clear()
 
 
 def test_create_and_decode_token_roundtrip():

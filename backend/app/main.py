@@ -6,12 +6,14 @@ from slowapi.errors import RateLimitExceeded
 from sqlmodel import SQLModel
 
 from app.auth import limiter
+from app.config import get_settings
 from app.db import engine
 from app.routers.auth import router as auth_router
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    get_settings()  # fail-fast at startup: missing/short JWT_SECRET → won't serve traffic
     # create_all 只建尚不存在的表；模型由后续 Task 导入后生效（schema 演进走 migrations/）。
     SQLModel.metadata.create_all(engine)
     yield

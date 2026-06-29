@@ -16,8 +16,8 @@ os.environ["XJXZ_DB_PATH"] = str(Path(_TMP_DIR) / "test.db")
 
 # 已知测试口令(≥16 位)及其 bcrypt 哈希,导入 app 之前注入环境。
 TEST_PASSWORD = "test-admin-password-0123456789"
-os.environ.setdefault("JWT_SECRET", "test-jwt-secret-for-pytest-32bytes-minimum-xx")
-os.environ.setdefault("ADMIN_PASSWORD_HASH", bcrypt.hash(TEST_PASSWORD))
+os.environ["JWT_SECRET"] = "test-jwt-secret-for-pytest-32bytes-minimum-xx"
+os.environ["ADMIN_PASSWORD_HASH"] = bcrypt.hash(TEST_PASSWORD)
 
 from app import config  # noqa: E402
 from app.auth import create_access_token, limiter  # noqa: E402

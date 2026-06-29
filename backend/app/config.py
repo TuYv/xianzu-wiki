@@ -32,4 +32,6 @@ def get_settings() -> Settings:
             "Missing required environment variables: " + ", ".join(missing)
         )
     assert jwt_secret is not None and admin_password_hash is not None
+    if len(jwt_secret.encode()) < 32:
+        raise RuntimeError("JWT_SECRET must be at least 32 bytes")
     return Settings(JWT_SECRET=jwt_secret, ADMIN_PASSWORD_HASH=admin_password_hash)

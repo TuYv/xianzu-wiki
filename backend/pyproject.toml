@@ -31,4 +31,7 @@ include = ["app*"]
 [tool.pytest.ini_options]
 pythonpath = ["."]
 testpaths = ["tests"]
-filterwarnings = ["ignore::starlette.exceptions.StarletteDeprecationWarning"]
+filterwarnings = [
+    "ignore::starlette.exceptions.StarletteDeprecationWarning",
+    "ignore:'crypt' is deprecated:DeprecationWarning",
+]
