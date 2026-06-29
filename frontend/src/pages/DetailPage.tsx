@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import type { Character, CharacterDetail } from '../types'
+import type { Character, CharacterDetail, Relationship } from '../types'
 import { getCharacter, listCharacters } from '../api/characters'
 import { isSafeHttpUrl } from '../lib/safeUrl'
 import { Markdown } from '../components/Markdown'
@@ -10,6 +10,30 @@ import { RelationshipPanel } from '../components/RelationshipPanel'
 
 const GENDER_LABEL: Record<Character['gender'], string> = { male: '男', female: '女', unknown: '未知' }
 const STATUS_LABEL: Record<Character['status'], string> = { alive: '在世', dead: '已故', unknown: '未知' }
+
+/**
+ * 从「当前人物」视角给出对方的称谓(方向感知)。
+ * parent 边方向是 父/母(from) → 子/女(to):
+ *  - 当前人物是 from(身为父母)→ 对方是子/女(看对方性别)
+ *  - 当前人物是 to(身为子女)→ 对方是父/母(看 parent_role)
+ */
+function relationLabel(r: Relationship, selfId: number, otherGender?: Character['gender']): string {
+  const selfIsFrom = r.from_id === selfId
+  switch (r.type) {
+    case 'parent':
+      return selfIsFrom
+        ? otherGender === 'female' ? '女' : '子'
+        : r.parent_role === 'mother' ? '母' : '父'
+    case 'spouse':
+      return otherGender === 'female' ? '妻' : otherGender === 'male' ? '夫' : '配偶'
+    case 'master':
+      return selfIsFrom ? '徒' : '师'
+    case 'sibling':
+      return otherGender === 'female' ? '姊妹' : otherGender === 'male' ? '兄弟' : '手足'
+    default:
+      return r.type
+  }
+}
 
 /**
  * 公开人物详情页(spec §6 百科页)。
@@ -52,8 +76,8 @@ export function DetailPage() {
 
   const selfId = character.id
   const safeAvatar = isSafeHttpUrl(character.avatar_url)
-  const nameById: Record<number, string> = {}
-  for (const c of characters) nameById[c.id] = c.name
+  const byId: Record<number, Character> = {}
+  for (const c of characters) byId[c.id] = c
 
   const attributes: Array<[string, string]> = [
     ['性别', GENDER_LABEL[character.gender]],
@@ -98,12 +122,12 @@ export function DetailPage() {
           <ul>
             {character.relationships.map((r) => {
               const otherId = r.from_id === selfId ? r.to_id : r.from_id
-              const label = nameById[otherId] ?? `#${otherId}`
+              const other = byId[otherId]
+              const name = other?.name ?? `#${otherId}`
               return (
                 <li key={r.id}>
-                  <span className="rel-type">{r.type}</span>
-                  {r.parent_role && <span className="rel-role">（{r.parent_role}）</span>}
-                  <Link to={`/characters/${otherId}`}>{label}</Link>
+                  <span className="rel-type">{relationLabel(r, selfId, other?.gender)}</span>
+                  <Link to={`/characters/${otherId}`}>{name}</Link>
                   {r.note && <span className="rel-note">{r.note}</span>}
                 </li>
               )

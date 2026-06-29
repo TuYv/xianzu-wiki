@@ -248,7 +248,6 @@ input:focus, select:focus, textarea:focus {
   font-size: .72rem; letter-spacing: .14em; color: var(--ink);
   background: var(--jade-deep); padding: .1rem .5rem; border-radius: 999px;
 }
-.detail .rel-role { color: var(--muted); font-size: .82rem; }
 .detail .rel-note { color: var(--faint); font-size: .82rem; }
 
 .detail-nav { margin-top: 1.8rem; }
