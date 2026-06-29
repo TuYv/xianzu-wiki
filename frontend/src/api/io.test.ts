@@ -15,14 +15,14 @@ describe('io api', () => {
     mockedFetch.mockReset();
   });
 
-  it('exportData GETs /api/export and returns payload', async () => {
+  it('exportData GETs /export and returns payload', async () => {
     mockedFetch.mockResolvedValue({ characters: [], relationships: [] });
     const result = await exportData();
-    expect(mockedFetch).toHaveBeenCalledWith('/api/export');
+    expect(mockedFetch).toHaveBeenCalledWith('/export');
     expect(result).toEqual({ characters: [], relationships: [] });
   });
 
-  it('importData POSTs /api/import with the exact JSON payload', async () => {
+  it('importData POSTs /import with the exact JSON payload', async () => {
     mockedFetch.mockResolvedValue({ imported_characters: 2, imported_relationships: 1 });
     const payload: ImportPayload = {
       characters: [{ name: 'A' }, { name: 'B' }],
@@ -32,7 +32,7 @@ describe('io api', () => {
 
     expect(mockedFetch).toHaveBeenCalledTimes(1);
     const [path, opts] = mockedFetch.mock.calls[0];
-    expect(path).toBe('/api/import');
+    expect(path).toBe('/import');
     expect(opts?.method).toBe('POST');
     expect(JSON.parse(opts?.body as string)).toEqual(payload);
     expect(result).toEqual({ imported_characters: 2, imported_relationships: 1 });

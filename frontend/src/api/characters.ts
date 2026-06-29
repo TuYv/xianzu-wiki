@@ -4,15 +4,15 @@ import type { Character, CharacterDetail } from '../types';
 const JSON_HEADERS = { 'Content-Type': 'application/json' } as const;
 
 export function listCharacters(): Promise<Character[]> {
-  return apiFetch<Character[]>('/api/characters');
+  return apiFetch<Character[]>('/characters');
 }
 
 export function getCharacter(id: number): Promise<CharacterDetail> {
-  return apiFetch<CharacterDetail>(`/api/characters/${id}`);
+  return apiFetch<CharacterDetail>(`/characters/${id}`);
 }
 
 export function createCharacter(c: Partial<Character>): Promise<Character> {
-  return apiFetch<Character>('/api/characters', {
+  return apiFetch<Character>('/characters', {
     method: 'POST',
     headers: JSON_HEADERS,
     body: JSON.stringify(c),
@@ -20,7 +20,7 @@ export function createCharacter(c: Partial<Character>): Promise<Character> {
 }
 
 export function updateCharacter(id: number, c: Partial<Character>): Promise<Character> {
-  return apiFetch<Character>(`/api/characters/${id}`, {
+  return apiFetch<Character>(`/characters/${id}`, {
     method: 'PUT',
     headers: JSON_HEADERS,
     body: JSON.stringify(c),
@@ -28,5 +28,5 @@ export function updateCharacter(id: number, c: Partial<Character>): Promise<Char
 }
 
 export function deleteCharacter(id: number): Promise<void> {
-  return apiFetch<void>(`/api/characters/${id}`, { method: 'DELETE' });
+  return apiFetch<void>(`/characters/${id}`, { method: 'DELETE' });
 }
