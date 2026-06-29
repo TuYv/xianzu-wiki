@@ -2,6 +2,9 @@ import { useEffect, useMemo, useState } from 'react';
 import type { Character, Status } from '../types';
 import { listCharacters } from '../api/characters';
 import { CharacterCard } from '../components/CharacterCard';
+import { useAuth } from '../state/auth';
+import { CharacterForm } from '../components/CharacterForm';
+import { ImportExport } from '../components/ImportExport';
 
 const STATUS_OPTIONS: { value: Status; label: string }[] = [
   { value: 'alive', label: '在世' },
@@ -34,12 +37,15 @@ function uniqueSorted(values: (string | null)[]): string[] {
 }
 
 export function ListPage() {
+  const { isAdmin } = useAuth();
   const [characters, setCharacters] = useState<Character[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [keyword, setKeyword] = useState('');
   const [affiliation, setAffiliation] = useState('');
   const [realm, setRealm] = useState('');
   const [status, setStatus] = useState('');
+  const [creating, setCreating] = useState(false);
+  const [reloadKey, setReloadKey] = useState(0);
 
   useEffect(() => {
     let active = true;
@@ -53,7 +59,10 @@ export function ListPage() {
     return () => {
       active = false;
     };
-  }, []);
+  }, [reloadKey]);
+
+  // 新建人物成功后递增 reloadKey,重新拉取人物列表。
+  const reload = () => setReloadKey((k) => k + 1);
 
   const affiliations = useMemo(() => uniqueSorted(characters.map((c) => c.affiliation)), [characters]);
   const realms = useMemo(() => uniqueSorted(characters.map((c) => c.realm)), [characters]);
@@ -65,6 +74,24 @@ export function ListPage() {
 
   return (
     <div className="list-page">
+      {isAdmin && (
+        <div className="list-page__admin" aria-label="admin-tools">
+          {creating ? (
+            <CharacterForm
+              onSaved={() => {
+                setCreating(false);
+                reload();
+              }}
+            />
+          ) : (
+            <button type="button" onClick={() => setCreating(true)}>
+              新建人物
+            </button>
+          )}
+          <ImportExport />
+        </div>
+      )}
+
       <div className="list-page__filters">
         <input
           type="search"

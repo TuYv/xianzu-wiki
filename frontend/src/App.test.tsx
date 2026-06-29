@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { AppRoutes } from './App';
+import { AuthProvider } from './state/auth';
 import { getCharacter, listCharacters } from './api/characters';
 import { listRelationships } from './api/relationships';
 import type { CharacterDetail, Character } from './types';
@@ -38,9 +39,11 @@ const chars: Character[] = [
 
 function renderAt(path: string) {
   return render(
-    <MemoryRouter initialEntries={[path]} future={routerFuture}>
-      <AppRoutes />
-    </MemoryRouter>,
+    <AuthProvider>
+      <MemoryRouter initialEntries={[path]} future={routerFuture}>
+        <AppRoutes />
+      </MemoryRouter>
+    </AuthProvider>,
   );
 }
 

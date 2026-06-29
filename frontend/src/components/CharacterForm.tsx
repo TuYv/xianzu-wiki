@@ -26,6 +26,8 @@ export function CharacterForm({ initial = null, onSaved }: CharacterFormProps) {
   const [error, setError] = useState<string | null>(null);
   const [saving, setSaving] = useState(false);
 
+  const isEdit = initial?.id != null;
+
   if (!isAdmin) return null;
 
   async function handleSubmit(e: FormEvent) {
@@ -42,8 +44,13 @@ export function CharacterForm({ initial = null, onSaved }: CharacterFormProps) {
       status,
       avatar_url: avatarUrl.trim() || null,
       bio: bio.trim() || null,
-      notes: notes.trim() || null,
     };
+    // notes 仅在新建时下发:公开详情接口不返回 notes,编辑态无从回填;
+    // 后端 update 用 model_dump(exclude_unset=True),省略 notes 才能保留库内原值,
+    // 携带空 notes 会把已有备注覆盖为 null。
+    if (!isEdit) {
+      payload.notes = notes.trim() || null;
+    }
     try {
       const saved = initial?.id
         ? await updateCharacter(initial.id, payload)
@@ -107,12 +114,14 @@ export function CharacterForm({ initial = null, onSaved }: CharacterFormProps) {
         生平
         <textarea aria-label="bio" value={bio} onChange={(e) => setBio(e.target.value)} />
       </label>
-      <label>
-        备注
-        <textarea aria-label="notes" value={notes} onChange={(e) => setNotes(e.target.value)} />
-      </label>
+      {!isEdit && (
+        <label>
+          备注
+          <textarea aria-label="notes" value={notes} onChange={(e) => setNotes(e.target.value)} />
+        </label>
+      )}
       {error && <p role="alert">{error}</p>}
-      <button type="submit" disabled={saving}>{initial?.id ? '保存' : '新建'}</button>
+      <button type="submit" disabled={saving}>{isEdit ? '保存' : '新建'}</button>
     </form>
   );
 }

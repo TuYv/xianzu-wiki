@@ -2,11 +2,21 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { ListPage, filterCharacters } from './ListPage';
+import { useAuth } from '../state/auth';
 import type { Character } from '../types';
 
-vi.mock('../api/characters', () => ({ listCharacters: vi.fn() }));
+vi.mock('../api/characters', () => ({
+  listCharacters: vi.fn(),
+  createCharacter: vi.fn(),
+  updateCharacter: vi.fn(),
+}));
+vi.mock('../api/io', () => ({ exportData: vi.fn(), importData: vi.fn() }));
+vi.mock('../state/auth', () => ({ useAuth: vi.fn() }));
 
 import { listCharacters } from '../api/characters';
+
+const guest = { isAdmin: false, login: vi.fn(), logout: vi.fn() };
+const admin = { isAdmin: true, login: vi.fn(), logout: vi.fn() };
 
 const SAMPLE: Character[] = [
   { id: 1, name: '萧寒', aliases: ['寒少'], gender: 'male', generation: '三代', realm: '金丹', affiliation: '萧家', status: 'alive', avatar_url: null, bio: null },
@@ -23,6 +33,10 @@ function renderPage() {
     </MemoryRouter>,
   );
 }
+
+beforeEach(() => {
+  vi.mocked(useAuth).mockReturnValue(guest);
+});
 
 describe('filterCharacters', () => {
   it('matches keyword against name and aliases', () => {
@@ -83,5 +97,28 @@ describe('ListPage', () => {
     expect(screen.getByText('萧无极')).toBeInTheDocument();
     expect(screen.queryByText('萧寒')).not.toBeInTheDocument();
     expect(screen.queryByText('柳沉香')).not.toBeInTheDocument();
+  });
+});
+
+describe('ListPage admin surface', () => {
+  beforeEach(() => {
+    vi.mocked(listCharacters).mockReset();
+    vi.mocked(listCharacters).mockResolvedValue(SAMPLE);
+  });
+
+  it('admin sees 新建人物 + ImportExport; 新建人物 reveals CharacterForm', async () => {
+    vi.mocked(useAuth).mockReturnValue(admin);
+    renderPage();
+    await screen.findByText('萧寒');
+    expect(screen.getByText('导出 JSON')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button', { name: '新建人物' }));
+    expect(screen.getByLabelText('name')).toBeInTheDocument();
+  });
+
+  it('guest sees neither create control nor ImportExport', async () => {
+    renderPage();
+    await screen.findByText('萧寒');
+    expect(screen.queryByRole('button', { name: '新建人物' })).toBeNull();
+    expect(screen.queryByText('导出 JSON')).toBeNull();
   });
 });

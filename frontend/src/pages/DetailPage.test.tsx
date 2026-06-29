@@ -1,14 +1,21 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest'
-import { render, screen } from '@testing-library/react'
+import { render, screen, fireEvent } from '@testing-library/react'
 import { MemoryRouter, Routes, Route } from 'react-router-dom'
 import { DetailPage } from './DetailPage'
 import { getCharacter, listCharacters } from '../api/characters'
+import { useAuth } from '../state/auth'
 import type { CharacterDetail, Character } from '../types'
 
 vi.mock('../api/characters', () => ({
   getCharacter: vi.fn(),
   listCharacters: vi.fn(),
+  createCharacter: vi.fn(),
+  updateCharacter: vi.fn(),
 }))
+vi.mock('../state/auth', () => ({ useAuth: vi.fn() }))
+
+const guest = { isAdmin: false, login: vi.fn(), logout: vi.fn() }
+const admin = { isAdmin: true, login: vi.fn(), logout: vi.fn() }
 
 const mockGet = vi.mocked(getCharacter)
 const mockList = vi.mocked(listCharacters)
@@ -49,6 +56,7 @@ const others: Character[] = [
 
 beforeEach(() => {
   vi.clearAllMocks()
+  vi.mocked(useAuth).mockReturnValue(guest)
 })
 
 describe('DetailPage', () => {
@@ -99,5 +107,40 @@ describe('DetailPage', () => {
     const { container } = renderAt(1)
     await screen.findByRole('heading', { name: '叶凡' })
     expect(container.textContent).not.toContain('notes')
+  })
+
+  it('shows 查看族谱 link to everyone (guest)', async () => {
+    mockGet.mockResolvedValue(makeDetail({}))
+    mockList.mockResolvedValue([])
+    renderAt(1)
+    await screen.findByRole('heading', { name: '叶凡' })
+    const link = screen.getByRole('link', { name: '查看族谱' })
+    expect(link.getAttribute('href')).toBe('/tree/1')
+  })
+})
+
+describe('DetailPage admin surface', () => {
+  it('admin sees the edit control + RelationshipPanel; 编辑 reveals CharacterForm', async () => {
+    vi.mocked(useAuth).mockReturnValue(admin)
+    mockGet.mockResolvedValue(makeDetail({}))
+    mockList.mockResolvedValue(others)
+    renderAt(1)
+    await screen.findByRole('heading', { name: '叶凡' })
+
+    // RelationshipPanel 渲染(管理员可见)
+    expect(screen.getByRole('button', { name: '添加关系' })).toBeTruthy()
+    // 编辑入口 → 点击后 CharacterForm 出现
+    fireEvent.click(screen.getByRole('button', { name: '编辑' }))
+    expect(screen.getByLabelText('name')).toBeTruthy()
+  })
+
+  it('guest sees no edit control and no RelationshipPanel', async () => {
+    mockGet.mockResolvedValue(makeDetail({}))
+    mockList.mockResolvedValue(others)
+    renderAt(1)
+    await screen.findByRole('heading', { name: '叶凡' })
+    expect(screen.queryByRole('button', { name: '编辑' })).toBeNull()
+    expect(screen.queryByRole('button', { name: '添加关系' })).toBeNull()
+    expect(screen.queryByLabelText('name')).toBeNull()
   })
 })

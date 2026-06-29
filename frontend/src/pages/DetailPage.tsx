@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
-import type { CharacterDetail } from '../types'
+import type { Character, CharacterDetail } from '../types'
 import { getCharacter, listCharacters } from '../api/characters'
 import { isSafeHttpUrl } from '../lib/safeUrl'
 import { Markdown } from '../components/Markdown'
+import { useAuth } from '../state/auth'
+import { CharacterForm } from '../components/CharacterForm'
+import { RelationshipPanel } from '../components/RelationshipPanel'
 
 /**
  * 公开人物详情页(spec §6 百科页)。
@@ -14,9 +17,12 @@ import { Markdown } from '../components/Markdown'
  */
 export function DetailPage() {
   const { id } = useParams<{ id: string }>()
+  const { isAdmin } = useAuth()
   const [character, setCharacter] = useState<CharacterDetail | null>(null)
-  const [names, setNames] = useState<Record<number, string>>({})
+  const [characters, setCharacters] = useState<Character[]>([])
   const [error, setError] = useState<string | null>(null)
+  const [editing, setEditing] = useState(false)
+  const [reloadKey, setReloadKey] = useState(0)
 
   useEffect(() => {
     if (!id) return
@@ -28,23 +34,23 @@ export function DetailPage() {
       .then((c) => { if (!cancelled) setCharacter(c) })
       .catch(() => { if (!cancelled) setError('加载失败') })
     listCharacters()
-      .then((cs) => {
-        if (cancelled) return
-        const map: Record<number, string> = {}
-        for (const c of cs) map[c.id] = c.name
-        setNames(map)
-      })
+      .then((cs) => { if (!cancelled) setCharacters(cs) })
       .catch(() => {
         /* 名称解析失败不阻塞详情渲染,链接降级为 #id */
       })
     return () => { cancelled = true }
-  }, [id])
+  }, [id, reloadKey])
+
+  // 编辑/关系变更后递增 reloadKey,触发上面的 effect 重新拉取详情与人物列表。
+  const reload = () => setReloadKey((k) => k + 1)
 
   if (error) return <p role="alert">{error}</p>
   if (!character) return <p>加载中…</p>
 
   const selfId = character.id
   const safeAvatar = isSafeHttpUrl(character.avatar_url)
+  const nameById: Record<number, string> = {}
+  for (const c of characters) nameById[c.id] = c.name
 
   return (
     <article className="detail">
@@ -97,7 +103,7 @@ export function DetailPage() {
           <ul>
             {character.relationships.map((r) => {
               const otherId = r.from_id === selfId ? r.to_id : r.from_id
-              const label = names[otherId] ?? `#${otherId}`
+              const label = nameById[otherId] ?? `#${otherId}`
               return (
                 <li key={r.id}>
                   <span className="rel-type">{r.type}</span>
@@ -110,6 +116,34 @@ export function DetailPage() {
           </ul>
         )}
       </section>
+
+      <nav className="detail-nav">
+        <Link to={`/tree/${selfId}`}>查看族谱</Link>
+      </nav>
+
+      {isAdmin && (
+        <section className="detail-admin" aria-label="admin-edit">
+          {editing ? (
+            <CharacterForm
+              initial={character}
+              onSaved={() => {
+                setEditing(false)
+                reload()
+              }}
+            />
+          ) : (
+            <button type="button" onClick={() => setEditing(true)}>
+              编辑
+            </button>
+          )}
+          <RelationshipPanel
+            characterId={selfId}
+            characters={characters}
+            relationships={character.relationships}
+            onChanged={reload}
+          />
+        </section>
+      )}
     </article>
   )
 }

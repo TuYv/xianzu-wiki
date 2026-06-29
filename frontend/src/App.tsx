@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './state/auth';
+import { Header } from './components/Header';
 import { LoginPage } from './pages/LoginPage';
 import { ListPage } from './pages/ListPage';
 import { DetailPage } from './pages/DetailPage';
@@ -23,6 +24,7 @@ export function App() {
   return (
     <AuthProvider>
       <BrowserRouter future={routerFuture}>
+        <Header />
         <AppRoutes />
       </BrowserRouter>
     </AuthProvider>
