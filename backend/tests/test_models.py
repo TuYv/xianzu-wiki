@@ -1,3 +1,5 @@
+import time
+
 from sqlalchemy import event
 from sqlalchemy.exc import IntegrityError
 from sqlmodel import Session, SQLModel, create_engine, select
@@ -47,6 +49,9 @@ def test_create_character_applies_defaults(engine):
         assert c.id is not None
         assert c.name == "叶老魔"
         assert c.notes is None
+        # tz-aware after DB round-trip (requires DateTime(timezone=True) column)
+        assert c.created_at.tzinfo is not None
+        assert c.updated_at.tzinfo is not None
 
 
 def test_create_relationship(engine):
@@ -110,3 +115,24 @@ def test_delete_character_cascades_relationships(engine):
         assert rows == []
         # b 仍在,确认只级联删了引用 a 的关系,没误删人物
         assert session.exec(select(Character).where(Character.name == "B")).first() is not None
+
+
+def test_updated_at_advances_on_update(engine):
+    """验证 onupdate 在字段修改后实际触发,updated_at 超过 created_at。
+    用 time.sleep(0.01) 保证可测量的时间差,避免同一时钟 tick 内两次 _utcnow() 相等。
+    """
+    with Session(engine) as session:
+        c = Character(name="修炼者")
+        session.add(c)
+        session.commit()
+        session.refresh(c)
+        original_updated_at = c.updated_at
+
+        time.sleep(0.01)  # 保证下次 _utcnow() 调用时间超过 original_updated_at
+
+        c.name = "修炼者_改"
+        session.add(c)
+        session.commit()
+        session.refresh(c)
+
+        assert c.updated_at > original_updated_at

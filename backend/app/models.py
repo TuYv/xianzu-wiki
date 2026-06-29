@@ -7,13 +7,30 @@
 from datetime import datetime, timezone
 from enum import Enum
 
-from sqlalchemy import JSON, Column, ForeignKey, Integer, UniqueConstraint
+from sqlalchemy import JSON, Column, DateTime, ForeignKey, Integer, UniqueConstraint
+from sqlalchemy import TypeDecorator
 from sqlmodel import Field, SQLModel
 
 
 def _utcnow() -> datetime:
     """tz-aware 当前 UTC 时间。"""
     return datetime.now(timezone.utc)
+
+
+class TZDateTime(TypeDecorator):
+    """DateTime 列,始终返回 tz-aware UTC datetime。
+
+    SQLite 以无时区字符串存储日期,本 TypeDecorator 在读回时补充 UTC 时区信息,
+    确保应用层无论何时都能拿到 tz-aware 值。
+    """
+
+    impl = DateTime(timezone=True)
+    cache_ok = True
+
+    def process_result_value(self, value: datetime | None, dialect) -> datetime | None:
+        if value is not None and value.tzinfo is None:
+            return value.replace(tzinfo=timezone.utc)
+        return value
 
 
 class Gender(str, Enum):
@@ -56,10 +73,13 @@ class Character(SQLModel, table=True):
     avatar_url: str | None = None
     bio: str | None = None
     notes: str | None = None
-    created_at: datetime = Field(default_factory=_utcnow)
+    created_at: datetime = Field(
+        default_factory=_utcnow,
+        sa_column=Column(TZDateTime, default=_utcnow),
+    )
     updated_at: datetime = Field(
         default_factory=_utcnow,
-        sa_column_kwargs={"onupdate": _utcnow},
+        sa_column=Column(TZDateTime, default=_utcnow, onupdate=_utcnow),
     )
 
 
