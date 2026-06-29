@@ -62,6 +62,7 @@ describe('FamilyTree', () => {
     expect(container.querySelector('.react-flow')).not.toBeNull();
     // 三个人物节点都在 DOM,且隐藏的 union 节点不可点击渲染
     expect(container.querySelector('[data-id="1"]')).not.toBeNull();
+    expect(container.querySelector('[data-id="2"]')).not.toBeNull();
     expect(container.querySelector('[data-id="3"]')).not.toBeNull();
     expect(container.querySelector('[data-id="union:1-2"]')).toBeNull();
   });
@@ -71,9 +72,9 @@ describe('FamilyTree', () => {
     const rels: Relationship[] = [
       { id: 1, from_id: 1, to_id: 3, type: 'parent', parent_role: 'father', note: null },
     ];
-    renderTree(chars, rels, 3);
+    const { container } = renderTree(chars, rels, 3);
 
-    const node = document.querySelector('[data-id="1"]');
+    const node = container.querySelector('[data-id="1"]');
     expect(node).not.toBeNull();
     fireEvent.click(node as Element);
 
