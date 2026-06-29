@@ -8,7 +8,7 @@ from pathlib import Path
 
 import pytest
 from passlib.hash import bcrypt
-from sqlmodel import Session
+from sqlmodel import Session, SQLModel
 
 # 必须在 import app 之前设置所有环境变量,避免污染 xjxz.db 且满足 config fail-fast。
 _TMP_DIR = tempfile.mkdtemp(prefix="xjxz-test-")
@@ -31,8 +31,7 @@ config.get_settings.cache_clear()
 test_engine = create_db_engine(f"sqlite:///{os.environ['XJXZ_DB_PATH']}")
 
 # 提前建好所有表(含 Relationship),使 _clean_db autouse 安全运行
-from sqlmodel import SQLModel as _SQLModel  # noqa: E402
-_SQLModel.metadata.create_all(test_engine)
+SQLModel.metadata.create_all(test_engine)
 
 
 def _get_session_override() -> Generator[Session, None, None]:

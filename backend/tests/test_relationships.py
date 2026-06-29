@@ -102,6 +102,53 @@ def test_duplicate_relationship_rejected(client, admin_token):
     assert r2.status_code == 409
 
 
+def test_transitive_parent_cycle_rejected(client, admin_token):
+    a = _create_character(client, admin_token, "曾祖")
+    b = _create_character(client, admin_token, "祖")
+    c = _create_character(client, admin_token, "父2")
+    client.post(
+        "/api/relationships",
+        json={"from_id": a, "to_id": b, "type": "parent"},
+        headers=_auth(admin_token),
+    ).raise_for_status()
+    client.post(
+        "/api/relationships",
+        json={"from_id": b, "to_id": c, "type": "parent"},
+        headers=_auth(admin_token),
+    ).raise_for_status()
+    # c→a 闭合 3-hop 环,应被 DFS 检测拒绝
+    r = client.post(
+        "/api/relationships",
+        json={"from_id": c, "to_id": a, "type": "parent"},
+        headers=_auth(admin_token),
+    )
+    assert r.status_code == 400
+
+
+def test_symmetric_cross_order_duplicate_rejected(client, admin_token):
+    a = _create_character(client, admin_token, "道侣丙")
+    b = _create_character(client, admin_token, "道侣丁")
+    assert a < b
+    r1 = client.post(
+        "/api/relationships",
+        json={"from_id": a, "to_id": b, "type": "spouse"},
+        headers=_auth(admin_token),
+    )
+    assert r1.status_code == 200
+    # 颠倒顺序:normalize_symmetric 应归一为同一行,UNIQUE 触发 409
+    r2 = client.post(
+        "/api/relationships",
+        json={"from_id": b, "to_id": a, "type": "spouse"},
+        headers=_auth(admin_token),
+    )
+    assert r2.status_code == 409
+
+
+def test_delete_nonexistent_relationship_returns_404(client, admin_token):
+    resp = client.delete("/api/relationships/99999", headers=_auth(admin_token))
+    assert resp.status_code == 404
+
+
 def test_list_and_delete_relationship(client, admin_token):
     a = _create_character(client, admin_token, "兄")
     b = _create_character(client, admin_token, "弟")
