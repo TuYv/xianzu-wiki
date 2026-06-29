@@ -2,199 +2,136 @@
   "characters": [
     {
       "id": 1,
-      "name": "叶天玄",
-      "aliases": [
-        "玄鉴老祖"
-      ],
+      "name": "陆江仙",
+      "aliases": ["鉴子", "镜灵"],
       "gender": "male",
-      "generation": "天字辈",
-      "realm": "化神",
-      "affiliation": "玄鉴仙族",
+      "generation": null,
+      "realm": "器灵·月华初凝",
+      "affiliation": "玄鉴本体",
       "status": "alive",
       "avatar_url": null,
-      "bio": "玄鉴仙族**当代族长**,执掌镇族至宝『玄鉴』。以稳健布局立族,数百年间使家族在险恶修仙界屹立不倒。\n\n> 「家族之道,不在一人之强,而在世代不绝。」"
+      "bio": "现代社畜陆江仙猝死后,神魂寄于一面**灰青色的破镜**(村人称『鉴子』),落在黎泾村眉尺河底。靠**吞吐月华**缓慢凝聚力量,能发微光、模糊感知周遭与他人心绪。被李项平徒手摸鱼时捡起,带回李家。隐隐感到**北方大湖**方向有『自己的一部分』。\n\n> 「这便是现在的我了吧。」"
     },
     {
       "id": 2,
-      "name": "苏婉清",
-      "aliases": [
-        "清漪仙子"
-      ],
-      "gender": "female",
-      "generation": "天字辈",
-      "realm": "元婴",
-      "affiliation": "玄鉴仙族",
+      "name": "李木田",
+      "aliases": [],
+      "gender": "male",
+      "generation": "李家·家主",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家",
       "status": "alive",
       "avatar_url": null,
-      "bio": "叶天玄之**道侣**,出身丹道世家,执掌家族丹房。"
+      "bio": "黎泾村**唯一出过远门**的人,从过军、杀过人,四十余岁用军饷买地、成了村中大户。性子刚硬,恨铁不成钢,盼儿子读书从军而非困于田亩。见鉴子映出月华异象,当即警觉,招四子持刀戒备。"
     },
     {
       "id": 3,
-      "name": "叶清歌",
+      "name": "柳林云",
       "aliases": [],
       "gender": "female",
-      "generation": "清字辈",
-      "realm": "金丹",
-      "affiliation": "玄鉴仙族",
+      "generation": "李家·主母",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家",
       "status": "alive",
       "avatar_url": null,
-      "bio": "叶天玄长女,擅御剑,性烈。"
+      "bio": "李木田之妻,李家四兄弟的母亲。操持家务,笑看一桌儿郎。"
     },
     {
       "id": 4,
-      "name": "叶承乾",
-      "aliases": [
-        "承乾公子"
-      ],
+      "name": "李长湖",
+      "aliases": [],
       "gender": "male",
-      "generation": "清字辈",
-      "realm": "元婴",
-      "affiliation": "玄鉴仙族",
+      "generation": "李家·长子",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家",
       "status": "alive",
       "avatar_url": null,
-      "bio": "叶天玄之子,**家族下一任族长继承人**,沉稳持重。"
+      "bio": "李家**长子**,十七岁,嘴上已生胡须,性情温和持重,处处照拂幼弟。"
     },
     {
       "id": 5,
-      "name": "柳沉香",
+      "name": "李通崖",
       "aliases": [],
-      "gender": "female",
-      "generation": "清字辈",
-      "realm": "金丹",
-      "affiliation": "柳氏药谷",
+      "gender": "male",
+      "generation": "李家·次子",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家",
       "status": "alive",
       "avatar_url": null,
-      "bio": "叶承乾之妻,柳氏药谷之女,联姻入族。"
+      "bio": "李家**次子**,性情阴郁果决。仇家上门之际,第一个翻身取刀披甲,镇定布置防卫。"
     },
     {
       "id": 6,
-      "name": "叶星河",
-      "aliases": [
-        "小星河"
-      ],
+      "name": "李项平",
+      "aliases": [],
       "gender": "male",
-      "generation": "星字辈",
-      "realm": "筑基",
-      "affiliation": "玄鉴仙族",
+      "generation": "李家·三子",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家",
       "status": "alive",
       "avatar_url": null,
-      "bio": "叶承乾幼子,天资卓绝,拜入玄鉴真人门下。家族未来的希望。"
+      "bio": "李家**三子**,约十三岁,眉眼清秀、眼神狡黠。在眉尺河徒手摸鱼时**捡到鉴子**(陆江仙本体),揣回家中,无意间将这缕外来神魂引入李家。"
     },
     {
       "id": 7,
-      "name": "叶星澜",
+      "name": "李尺泾",
+      "aliases": [],
+      "gender": "male",
+      "generation": "李家·幼子",
+      "realm": "凡人",
+      "affiliation": "黎泾村·李家",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "李家**幼子**(四弟),顽皮机灵。后山摘桑养蚕时顺手逮了一窝肥田鼠回来,惹得父亲大悦。"
+    },
+    {
+      "id": 8,
+      "name": "田芸",
       "aliases": [],
       "gender": "female",
-      "generation": "星字辈",
-      "realm": "练气",
-      "affiliation": "玄鉴仙族",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "黎泾村·田家",
       "status": "alive",
       "avatar_url": null,
-      "bio": "叶星河之姊,温婉聪慧。"
-    },
-    {
-      "id": 8,
-      "name": "玄鉴真人",
-      "aliases": [
-        "鉴真上人"
-      ],
-      "gender": "male",
-      "generation": "—",
-      "realm": "大乘",
-      "affiliation": "玄鉴仙族",
-      "status": "alive",
-      "avatar_url": null,
-      "bio": "家族供奉的**大乘期老怪**,寿元将尽,收叶星河为关门弟子。"
-    }
-  ],
-  "relationships": [
-    {
-      "id": 1,
-      "from_id": 1,
-      "to_id": 2,
-      "type": "spouse",
-      "parent_role": null,
-      "note": "道侣"
-    },
-    {
-      "id": 2,
-      "from_id": 1,
-      "to_id": 3,
-      "type": "parent",
-      "parent_role": "father",
-      "note": null
-    },
-    {
-      "id": 3,
-      "from_id": 2,
-      "to_id": 3,
-      "type": "parent",
-      "parent_role": "mother",
-      "note": null
-    },
-    {
-      "id": 4,
-      "from_id": 1,
-      "to_id": 4,
-      "type": "parent",
-      "parent_role": "father",
-      "note": null
-    },
-    {
-      "id": 5,
-      "from_id": 2,
-      "to_id": 4,
-      "type": "parent",
-      "parent_role": "mother",
-      "note": null
-    },
-    {
-      "id": 6,
-      "from_id": 4,
-      "to_id": 5,
-      "type": "spouse",
-      "parent_role": null,
-      "note": "联姻"
-    },
-    {
-      "id": 7,
-      "from_id": 4,
-      "to_id": 6,
-      "type": "parent",
-      "parent_role": "father",
-      "note": null
-    },
-    {
-      "id": 8,
-      "from_id": 5,
-      "to_id": 6,
-      "type": "parent",
-      "parent_role": "mother",
-      "note": null
+      "bio": "黎泾村女孩,十一岁,脸蛋圆圆、笑意盈盈,发育早、个头已高过同辈。按黎泾村男女十三五成婚的乡俗,心中**早已属意李项平为夫君**。父亲是村中最厚道的田叔。"
     },
     {
       "id": 9,
-      "from_id": 4,
-      "to_id": 7,
-      "type": "parent",
-      "parent_role": "father",
-      "note": null
+      "name": "田叔",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "黎泾村·田家",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "田芸之父,黎泾村**最厚道**的村民,与李木田相熟,常羡李家四子有出息。"
     },
     {
       "id": 10,
-      "from_id": 5,
-      "to_id": 7,
-      "type": "parent",
-      "parent_role": "mother",
-      "note": null
-    },
-    {
-      "id": 11,
-      "from_id": 8,
-      "to_id": 6,
-      "type": "master",
-      "parent_role": null,
-      "note": "关门弟子"
+      "name": "李叶生",
+      "aliases": ["叶弟儿"],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "黎泾村",
+      "status": "alive",
+      "avatar_url": null,
+      "bio": "黎泾村放鸭少年,与李项平相熟,项平唤其『叶弟儿』。上有一位严厉的兄长。\n\n> 注:第四章以『李叶盛』为题,或即此人。"
     }
+  ],
+  "relationships": [
+    { "id": 1, "from_id": 2, "to_id": 3, "type": "spouse", "parent_role": null, "note": "结发夫妻" },
+    { "id": 2, "from_id": 2, "to_id": 4, "type": "parent", "parent_role": "father", "note": null },
+    { "id": 3, "from_id": 2, "to_id": 5, "type": "parent", "parent_role": "father", "note": null },
+    { "id": 4, "from_id": 2, "to_id": 6, "type": "parent", "parent_role": "father", "note": null },
+    { "id": 5, "from_id": 2, "to_id": 7, "type": "parent", "parent_role": "father", "note": null },
+    { "id": 6, "from_id": 3, "to_id": 4, "type": "parent", "parent_role": "mother", "note": null },
+    { "id": 7, "from_id": 3, "to_id": 5, "type": "parent", "parent_role": "mother", "note": null },
+    { "id": 8, "from_id": 3, "to_id": 6, "type": "parent", "parent_role": "mother", "note": null },
+    { "id": 9, "from_id": 3, "to_id": 7, "type": "parent", "parent_role": "mother", "note": null },
+    { "id": 10, "from_id": 9, "to_id": 8, "type": "parent", "parent_role": "father", "note": null },
+    { "id": 11, "from_id": 6, "to_id": 8, "type": "spouse", "parent_role": null, "note": "乡俗早定,田芸属意项平为未来夫君(尚未成婚)" }
   ]
 }

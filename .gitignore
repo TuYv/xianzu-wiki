@@ -33,3 +33,7 @@ dist/
 
 # SDD scratch
 .superpowers/
+
+# === 原著文本(版权,仅本地分析用,绝不入库)===
+/玄鉴仙族.txt
+*.novel.txt
