@@ -9,11 +9,14 @@
         "法鉴",
         "青灰色鉴子",
         "仙鉴",
-        "月华元府主"
+        "月华元府主",
+        "太阴玄光",
+        "见阳环之主",
+        "青松观陆江仙"
       ],
       "gender": "male",
       "generation": "法鉴器灵",
-      "realm": "筑基(太阴月华)",
+      "realm": "紫府(太阴玄光级别)",
       "affiliation": "黎泾李家(寄于法鉴)",
       "status": "alive",
       "bio": "现代社畜猝死后转生成眉尺河底一面破镜的器灵,吞吐月华觉醒灵智,被李项平捞起带回李家。无手无脚动弹不得,遂佯装死物、隐忍藏拙,凭《玄珠祀灵术》分发玄珠符种,借李家人力延续仙路。务实而工于心计,靠揣摩人心学会方言,屡屡装聋作哑以防多疑的李家夺去控制权。随李家三兄弟与李尺泾的修行反馈,他凝出太阴玄光、神识覆盖全村,先后斩巨狼、震杀望月湖老道,吸纳玉佩解锁箓丹与《祭萃夺元法》《牲祭法》。前百章中他逐步坐实自身与月华元府的渊源,定下深山苟存五百年、借李家暗访消息之策;借李项平身死回馈而法力大涨,可连发数道太阴玄光,并对大厥庭方向的金丹与山越巫觋黑气保持警觉。",
@@ -81,13 +84,15 @@
         "通崖兄",
         "通崖哥",
         "通崖小友",
-        "李家老祖"
+        "李家老祖",
+        "月阙剑",
+        "泾龙王"
       ],
       "gender": "male",
       "generation": "李木田次子(玄宣之仲父)",
-      "realm": "练气九层",
+      "realm": "筑基(仙基『浩瀚海』,古称『泾龙王』)",
       "affiliation": "黎泾李家",
-      "status": "alive",
+      "status": "dead",
       "bio": "李木田次子,城府最深、最似其父,沉稳镇定、精打细算。早年最先看出鉴子毫光指北、潜入望月湖取回玉石,长兄死后挺身稳住局面、主持对外事务,凝玄景轮入道并接过青池玉印。他主掌家族日常,代表李家东行缴供奉、结交萧雍灵与萧家老祖萧初庭,练成玄水剑诀剑芒,奉父命带养柳柔绚并娶之生子李玄岭。修为自玄景轮一路晋至胎息巅峰,持老道遗剑生擒山越阿会剌,从萧初庭口中探得三宗七门豢养世家等内情。前百章末他以万姓散修化名助迢云卢家攻汲家、斩杀汲登齐,服丹突破练气三层,并救回被掳的玄岭与景恬,从汲家密信中窥破大巫欲以伽泥奚为祭的图谋而深感惊惧。",
       "avatar_url": null
     },
@@ -254,7 +259,7 @@
       ],
       "gender": "female",
       "generation": "李长湖之妻",
-      "realm": "凡人",
+      "realm": "胎息三层",
       "affiliation": "黎泾镇李家",
       "status": "alive",
       "bio": "任平安次女,容貌端庄大气,经风光迎娶嫁与李长湖,口风严谨守得住秘密,深得李木田器重盼其早续香火。怀孕报喜时全家欢腾,却旋即遭逢丈夫横死的噩耗而昏厥,家人只瞒说长湖去了远方;她强撑诞下遗腹子,思虑一夜取名'宣',即日后的李玄宣。此后她寡居理家、热心照拂晚辈与新妇,对玄宣修行进境之速既惊且喜。至四十余岁睡眠渐浅,数年前刚送走病逝的父亲任平安,又在李木田临终时主持料理、催唤其子归来,是李家长房一脉的定海之人。",
@@ -303,7 +308,7 @@
       ],
       "gender": "male",
       "generation": "古黎道领兵将领",
-      "realm": "筑基",
+      "realm": "筑基巅峰",
       "affiliation": "古黎道军中",
       "status": "unknown",
       "bio": "昔年奉朝廷之命东征山越的筑基修为将领,曾在古黎道征兵收编了无处容身的李木田。他治军严明却与士卒同食同住、亲如一家,传授越兵战法,麾下东征却伤亡惨重。其形象仅存于李木田的回忆中,李通崖更以这段从军经历充作父亲早年阅历的托词。正是当年随他从军所得的符箓,日后被李木田认出乃青池仙宗(青池宗)所发,印证了仙宗渊源。",
@@ -336,11 +341,12 @@
         "宣哥哥",
         "少家主",
         "宣哥",
-        "宣哥儿"
+        "宣哥儿",
+        "父亲"
       ],
       "gender": "male",
       "generation": "玄字辈,少家主",
-      "realm": "胎息四层青元轮",
+      "realm": "练气七层",
       "affiliation": "黎泾李家",
       "status": "alive",
       "bio": "李长湖与任氏的遗腹子,李木田据《接引法》定下'玄景渊清'辈分、合母名取作'玄宣',自幼神似亡父、早慧沉稳而心思缜密。因常追问父亲下落而哭闹,后由李项平揭示其身无灵窍、李家全凭鉴子立身的核心秘密,他迅速领悟三叔诸般狠辣布置的苦衷,遂接受鉴子授下的玄珠符种,借镜面月华之力修行,进境之速仅稍逊当年的李尺泾。八九岁已能施灵雨掐神行术,被村中昵称'小仙师',作为主脉第三代由李项平倾力栽培为下一代家主,众管事尊为少家主。他突破周行轮、入眉尺山闭关冲击青元轮,在生擒山越一役中被迫亲手杀敌而顿悟世事残酷,自此沉静决绝,心性蜕变;被委为族正后,神态由稚嫩转为令族人望而生畏的成熟平静。山越破镇后他强压悲痛独撑家族、对外谎称家主闭关,劫后主持族务、重整两三百族兵、安抚诸村、清点灵田,并喜得长子李渊修,与李通崖议定大宗小宗按灵窍升降的分家之制。",
@@ -385,11 +391,14 @@
       "name": "袁湍",
       "aliases": [
         "四师姐",
-        "师姐"
+        "师姐",
+        "青池宗青穗峰主",
+        "师尊",
+        "仙师"
       ],
       "gender": "female",
       "generation": "青穗峰弟子",
-      "realm": "练气",
+      "realm": "筑基(仙基『青宣岳』)",
       "affiliation": "青池宗青穗峰",
       "status": "alive",
       "bio": "李尺泾的四师姐,青穗峰练气修士,十八岁入练气而容颜难老,温婉和气。初见便赠安神定念的玉佩助师弟入定,后为受伤的尺泾敷药疗伤,讲解邓家功法源流与太阴月华掌故。她常驾霞光云船接送师弟往返望月湖、顺路携其返乡探父,见他探亲伤怀便温言相劝。因不善争斗,宗门抽调赴南疆时她被留守峰内。",
@@ -418,13 +427,14 @@
       "aliases": [
         "二嫂",
         "新妇",
-        "叔母"
+        "叔母",
+        "娘子"
       ],
       "gender": "female",
       "generation": "李家叔母辈",
       "realm": "胎息四层",
       "affiliation": "黎泾李家",
-      "status": "alive",
+      "status": "dead",
       "bio": "出身泾阳柳家的少女,卡着年龄上限被测出身具灵窍,由李通崖收下传授青元养轮法,安置黎泾小院修行,是李家唯一的外姓修士。她怯生生又活泼俏皮,在朝夕相处中对李通崖暗生情愫,主动相问'可还看得上我',实为李木田从中撮合,后两人定亲、开春成婚,娘家更以压箱底宝剑作嫁妆。婚后她依虫书主理吴柞虫养殖、与李秋阳同理灵田,并诞下李玄岭。因青元法门提炼效率偏低,她直到近两年才凝成玄景轮,百章时已是胎息四层。山越来犯、家中高手随军西去之际,她临危受命前往梨川口安抚善后。",
       "avatar_url": null
     },
@@ -433,11 +443,12 @@
       "name": "李秋阳",
       "aliases": [
         "叶秋阳",
-        "秋阳"
+        "秋阳",
+        "李老三"
       ],
       "gender": "male",
       "generation": "李家支系子弟",
-      "realm": "胎息巅峰",
+      "realm": "杂气修士(晋级练气失败,道基受损)",
       "affiliation": "黎泾李家(支系)",
       "status": "alive",
       "bio": "叶承福之子,幼时误入后山偷食灵根果子而身具灵窍,由此引出后山灵根之事,测灵后随父归宗改姓李,获赐青元养轮法被带往泾阳小院修行。他眉眼清秀、低调懂事,借蛇蛟果之力进境神速,早早凝成玄景轮并立玄景灵誓,十一二岁即主理各村灵稻、看护小院、照料灵田,让李通崖等人专注修炼。其周行轮一度停滞两三年,被旁支视为与主家相互制衡的资本,后驻守黎道口、梨川口抵御山越溃兵,曾与李玄宣联手生擒敌将。百章时他已胎息四层、娶陈家女育有一子一女,随李项平西征,家主战死后随陈冬河东归。",
@@ -471,7 +482,7 @@
       "generation": "万家修士",
       "realm": "玉京轮(胎息第五层)",
       "affiliation": "万家",
-      "status": "unknown",
+      "status": "dead",
       "bio": "万家家主万萧华之子,年纪轻轻便修成青元轮,健谈好食、性情直爽。他奉父命携松越果拜访新崛起的李家,悲愤详述万家受镗金门汲家年年劫掠之苦,意在结盟借力;东行送供奉途中为李通崖讲解坊市掌故、世家修为与阵旗阵盘之别,见识老到。后突破玉京轮,曾参与商讨伏击汲登齐,华芊山大阵将破时扶住惊惶的父亲、受命组织嫡系子弟向李卢两家方向突围。镗金门南下攻破华芊山后他下落不明,被李通崖判为凶多吉少。",
       "avatar_url": null
     },
@@ -533,7 +544,7 @@
       ],
       "gender": "male",
       "generation": "玄字辈,李项平之子",
-      "realm": "胎息五层玉京轮",
+      "realm": "筑基",
       "affiliation": "黎泾李家",
       "status": "alive",
       "bio": "李项平与田芸所生龙凤胎中的男婴,由老爷子李木田按族中字辈取名,自幼由守墓的徐老汉带大。他顽劣不羁、狂放尚武却有杀伐果断的狠劲,送徐老汉最后一程时听其吐露身世与镗金门秘辛;被父亲种下玄珠符种,灵窍异于常人地生于右手少府穴。其天资聪颖、臂力惊人,十二岁拉断六弓,自创借掌中灵窍与箭意的弓法,无箭亦能洞穿大树,箭无虚发。父亲深入山越后他忧心如焚、扬言要凭实力强夺传承,服蛇元丹闭关突破胎息五层玉京轮、生出灵识,并外出猎妖补贴家用,暗誓长大要杀光镗金门。",
@@ -552,7 +563,7 @@
       "generation": "玄字辈,李项平之女",
       "realm": "凡人",
       "affiliation": "黎泾李家",
-      "status": "alive",
+      "status": "dead",
       "bio": "李项平与田芸所生龙凤胎中的女婴,由李木田取名,是李家这一辈唯一的女孩,常抱一只雪白小猫,眉眼弯弯、笑容讨喜。她虽无灵窍、不能修仙,却容貌出众、英气干净,遗传了父亲的灰黑色眸子,且见识老到,曾向父亲剖析青池宗与山越交割领地、断定李家已沦为被交易的货物。山越夜袭时她随李玄岭逃藏、抹泥扮丑仍被掳入寨,被大帅木焦蛮掳走后谎称名叫叶恬自保,以死相胁拒不屈从,又借侍从之便暗中替家中打探传递消息,配合李玄岭脱身。",
       "avatar_url": null
     },
@@ -603,7 +614,7 @@
       ],
       "gender": "male",
       "generation": "萧家修士",
-      "realm": "胎息·承明轮",
+      "realm": "筑基后期",
       "affiliation": "萧家",
       "status": "alive",
       "bio": "萧家嫡系青年、萧初庭最得意的嫡孙,锦衣养尊却待人客气、健谈爱八卦,见多识广。镇守东口时于酒肆偶遇李通崖、万元凯,凭族中辨修宝物识破二人身份,攀谈间讲起月湖峰上使及望月湖三宗十门大战的旧闻。后听祖父道破世家不过是青池宗豢养待宰的'药材'真相,惊惧战栗。再见李通崖时以'通崖兄'相称,在坊市为其讲解功法行情与古法、秘法之别,感慨这位故交的天赋反被家族所累。",
@@ -660,7 +671,9 @@
     {
       "id": 41,
       "name": "李江群",
-      "aliases": [],
+      "aliases": [
+        "洞骅真人"
+      ],
       "gender": "male",
       "generation": null,
       "realm": "紫府",
@@ -676,13 +689,14 @@
       "aliases": [
         "迟尉老祖",
         "迟尉老鬼",
-        "鹤发老翁"
+        "鹤发老翁",
+        "如重浊"
       ],
       "gender": "male",
       "generation": "青池宗天才修士",
       "realm": "紫府巅峰",
       "affiliation": "青池宗",
-      "status": "alive",
+      "status": "dead",
       "bio": "青池宗横绝一时的天才修士,被仙门私下供给玄明之气。眉尺山洞府密信即以其落款,请道友速速出手围堵抵达望月湖的'那人',许以烈火朝阳诀与灵玉火晶为酬。后命危,全宗四处求灵药为其续命;金羽宗紫府修士对他褒贬两极,既称天才又骂其小人、盼其速死。两卷均仅借他人之口提及,本人未正面出场。",
       "avatar_url": null
     },
@@ -695,9 +709,9 @@
       ],
       "gender": "male",
       "generation": "玄字辈,李通崖长子",
-      "realm": "胎息巅峰",
+      "realm": "练气三层",
       "affiliation": "黎泾李家",
-      "status": "alive",
+      "status": "dead",
       "bio": "李通崖与柳柔绚之独子,李家玄字辈晚辈,虽无灵窍却承玄珠符种,五岁即异常沉稳、剑术天赋为小辈之冠。被陆江仙借梦引导持法鉴查探,识破伽泥奚合围,施神行术背起长姐李景恬抢先下山、翻墙改装藏匿,机敏过人却终与她一同被山越掳入寨。沦为奴隶仍装疲弱掩饰修为,暗中与李景恬联络,趁李通崖搅乱大寨之机一举杀守卫、携长姐逃出山越营地。",
       "avatar_url": null
     },
@@ -707,11 +721,12 @@
       "aliases": [
         "陈冬河",
         "冬河",
-        "河儿"
+        "河儿",
+        "姐夫"
       ],
       "gender": "male",
       "generation": "陈家子弟,李项平部将",
-      "realm": "胎息三层",
+      "realm": "练气四层",
       "affiliation": "陈家(随黎泾李家征战)",
       "status": "alive",
       "bio": "陈二牛幼子,出生即啼声响亮、由韩文许按陈家传统取名,自幼聪慧,是近十年李家唯一新出灵窍之子,遂被送到李项平身边修行打杂、绑箭袋随侍。长成十七八岁清秀少年,胎息三层,披甲佩剑充任项平传令亲卫,常持地图谋划路线,暗暗倾慕李景恬:项平当众戏言要将景恬许配于他并坚持其须为正妻,他暗喜却结巴不敢应。山越破后路时由他封锁消息整兵西进;家主李项平中咒身亡后,他受托背起青乌弓、怀揣宝珠,带众东归。",
@@ -859,7 +874,7 @@
       ],
       "gender": "female",
       "generation": "月湖峰弟子、收供奉上使",
-      "realm": "筑基",
+      "realm": "筑基巅峰",
       "affiliation": "青池宗月湖峰",
       "status": "alive",
       "bio": "温婉貌美的月湖峰女修，二十四岁即破练气八层，炼松林朔风成道、尤擅阵法，向来不理俗务。接下赴黎夏郡收供奉之任，应李尺泾之托关照其家人，亲口过问李通崖并代转锦囊灵石。",
@@ -880,10 +895,13 @@
     {
       "id": 59,
       "name": "袁护远",
-      "aliases": [],
+      "aliases": [
+        "袁护忠",
+        "护远老祖"
+      ],
       "gender": "male",
       "generation": "袁湍之族弟",
-      "realm": "练气",
+      "realm": "筑基",
       "affiliation": "蕈林原袁家",
       "status": "alive",
       "bio": "蕈林原袁家修士、袁湍族弟,前年方入练气故显中年相;驾飞梭护送尺泾往大黎山,沿途畅谈以貌取人之诫与修仙见闻。",
@@ -963,7 +981,8 @@
         "修儿",
         "渊修",
         "修公子",
-        "李家嫡长"
+        "李家嫡长",
+        "公子修"
       ],
       "gender": "male",
       "generation": "渊字辈,李玄宣长子,李家第三代",
@@ -992,15 +1011,18 @@
     },
     {
       "id": 67,
-      "name": "安兄",
+      "name": "安鹧言",
       "aliases": [
         "安姓男子",
-        "安鹧言",
-        "安家主"
+        "安家主",
+        "安兄",
+        "鹧言",
+        "前辈",
+        "安客卿"
       ],
       "gender": "male",
       "generation": null,
-      "realm": "练气中期",
+      "realm": "练气九层",
       "affiliation": "安家(卢思嗣盟友)",
       "status": "alive",
       "bio": "光头大胡子的练气中期修士,卢思嗣埋伏好的帮手,参与围杀汲登齐,事成后取得汲家老巢骅中山,自陈北边郁家势大需多照拂。",
@@ -1012,7 +1034,8 @@
       "aliases": [
         "炙云",
         "迟师兄",
-        "迟炙云"
+        "迟炙云",
+        "和靖之族兄"
       ],
       "gender": "male",
       "generation": "李尺泾师兄",
@@ -1040,7 +1063,7 @@
       "aliases": [],
       "gender": "male",
       "generation": null,
-      "realm": "练气",
+      "realm": "筑基巅峰",
       "affiliation": "金羽宗",
       "status": "alive",
       "bio": "金羽宗弟子,精阵法;开蛇妖洞府杀许阳平夫妇,误认李通崖为萧家人,透露萧初庭已晋紫府及金羽宗结盟萧家之约;称江河一气诀或为江河大陵经前置功法",
@@ -1085,7 +1108,7 @@
       "generation": null,
       "realm": "凡人",
       "affiliation": "黎泾李家(原东山越木鹿氏)",
-      "status": "alive",
+      "status": "dead",
       "bio": "山越巫族(木鹿氏)之女,木焦蛮之妹,以联姻入李家为李玄宣七夫人,生子李渊蛟",
       "avatar_url": null
     },
@@ -1113,9 +1136,9 @@
       ],
       "gender": "female",
       "generation": null,
-      "realm": "胎息三层",
+      "realm": "胎息四层(青元轮)",
       "affiliation": "迢云卢家→黎泾李家",
-      "status": "alive",
+      "status": "dead",
       "bio": "卢家嫡女,身具灵窍,嫁李玄岭为妻,生李清虹、李渊云",
       "avatar_url": null
     },
@@ -1155,7 +1178,9 @@
       "id": 79,
       "name": "陈涛平",
       "aliases": [
-        "张错天"
+        "张错天",
+        "陈涛惊",
+        "涛惊"
       ],
       "gender": "male",
       "generation": null,
@@ -1169,7 +1194,10 @@
     {
       "id": 80,
       "name": "元素真人",
-      "aliases": [],
+      "aliases": [
+        "迢宵",
+        "宁迢宵"
+      ],
       "gender": "male",
       "generation": null,
       "realm": "紫府",
@@ -1181,7 +1209,10 @@
     {
       "id": 81,
       "name": "大蛟",
-      "aliases": [],
+      "aliases": [
+        "老蛟",
+        "参渌馥"
+      ],
       "gender": "male",
       "generation": null,
       "realm": "紫府巅峰",
@@ -1195,11 +1226,12 @@
       "name": "刘长迭",
       "aliases": [
         "长迭",
-        "刘长迭大师"
+        "刘长迭大师",
+        "长迭大师"
       ],
       "gender": "male",
       "generation": null,
-      "realm": "练气二层",
+      "realm": "筑基",
       "affiliation": "阵道修士(黎夏郡)",
       "status": "alive",
       "bio": "黎夏郡阵法大师、重生者,精阵道,受大衍天玄箓植入伪记忆,为李家布日仪玄光大阵/护山大阵,并打探'江雁'消息",
@@ -1213,13 +1245,14 @@
         "蛟",
         "蛟弟",
         "蛟哥儿",
-        "渊蛟"
+        "渊蛟",
+        "尺泾公宗继之孙"
       ],
       "gender": "male",
       "generation": "渊字辈",
-      "realm": "胎息二层",
+      "realm": "筑基中期",
       "affiliation": "黎泾李家",
-      "status": "alive",
+      "status": "dead",
       "bio": "李玄宣与木芽鹿之子,身具灵窍带山越血统,突破玄景神速,辅佐兄长李渊修扶植唦摩里、盘剥山越六大氏族",
       "avatar_url": null
     },
@@ -1227,11 +1260,12 @@
       "id": 84,
       "name": "白榕狐",
       "aliases": [
-        "狐狸"
+        "狐狸",
+        "公子"
       ],
       "gender": "unknown",
       "generation": null,
-      "realm": null,
+      "realm": "练气九层",
       "affiliation": "黎泾山野妖",
       "status": "alive",
       "bio": "黎泾山白榕树下狐妖,以灵稻换消息,向李通崖透露李尺泾、于羽楔被炼丹真相及南疆妖王炼丹消息",
@@ -1248,7 +1282,7 @@
       "generation": "渊字辈",
       "realm": "凡人",
       "affiliation": "黎泾李家",
-      "status": "alive",
+      "status": "dead",
       "bio": "李玄岭与卢婉容之子,无灵窍不能修行,随姑姑李景恬读书治学",
       "avatar_url": null
     },
@@ -1256,11 +1290,15 @@
       "id": 86,
       "name": "李清虹",
       "aliases": [
-        "清虹"
+        "清虹",
+        "散修叶氏",
+        "叶清虹",
+        "玉庭峰主",
+        "青杜李清虹"
       ],
       "gender": "female",
       "generation": "渊字辈",
-      "realm": "胎息二层",
+      "realm": "筑基后期",
       "affiliation": "黎泾李家",
       "status": "alive",
       "bio": "李玄岭与卢婉容长女,身具灵窍资质佳,弃剑习枪,获法鉴符种",
@@ -1288,13 +1326,14 @@
       "name": "江伯清",
       "aliases": [
         "中年人",
-        "乞丐"
+        "乞丐",
+        "师傅"
       ],
       "gender": "male",
       "generation": null,
-      "realm": null,
+      "realm": "紫府",
       "affiliation": null,
-      "status": "alive",
+      "status": "dead",
       "bio": "行咒术的中年术士,拐走李渊渔收为徒改名江雁,传授咒术",
       "avatar_url": null
     },
@@ -1315,11 +1354,12 @@
       "id": 90,
       "name": "萧如誉",
       "aliases": [
-        "如誉"
+        "如誉",
+        "公子"
       ],
       "gender": "male",
       "generation": null,
-      "realm": "练气",
+      "realm": "练气巅峰",
       "affiliation": "萧家",
       "status": "alive",
       "bio": "萧家少家主/练气修士,萧雍灵族侄,接待李玄锋并切磋,助李玄锋伏杀司徒友后西逃",
@@ -1330,11 +1370,14 @@
       "name": "唦摩里",
       "aliases": [
         "王嗣",
-        "王子"
+        "王子",
+        "山越王",
+        "沙摩里",
+        "李寄蛮"
       ],
       "gender": "male",
       "generation": null,
-      "realm": "练气",
+      "realm": "练气六层",
       "affiliation": "东山越(李家傀儡王)",
       "status": "alive",
       "bio": "山越先王木焦蛮第四子,逃避荠木屠杀投奔李家,借箓丹与紫雷秘元功突破练气,弑兄荠木夺东山越王位为李家傀儡",
@@ -1376,11 +1419,12 @@
       "name": "徐公明",
       "aliases": [
         "公明",
-        "徐大人"
+        "徐大人",
+        "徐千户"
       ],
       "gender": "male",
       "generation": null,
-      "realm": "胎息三层",
+      "realm": "练气初期",
       "affiliation": "黎泾李家(族兵·徐氏)",
       "status": "alive",
       "bio": "徐氏唯一灵窍子,投李家军任先锋百夫长/族兵首领/矿吏,攻山越斩敌将,谨守不结交望姓之嘱",
@@ -1394,17 +1438,20 @@
       "generation": null,
       "realm": "凡人",
       "affiliation": "黎泾镇徐氏",
-      "status": "alive",
+      "status": "dead",
       "bio": "徐三之子、徐氏掌事,凡人,教侄徐公明从军当守'忠''稳'二字",
       "avatar_url": null
     },
     {
       "id": 98,
       "name": "陈睦峰",
-      "aliases": [],
+      "aliases": [
+        "少户",
+        "千户"
+      ],
       "gender": "male",
       "generation": null,
-      "realm": "凡人",
+      "realm": "练气中期",
       "affiliation": "陈家→黎泾李家",
       "status": "alive",
       "bio": "陈家八岁灵窍子,由陈冬河带出,拜李秋阳为师并与其六女定娃娃亲",
@@ -1447,11 +1494,12 @@
       "name": "田仲青",
       "aliases": [
         "仲青",
-        "田氏子"
+        "田氏子",
+        "百户"
       ],
       "gender": "male",
       "generation": null,
-      "realm": "胎息三层",
+      "realm": "胎息四层",
       "affiliation": "田氏(黎泾李家治下外姓)",
       "status": "alive",
       "bio": "田氏老爷长孙、田氏晚辈领头,十七八岁胎息三层,雨中送华芊山急信,配合李渊修反间计押来安家细作",
@@ -1464,13 +1512,14 @@
         "慕高",
         "郁公子",
         "高儿",
-        "郁家家主"
+        "郁家家主",
+        "密林郡家主"
       ],
       "gender": "male",
       "generation": "慕字辈",
-      "realm": "练气三层",
+      "realm": "练气后期",
       "affiliation": "望月湖郁家",
-      "status": "alive",
+      "status": "dead",
       "bio": "郁萧贵长子、郁家家主,机敏阴狠善谋,牵头整合望月湖,设术雷害死李渊修,逼杀安景明",
       "avatar_url": null
     },
@@ -1480,13 +1529,14 @@
       "aliases": [
         "萧贵",
         "郁家主",
-        "郁家老祖"
+        "郁家老祖",
+        "老五"
       ],
       "gender": "male",
       "generation": "萧字辈",
-      "realm": "筑基",
+      "realm": "筑基中期",
       "affiliation": "望月湖郁家",
-      "status": "alive",
+      "status": "dead",
       "bio": "密林郁家当代家主/老祖,郁家五杰之首,筑基修士,建密林郡,湖上霸主,欲压制李家",
       "avatar_url": null
     },
@@ -1514,7 +1564,7 @@
       "generation": null,
       "realm": "筑基后期",
       "affiliation": "望月湖郁家",
-      "status": "alive",
+      "status": "dead",
       "bio": "郁家第二位筑基修士,号白玉手,坐镇密林郡坊市",
       "avatar_url": null
     },
@@ -1526,9 +1576,9 @@
       ],
       "gender": "male",
       "generation": "慕字辈",
-      "realm": null,
+      "realm": "筑基后期",
       "affiliation": "望月湖郁家→青池宗",
-      "status": "alive",
+      "status": "dead",
       "bio": "郁慕高胞弟,拜入元乌峰擅炼器,献策使元乌峰停收徒以困死周边家族出路",
       "avatar_url": null
     },
@@ -1553,13 +1603,15 @@
       "name": "费望白",
       "aliases": [
         "费家家主",
-        "费家主"
+        "费家主",
+        "望白",
+        "费桐玉"
       ],
       "gender": "male",
       "generation": null,
       "realm": "筑基",
       "affiliation": "费家(望月湖北岸)",
-      "status": "alive",
+      "status": "dead",
       "bio": "北岸费家家主,二十年前筑基,湖上第二筑基世家,持白长枪,与李家交好共制衡郁家,助李通崖逼退吠罗牙",
       "avatar_url": null
     },
@@ -1593,7 +1645,7 @@
       "aliases": [],
       "gender": "male",
       "generation": null,
-      "realm": "练气六层",
+      "realm": "筑基中期",
       "affiliation": "紫烟门(紫气峰)",
       "status": "alive",
       "bio": "三宗七门紫烟门弟子,逃亡至黎泾山,被李家所救后手刃长霄门二修,以《紫雷秘元功》换李家庇护后返门复命;持紫烟灵罩",
@@ -1634,7 +1686,7 @@
       ],
       "gender": "male",
       "generation": null,
-      "realm": "紫府",
+      "realm": "紫府巅峰",
       "affiliation": "巫山",
       "status": "dead",
       "bio": "巫山紫府、最年长者,得仙人赐《答桑下乞儿问》活六百余年,曾庇护黎山北脉山越;突破金丹失败身死道消,化邪物槐荫鬼",
@@ -1651,7 +1703,7 @@
       "generation": "初字辈",
       "realm": "筑基中期",
       "affiliation": "萧家",
-      "status": "alive",
+      "status": "dead",
       "bio": "萧家辈分大的老祖,筑基中期;借取山越宝药之名实欲探巫山遗迹寻仙书;访李家议联姻,定萧归鸾将许配李家",
       "avatar_url": null
     },
@@ -1694,6 +1746,2636 @@
       "bio": "郁家老供奉,百五十岁擅咒术,施术雷,被李玄锋射伤后遭郁慕元灭口溺亡",
       "avatar_url": null,
       "chronicle": "**出身**\n\n江客卿者，郁家老供奉也，世亦称江供奉、江先生。寿逾百五十，满头华发，皱纹密布，气息奄奄，而修为不过练气三层，辈分尊而道行微。家主郁慕高待之甚敬，每以「先生」相称，呼之议事而色无愠焉。\n\n**性情**\n\n客卿为人疏狂，登堂箕踞，翘足于红木之椅，虽家主在前亦不为礼，慕高亦不以为忤。尝面斥慕高阴损，曰：「我闯南走北，头一回见你大哥这等阴损人物。」言虽刺，意实自负，盖恃其方技，无所惮也。\n\n**方技**\n\n客卿生平专精咒术，一辈子尽花在阴人之术上，能损人根基、伤人元气，使受者纵救亦无前程可言；然斗法之事则懵然无能，临敌全无经验。\n\n**术雷**\n\n郁慕高谋戕李家，授以「术雷」之法，借安家之手纳灵珠于矿脉，诱李家取之。客卿乃偕郁慕元潜望月湖小洲，跪坐点升阳府，神游百里，得术雷已在少家主李渊修手中。客卿本欲放长线以候李通崖，慕元虑久生变，促之即发。客卿掐诀喝「疾」，雷火暴起，裂渊修之血肉，旁及左右。\n\n**结局**\n\n李玄锋凭法鉴穷百里之灵识，金庚弓发一矢，贯客卿之腹。客卿练气微躯，斗法无术，痛呼「少爷救我」，风且不能驾。郁慕元恐其累己，反掌击其升阳府，七窍流血，神识尽毁如痴，复夺其储物袋，火术毁容，拍风行符遣其身远遁，终溺死望月湖中，面目焦黑，为李通崖捞出。\n\n**身后**\n\n事败，慕元亦自爆而亡。郁慕高、郁萧贵议之，徒惜搭上慕元、启李家之疑，至若客卿，则曰「死了就死了」，略不动容焉。\n\n**论曰**：客卿挟咒术之长，傲睨豪门而不自检，终为人鹰犬，受命害人。一矢中腹，旧主反掌灭口，毁容沉湖，弃之如刍狗。专于阴人者，竟自阴于人手，悲夫！"
+    },
+    {
+      "id": 120,
+      "name": "上元真人",
+      "aliases": [
+        "上元",
+        "上元前辈",
+        "上元剑仙"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府巅峰之上,金丹之下第一(剑仙)",
+      "affiliation": "修越宗",
+      "status": "alive",
+      "bio": "修越宗剑仙,坐镇徐国震慑四方,一剑斩杀忿怒摩诃转世法慧,为救李通崖出手",
+      "avatar_url": null
+    },
+    {
+      "id": 121,
+      "name": "乌少云",
+      "aliases": [
+        "乌少白"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基初期",
+      "affiliation": "郡南乌家",
+      "status": "alive",
+      "bio": "郡南乌家筑基修士,借亡女之名试探李通崖未果;另有一说称其为郁慕仙胞弟、在元乌峰某宗门修行常向家中索资,与本条恐系文本讹误混淆之另一人,待核实",
+      "avatar_url": null
+    },
+    {
+      "id": 122,
+      "name": "伏代木",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "筑基后期",
+      "affiliation": null,
+      "status": "alive",
+      "bio": "被吠罗牙提及新近晋筑基后期之人,身份背景不明,仅一笔带过",
+      "avatar_url": null
+    },
+    {
+      "id": 123,
+      "name": "南山翁",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基巅峰",
+      "affiliation": "萧家(客卿)",
+      "status": "alive",
+      "bio": "萧家客卿,筑基巅峰,曾于黎夏郡扬名,随萧初筹诛杀郁玉封",
+      "avatar_url": null
+    },
+    {
+      "id": 124,
+      "name": "司前辈",
+      "aliases": [
+        "司姓紫府"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "青池宗",
+      "status": "alive",
+      "bio": "青池宗紫府修士,与萧初庭同行商议郁慕仙金销洞之事",
+      "avatar_url": null
+    },
+    {
+      "id": 125,
+      "name": "合清",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "蒋家(嫁入郁家)",
+      "status": "dead",
+      "bio": "郁萧瓯亡妻,出身蒋家,早已故去",
+      "avatar_url": null
+    },
+    {
+      "id": 126,
+      "name": "唐元乌",
+      "aliases": [
+        "元乌真人",
+        "元乌",
+        "唐元乌"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "青池宗元乌峰(太上,创峰祖师)",
+      "status": "alive",
+      "bio": "元乌峰创峰祖师,子早亡后重出闭关掌峰,郁慕仙岳父",
+      "avatar_url": null
+    },
+    {
+      "id": 127,
+      "name": "唐师兄",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "青池宗(郁慕仙同门)",
+      "status": "alive",
+      "bio": "郁慕仙同门师兄,修为不高但人脉广,为其出谋划策",
+      "avatar_url": null
+    },
+    {
+      "id": 128,
+      "name": "堇莲摩诃",
+      "aliases": [
+        "明慧法师"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "摩诃(七世)",
+      "affiliation": "莲花寺·莲花宗(老祖)",
+      "status": "alive",
+      "bio": "莲花宗老祖,七世摩诃,曾与法鉴陆江仙交手落败,后被其以命数擒拿盘问",
+      "avatar_url": null
+    },
+    {
+      "id": 129,
+      "name": "天元真人",
+      "aliases": [
+        "张天元",
+        "天元"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "紫府真人联盟(围杀忿怒摩诃)",
+      "status": "alive",
+      "bio": "紫府真人,统领九真人围杀忿怒摩诃,持仙府法宝金桥锁,事后功劳归其名下",
+      "avatar_url": null
+    },
+    {
+      "id": 130,
+      "name": "宁和远",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气四层",
+      "affiliation": "青池宗(宁氏子弟)",
+      "status": "alive",
+      "bio": "青池宗宁氏子弟,持巳元乾光赴黎泾李家寻衅比试,败于李清虹",
+      "avatar_url": null
+    },
+    {
+      "id": 131,
+      "name": "宁迢宵",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "青池宗",
+      "status": "alive",
+      "bio": "青池宗紫府修士,代宗门向萧初庭道贺,示好化解嫌隙",
+      "avatar_url": null
+    },
+    {
+      "id": 132,
+      "name": "安鹧宇",
+      "aliases": [
+        "安家主"
+      ],
+      "gender": "male",
+      "generation": "鹧",
+      "realm": "胎息四层",
+      "affiliation": "骅中山安家",
+      "status": "dead",
+      "bio": "安鹧言庶弟,郁家扶持的安家傀儡家主,虐杀老仆并分食安景明尸身,事发后被李通崖罚安鹧言凌迟分食,终遭弹指打死",
+      "avatar_url": null
+    },
+    {
+      "id": 133,
+      "name": "常遥",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": null,
+      "status": "unknown",
+      "bio": "郁慕高信中提及的传信之人,称李萧两家有旧,仅一笔带过",
+      "avatar_url": null
+    },
+    {
+      "id": 134,
+      "name": "慕容夏",
+      "aliases": [
+        "法师",
+        "老衲"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气六七层(筑基级实力)",
+      "affiliation": "魔宗(善乐魔修行者)",
+      "status": "alive",
+      "bio": "魔宗善乐魔修士,腹养人首食人为乐,游历江南时被李清虹雷法击退,曾与李玄岭有过接触",
+      "avatar_url": null
+    },
+    {
+      "id": 135,
+      "name": "明慧",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "摩诃(莲花寺首徒)",
+      "affiliation": "莲花寺",
+      "status": "alive",
+      "bio": "莲花寺首徒,堇莲摩诃自幼收养教导,护送慕容夏时曾以金光胁迫李通崖,亦曾出手阻挠李通崖之谋但交手落败",
+      "avatar_url": null
+    },
+    {
+      "id": 136,
+      "name": "曹业",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "玉庭山镇(平民)",
+      "status": "alive",
+      "bio": "玉庭山老农,亡子曹阳暄魂魄求接其团圆入乐土",
+      "avatar_url": null
+    },
+    {
+      "id": 137,
+      "name": "曹阳暄",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "玉庭山镇(平民)",
+      "status": "dead",
+      "bio": "玉庭山镇民曹业之子,死后魂魄被慕容夏摄入乐土,后遭李清虹雷法彻底震灭",
+      "avatar_url": null
+    },
+    {
+      "id": 138,
+      "name": "李寄蛮",
+      "aliases": [],
+      "gender": "male",
+      "generation": "渊清字辈",
+      "realm": null,
+      "affiliation": "东山越→黎泾李家(赐李姓)",
+      "status": "alive",
+      "bio": "唦摩里长子,获赐李姓,已开始修炼,将继东山越王位",
+      "avatar_url": null
+    },
+    {
+      "id": 139,
+      "name": "李曦峸",
+      "aliases": [
+        "峸哥儿",
+        "大公子",
+        "峸儿"
+      ],
+      "gender": "male",
+      "generation": "曦",
+      "realm": "胎息三层",
+      "affiliation": "黎泾李家",
+      "status": "alive",
+      "bio": "李渊云嫡长子,性木讷温弱,得授《折羽枪》未受太阴符种,随姑姑李清虹在玉庭山习武",
+      "avatar_url": null
+    },
+    {
+      "id": 140,
+      "name": "李曦峻",
+      "aliases": [
+        "峻儿",
+        "八弟",
+        "峻弟",
+        "明霜松岭",
+        "八公子"
+      ],
+      "gender": "male",
+      "generation": "曦",
+      "realm": null,
+      "affiliation": "黎泾李家",
+      "status": "alive",
+      "bio": "李渊云幼子,容貌绝美、天赋平平,受太阴符种",
+      "avatar_url": null
+    },
+    {
+      "id": 141,
+      "name": "李曦明",
+      "aliases": [
+        "明儿",
+        "明弟",
+        "明哥儿"
+      ],
+      "gender": "male",
+      "generation": "曦",
+      "realm": null,
+      "affiliation": "黎泾李家",
+      "status": "alive",
+      "bio": "李渊平独子,一岁余聪慧健康,天生炼丹体质,受太阴符种",
+      "avatar_url": null
+    },
+    {
+      "id": 142,
+      "name": "李曦治",
+      "aliases": [
+        "曦治",
+        "治儿"
+      ],
+      "gender": "male",
+      "generation": "曦",
+      "realm": "胎息三层",
+      "affiliation": "黎泾李家嫡系→青池宗青穗峰",
+      "status": "alive",
+      "bio": "李渊蛟与萧归鸾嫡子,自幼受太阴符种,后拜入青穗峰主袁湍门下修行",
+      "avatar_url": null
+    },
+    {
+      "id": 143,
+      "name": "李清晓",
+      "aliases": [
+        "清晓",
+        "晓儿",
+        "萧李氏",
+        "余山李清晓"
+      ],
+      "gender": "female",
+      "generation": "清",
+      "realm": "胎息三层",
+      "affiliation": "黎泾李家→黎夏萧家(嫁入)",
+      "status": "alive",
+      "bio": "陈冬河与李景恬之女,李渊蛟、李渊平之妹,温婉机敏,后嫁萧久庆之子萧宪",
+      "avatar_url": null
+    },
+    {
+      "id": 144,
+      "name": "李渊平",
+      "aliases": [
+        "平儿",
+        "平弟",
+        "渊平"
+      ],
+      "gender": "male",
+      "generation": "渊",
+      "realm": "胎息三层",
+      "affiliation": "黎泾李家(持家)",
+      "status": "alive",
+      "bio": "李玄宣与窦氏之子,李渊修同母弟、李渊蛟异母兄弟,根骨有缺体弱寿短,主理镇务与族正院,育独子李曦明,促成妹李清晓与萧宪婚事,后与李渊蛟共同隐瞒李通崖已故之事",
+      "avatar_url": null
+    },
+    {
+      "id": 145,
+      "name": "步梓真人",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "青池宗",
+      "status": "alive",
+      "bio": "青池宗紫府真人,代表宗门出席萧初庭法会",
+      "avatar_url": null
+    },
+    {
+      "id": 146,
+      "name": "毕华轩",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气五层",
+      "affiliation": "散修(古黎道行商)",
+      "status": "alive",
+      "bio": "散修行商,拾获天一淳元遭同伴追杀,向李渊平求助,后经徐公明疗伤安神",
+      "avatar_url": null
+    },
+    {
+      "id": 147,
+      "name": "毕辉爱",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "乌家(郡南)",
+      "status": "alive",
+      "bio": "郡南乌家人士,筑基修士,赴郁家问询旧事(该段文本讹误较多,细节存疑)",
+      "avatar_url": null
+    },
+    {
+      "id": 148,
+      "name": "法慧",
+      "aliases": [
+        "忿怒摩诃",
+        "怒目四魔帝剎相",
+        "九世摩诃",
+        "和尚"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "法师(真身为九世摩诃转世)",
+      "affiliation": "短陳寺(摩诃转世躯壳)",
+      "status": "dead",
+      "bio": "短陳寺摩诃第九世转世,奉命追杀李玄岭以求突破证道,弑李玄岭夺命得法,终遭上元真人一剑斩杀身陨",
+      "avatar_url": null
+    },
+    {
+      "id": 149,
+      "name": "清元渌水真君",
+      "aliases": [
+        "渌水真君",
+        "渌水",
+        "渌水午元符语真君"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "金丹",
+      "affiliation": "仙府",
+      "status": "alive",
+      "bio": "金丹修士,赐下法宝金桥锁助围杀忿怒摩诃,与上元真人素有恩怨",
+      "avatar_url": null
+    },
+    {
+      "id": 150,
+      "name": "献珧真人",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "紫府真人联盟(围杀忿怒摩诃)",
+      "status": "alive",
+      "bio": "参与围杀忿怒摩诃的紫府真人之一",
+      "avatar_url": null
+    },
+    {
+      "id": 151,
+      "name": "田有道",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气一层",
+      "affiliation": "田氏(黎泾李家治下外姓首领)",
+      "status": "alive",
+      "bio": "田芸胞弟,田仲青伯父,田荣之父,晚年服小清灵气突破练气,为李家第三位外姓练气修士",
+      "avatar_url": null
+    },
+    {
+      "id": 152,
+      "name": "田荣",
+      "aliases": [
+        "田公子"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "凡人",
+      "affiliation": "田氏(黎泾李家治下外姓)",
+      "status": "alive",
+      "bio": "田有道独子,纨绔好色无能,屡次纠缠唦摩里惹田仲青恼怒",
+      "avatar_url": null
+    },
+    {
+      "id": 153,
+      "name": "窦氏",
+      "aliases": [
+        "窦夫人",
+        "夫人",
+        "窦氏"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": "练气初期(小清灵气)",
+      "affiliation": "黎泾李家(李玄宣正妻)",
+      "status": "alive",
+      "bio": "李玄宣正妻,大方端庄,李渊修、李渊平生母,晚年凭'小清灵气'功法突破练气,渐显无情寡恩,把持家族权柄",
+      "avatar_url": null
+    },
+    {
+      "id": 154,
+      "name": "窦老爷",
+      "aliases": [
+        "窦老爷子"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "黎泾李家(窦氏支系)",
+      "status": "alive",
+      "bio": "窦夫人之兄,窦邑之父,好弄权谋图利族中",
+      "avatar_url": null
+    },
+    {
+      "id": 155,
+      "name": "窦邑",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "黎泾李家(窦氏,伺候李渊平)",
+      "status": "alive",
+      "bio": "窦老爷之子,窦夫人之侄,近十年伺候李渊平的心腹侍从,负责通传杂务",
+      "avatar_url": null
+    },
+    {
+      "id": 156,
+      "name": "糁君妖王",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": null,
+      "status": "unknown",
+      "bio": "边燕妖将自称效忠对象,真实性存疑,李通崖当面质疑其存在",
+      "avatar_url": null
+    },
+    {
+      "id": 157,
+      "name": "萧久庆",
+      "aliases": [
+        "萧久庆大人"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气二层",
+      "affiliation": "萧家(余山支脉)",
+      "status": "alive",
+      "bio": "萧家余山支脉子弟,萧宪之父,随侍萧雍灵,处世八面玲珑,替李萧联姻奔走操办",
+      "avatar_url": null
+    },
+    {
+      "id": 158,
+      "name": "萧宪",
+      "aliases": [
+        "萧郎",
+        "余山萧宪"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "胎息三层",
+      "affiliation": "萧家(余山一脉)",
+      "status": "alive",
+      "bio": "萧久庆嫡长子,倾慕李清晓求娶多年,经家族商议订亲后终娶其为妻",
+      "avatar_url": null
+    },
+    {
+      "id": 159,
+      "name": "萧归图",
+      "aliases": [
+        "归图公子"
+      ],
+      "gender": "male",
+      "generation": "归",
+      "realm": "练气三层",
+      "affiliation": "萧家(主脉·冠云峰)",
+      "status": "alive",
+      "bio": "萧家主脉大公子,萧归鸾兄长,守衔忧峰山门,代萧家传讯试探李家并操持妹妹婚事",
+      "avatar_url": null
+    },
+    {
+      "id": 160,
+      "name": "萧归鸾",
+      "aliases": [
+        "归鸾",
+        "鸾儿",
+        "夫人",
+        "萧夫人"
+      ],
+      "gender": "female",
+      "generation": "归",
+      "realm": "练气(清夕元气)",
+      "affiliation": "萧家→黎泾李家(李渊蛟正室)",
+      "status": "alive",
+      "bio": "萧家嫡脉庶出女,萧归图之妹,嫁李渊蛟为正室,育有一子李曦治,凭三品功法'清夕元气'成就练气,精明善治家",
+      "avatar_url": null
+    },
+    {
+      "id": 161,
+      "name": "萧衔忧",
+      "aliases": [
+        "萧锦州",
+        "衔忧老祖"
+      ],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "金丹种子(未及成丹),传闻曾修浩瀚海/泾龙王道基",
+      "affiliation": "萧家(先祖)",
+      "status": "dead",
+      "bio": "萧初庭仲父/萧家先祖,创《越河湍流步》,金丹苗子未及成丹便为迟尉所害身亡,衔忧峰因其得名",
+      "avatar_url": null
+    },
+    {
+      "id": 162,
+      "name": "蒋合乾",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基前期",
+      "affiliation": "蒋家(没落祖家,费望白安排的东岸细作)",
+      "status": "alive",
+      "bio": "蒋家没落贵族后裔,修成仙基玉庭将,助费望白屠灭郁家密林郡坊市,后惧郁萧贵、郁玉封报复而销声匿迹,亦为青池宗特意关照、与郁家有旧怨之人",
+      "avatar_url": null
+    },
+    {
+      "id": 163,
+      "name": "谭艳新",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "黎泾李家(随军弓手)",
+      "status": "alive",
+      "bio": "李家随军女子,善使弓箭,助破玉庭山阵法(该段文本讹误较多,疑似暗示为李项平之女,存疑待考)",
+      "avatar_url": null
+    },
+    {
+      "id": 164,
+      "name": "费天玄",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "费家(开山始祖)",
+      "status": "dead",
+      "bio": "费家开山始祖,趁蒋家衰败之机在寒云峰立家",
+      "avatar_url": null
+    },
+    {
+      "id": 165,
+      "name": "费望江",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气六层",
+      "affiliation": "费家(费望白仅存兄弟)",
+      "status": "alive",
+      "bio": "费望白仅存兄弟,寒云峰被围时迎接李通崖并致谢",
+      "avatar_url": null
+    },
+    {
+      "id": 166,
+      "name": "费桐啸",
+      "aliases": [],
+      "gender": "male",
+      "generation": "桐",
+      "realm": "胎息·白玉六轮",
+      "affiliation": "费家(费桐玉之弟)",
+      "status": "alive",
+      "bio": "费桐玉之弟,倾心同门师姐李清虹遭婉拒,修书求爱未果,后主张隐忍求存,决意散功重修自保",
+      "avatar_url": null
+    },
+    {
+      "id": 167,
+      "name": "费桐玉",
+      "aliases": [
+        "费家少主",
+        "费家家主"
+      ],
+      "gender": "male",
+      "generation": "桐",
+      "realm": "练气初期",
+      "affiliation": "费家(望月湖北岸)少主",
+      "status": "alive",
+      "bio": "费逸和长子,费桐啸兄长,费望白嫡孙,祖父身死后代掌费家为少主,获郁慕仙许诺元乌峰弟子名额,后与李通崖结善缘",
+      "avatar_url": null
+    },
+    {
+      "id": 168,
+      "name": "费桐财",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "费家",
+      "status": "alive",
+      "bio": "费家弟子,曾调侃费桐啸对李清虹的心思,着墨极少",
+      "avatar_url": null
+    },
+    {
+      "id": 169,
+      "name": "费逸和",
+      "aliases": [
+        "逸和",
+        "费家少主"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气巅峰",
+      "affiliation": "费家(费望白长子)",
+      "status": "alive",
+      "bio": "费望白长子,费桐玉与费桐啸之父,与李玄锋同守倚山城十年,相交甚厚",
+      "avatar_url": null
+    },
+    {
+      "id": 170,
+      "name": "贺道人",
+      "aliases": [
+        "贺前辈",
+        "贺道友",
+        "西岸散修"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基中期",
+      "affiliation": "望月湖西岸(治下散修)",
+      "status": "alive",
+      "bio": "西岸筑基中期散修,一心求道,曾与郁玉封结怨数次为难郁家,李通崖嘱李渊蛟留意",
+      "avatar_url": null
+    },
+    {
+      "id": 171,
+      "name": "边燕妖将",
+      "aliases": [
+        "边燕山狼妖",
+        "边燕山大王",
+        "地巫祝"
+      ],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "徐国边燕山(独立妖物)",
+      "status": "dead",
+      "bio": "徐国边燕山筑基狼妖,占山为王,自称效忠糁君妖王,被李通崖擒杀祭鉴",
+      "avatar_url": null
+    },
+    {
+      "id": 172,
+      "name": "邓予之",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "青池峰邓家(随青池宗)",
+      "status": "alive",
+      "bio": "邓求之之弟,随征召队伍暗中示警李通崖",
+      "avatar_url": null
+    },
+    {
+      "id": 173,
+      "name": "郁萧瓯",
+      "aliases": [
+        "萧瓯长老"
+      ],
+      "gender": "male",
+      "generation": "萧",
+      "realm": "练气巅峰",
+      "affiliation": "望月湖郁家",
+      "status": "dead",
+      "bio": "郁家萧字辈耆老,合清之夫,坐镇玉庭戍一阵,被蒋合乾破阵挖心而死,后又被追以通敌之名清算",
+      "avatar_url": null
+    },
+    {
+      "id": 174,
+      "name": "鄰谷猎",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气五层",
+      "affiliation": "葭川郡鄰谷氏(山越裔,青池宗附庸世家)",
+      "status": "alive",
+      "bio": "葭川郡鄰谷氏世家子弟,专营虫蛇之术,与李通崖旧识",
+      "avatar_url": null
+    },
+    {
+      "id": 175,
+      "name": "长奚真人",
+      "aliases": [
+        "长奚"
+      ],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "玄岳门/紫府真人联盟",
+      "status": "alive",
+      "bio": "玄岳门紫府真人,法会中向上元真人道贺,后参与围杀忿怒摩诃,与另一紫府有旧怨",
+      "avatar_url": null
+    },
+    {
+      "id": 176,
+      "name": "陈涛惊",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基中期",
+      "affiliation": "萧家(客卿,原望月湖坊市)",
+      "status": "alive",
+      "bio": "萧家客卿,修《江河一气诀》成浩瀚海,随萧初筹诛杀郁玉封",
+      "avatar_url": null
+    },
+    {
+      "id": 177,
+      "name": "李月湘",
+      "aliases": [
+        "湘儿",
+        "月湘姑娘"
+      ],
+      "gender": "female",
+      "generation": "月",
+      "realm": "凡人",
+      "affiliation": "黎泾/青杜李家(李渊蛟之女)",
+      "status": "alive",
+      "bio": "李渊蛟与萧归鸾之幼女,尚年幼未测灵窍,由母亲抚养长大。",
+      "avatar_url": null
+    },
+    {
+      "id": 178,
+      "name": "庆济方",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "吴国(长怀山)",
+      "status": "unknown",
+      "bio": "吴国紫府修士,受长怀山之命追查仙书《答桑下乞儿问》线索,反遭金光偷袭,结局不明。",
+      "avatar_url": null
+    },
+    {
+      "id": 179,
+      "name": "迟步梓",
+      "aliases": [
+        "步梓",
+        "步梓真人",
+        "迟真人"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府中期",
+      "affiliation": "青池宗(真人)",
+      "status": "alive",
+      "bio": "青池宗紫府真人,袁湍所属一脉之首,常年游历东海,与元素真人同门;窥探黎泾李家法鉴机缘反遭陆江仙反噬,险遭夺舍,后被布局套话返宗;与迟灸云、迟尉同宗。",
+      "avatar_url": null
+    },
+    {
+      "id": 180,
+      "name": "袁立成",
+      "aliases": [
+        "袁家老祖"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基巅峰",
+      "affiliation": "蕈林原袁家(老祖)",
+      "status": "alive",
+      "bio": "蕈林原袁家老祖,筑基巅峰,曾提点迟步梓,贪心促使袁护远向李家索要好处,亲率族修剿灭魔修。",
+      "avatar_url": null
+    },
+    {
+      "id": 181,
+      "name": "司伯休",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "青池宗",
+      "status": "alive",
+      "bio": "青池宗紫府真人,迟尉同辈近臣,为元素真人所不喜。",
+      "avatar_url": null
+    },
+    {
+      "id": 182,
+      "name": "宁和靖",
+      "aliases": [
+        "和靖"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "青池宗远刑峰(峰主)",
+      "status": "alive",
+      "bio": "青池宗远刑峰峰主,迟灸云母族至亲,曾任命李玄锋镇守倚山城,与邓求之有旧怨。",
+      "avatar_url": null
+    },
+    {
+      "id": 183,
+      "name": "张秋水",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "金羽宗",
+      "status": "alive",
+      "bio": "金羽宗修士,新成命神通\"浥铅华\",可操控魔修。",
+      "avatar_url": null
+    },
+    {
+      "id": 184,
+      "name": "费清伊",
+      "aliases": [
+        "清伊"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "费家→青池宗元乌峰(弟子)",
+      "status": "alive",
+      "bio": "费家女修,两年前拜入青池宗元乌峰,受郁慕仙看重。",
+      "avatar_url": null
+    },
+    {
+      "id": 185,
+      "name": "猪二",
+      "aliases": [
+        "大黎山妖洞猪二"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气巅峰",
+      "affiliation": "大黎山妖洞(嗒朱洞)",
+      "status": "alive",
+      "bio": "大黎山妖洞猪妖信使,向李家索血食赔偿被逐退,后受白榕狐所托向吠罗牙求助。",
+      "avatar_url": null
+    },
+    {
+      "id": 186,
+      "name": "崔幕",
+      "aliases": [
+        "东离真人"
+      ],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "紫府(真君)",
+      "affiliation": "东离宗",
+      "status": "dead",
+      "bio": "古魏国东离真人,金殿煌元诀原作者,东火洞天创建者;疑为明阳道统真君,一场赌局落败致道统覆灭。",
+      "avatar_url": null
+    },
+    {
+      "id": 187,
+      "name": "李承目",
+      "aliases": [],
+      "gender": "male",
+      "generation": "承",
+      "realm": "胎息(有望练气)",
+      "affiliation": "黎泾李家(仲脉小宗)",
+      "status": "alive",
+      "bio": "仲脉小宗子弟,天赋不错,于青杜峰随支脉修炼。",
+      "avatar_url": null
+    },
+    {
+      "id": 188,
+      "name": "李承氏",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": "承",
+      "realm": "胎息(有望练气)",
+      "affiliation": "黎泾李家(仲脉小宗)",
+      "status": "alive",
+      "bio": "仲脉小宗子弟,与李承目同修,天赋不错。",
+      "avatar_url": null
+    },
+    {
+      "id": 189,
+      "name": "李承",
+      "aliases": [],
+      "gender": "male",
+      "generation": "承",
+      "realm": null,
+      "affiliation": "黎泾李家(仲脉渊云支)",
+      "status": "alive",
+      "bio": "仲脉渊云支幼子(具体生父未明,或为曦峸/曦峻/曦明三兄弟之一),承明辈。",
+      "avatar_url": null
+    },
+    {
+      "id": 190,
+      "name": "李承辽",
+      "aliases": [
+        "辽儿",
+        "大公子"
+      ],
+      "gender": "male",
+      "generation": "承明",
+      "realm": null,
+      "affiliation": "黎泾李家(仲脉嫡长)",
+      "status": "alive",
+      "bio": "李曦峸长子,黎泾李家承明辈仲脉嫡长子,十六岁,统领同辈修行。",
+      "avatar_url": null
+    },
+    {
+      "id": 191,
+      "name": "李明宫",
+      "aliases": [],
+      "gender": "female",
+      "generation": "承明",
+      "realm": null,
+      "affiliation": "黎泾李家(伯脉渊完支)",
+      "status": "alive",
+      "bio": "黎泾李家承明辈,伯脉渊完支长姊,天赋出众。",
+      "avatar_url": null
+    },
+    {
+      "id": 192,
+      "name": "杨宵儿",
+      "aliases": [
+        "宵儿"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "青池宗帝云峰→随夫青穗峰",
+      "status": "alive",
+      "bio": "帝云峰主杨天衙之女,与李曦治结为道侣,代夫打探李恩成底细。",
+      "avatar_url": null
+    },
+    {
+      "id": 193,
+      "name": "楚逸",
+      "aliases": [
+        "离火枪"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "东离宗传承/散修",
+      "status": "alive",
+      "bio": "豫馥散修出身,得东离宗传承筑基,号离火枪,连杀两位筑基老祖,以面具人身份夺取东离道藏,疑为金丹真君转世。",
+      "avatar_url": null
+    },
+    {
+      "id": 194,
+      "name": "洞骅真人(宁国)",
+      "aliases": [
+        "滴血成桂"
+      ],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "宁国",
+      "status": "unknown",
+      "bio": "宁国真人,号\"滴血成桂\",与月华元府李江群的\"洞骅真人\"称号巧合,经证实与李家无血缘。",
+      "avatar_url": null
+    },
+    {
+      "id": 195,
+      "name": "狄绋老祖",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "魔修",
+      "status": "alive",
+      "bio": "魔修显赫老祖,派遣裘籍、张怀德等一众魔修出行袭扰李家。",
+      "avatar_url": null
+    },
+    {
+      "id": 196,
+      "name": "王寻",
+      "aliases": [
+        "寻",
+        "小王剑仙"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "金丹(仙裔)",
+      "affiliation": "赵国颍华王家(海内三金之一)",
+      "status": "alive",
+      "bio": "赵国颍华王家子弟,修服气养性道,海内三金家族仙裔,曾拜访黎泾李家借青尺剑集剑意,并赠遂元丹与灵根;高祖为海内仅存三金真君之首逍金真君,曾向修越宗上元真人求剑相谈甚欢。",
+      "avatar_url": null
+    },
+    {
+      "id": 197,
+      "name": "田陵",
+      "aliases": [
+        "灵窍子"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "田氏(黎泾李家治下)",
+      "status": "alive",
+      "bio": "田有道嫡孙,田荣之子,灵窍初显,继承田荣抚恤灵石。",
+      "avatar_url": null
+    },
+    {
+      "id": 198,
+      "name": "白寅子",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气三层",
+      "affiliation": "金羽宗谷烟庙(庙主)",
+      "status": "alive",
+      "bio": "金羽宗谷烟庙庙主,与陈东河(陈冬河)交好,助其立足大漠。",
+      "avatar_url": null
+    },
+    {
+      "id": 199,
+      "name": "白猴",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "练气中期",
+      "affiliation": "黎泾李家",
+      "status": "alive",
+      "bio": "黎泾李家练气中期修士,列于族中练气名录,生平不详。",
+      "avatar_url": null
+    },
+    {
+      "id": 200,
+      "name": "祝先",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基初期",
+      "affiliation": "巫山山越(吠罗牙同门)",
+      "status": "alive",
+      "bio": "吠罗牙请来的同门师弟,持藤鞭助围杀伏代木一党。",
+      "avatar_url": null
+    },
+    {
+      "id": 201,
+      "name": "秋水真人",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "金羽宗(原属)",
+      "status": "alive",
+      "bio": "紫府真人,原金羽宗出身,与元素真人相熟,谈论落霞山与楚逸下场。",
+      "avatar_url": null
+    },
+    {
+      "id": 202,
+      "name": "程稿",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "万昱剑门",
+      "status": "alive",
+      "bio": "万昱剑门潇洒剑修,东海随行屡次相助李渊蛟,指点妖洞。",
+      "avatar_url": null
+    },
+    {
+      "id": 203,
+      "name": "空衡",
+      "aliases": [
+        "空衡法师",
+        "空衡和尚",
+        "比丘",
+        "光头和尚"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "燕国辽河寺(释修)",
+      "status": "alive",
+      "bio": "燕国辽河寺法师,望月湖畔布施多年,称有劫数应李家,借李清虹凝聚仙基之机修成法师果位,后长期依附黎泾李家,随侍李玄宣采气、护送族人、看护矿脉。",
+      "avatar_url": null
+    },
+    {
+      "id": 204,
+      "name": "章牧童",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气中期",
+      "affiliation": "魔修(狄绋老祖麾下)",
+      "status": "dead",
+      "bio": "魔修,御魔一役中被李家与唦摩里合力肢解烧杀。",
+      "avatar_url": null
+    },
+    {
+      "id": 205,
+      "name": "芮琼措",
+      "aliases": [
+        "芮老头"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "胎息四层",
+      "affiliation": "芮氏→黎泾李家(内附)",
+      "status": "alive",
+      "bio": "芮氏家主,原为萧家矿奴附庸,遭魔修袭扰后降服归附黎泾李家求庇护,山峰被搬迁后举家内附。",
+      "avatar_url": null
+    },
+    {
+      "id": 206,
+      "name": "萧暮云",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "胎息三层",
+      "affiliation": "余山萧氏(少主)",
+      "status": "alive",
+      "bio": "余山萧氏少主,萧久庆与李清晓之子,萧宪之孙,年十二三已达胎息三层,由母李清晓抚养主持余山。",
+      "avatar_url": null
+    },
+    {
+      "id": 207,
+      "name": "蛰勒待",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基初期",
+      "affiliation": "巫山山越(伏代木侍从/师弟)",
+      "status": "dead",
+      "bio": "伏代木的侍从兼师弟,经伏代木举荐拜入巫山,为掩护师兄断后力竭而死。",
+      "avatar_url": null
+    },
+    {
+      "id": 208,
+      "name": "袁成盾",
+      "aliases": [
+        "袁家老祖"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基中期",
+      "affiliation": "蕈林原袁家",
+      "status": "alive",
+      "bio": "袁护远族弟,持仙基伏青山,善降妖棍法,三十七岁筑基,随李渊蛟擒猪妖、诛伏代木。",
+      "avatar_url": null
+    },
+    {
+      "id": 209,
+      "name": "裘籍",
+      "aliases": [
+        "裘姓魔修"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气巅峰",
+      "affiliation": "魔修(狄绋老祖麾下)",
+      "status": "alive",
+      "bio": "魔修,持血摩法书,昔年曾杀李渊云,御魔一役中断指重伤仍遁走。",
+      "avatar_url": null
+    },
+    {
+      "id": 210,
+      "name": "角中梓",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "巫山山越(端木奎门下)",
+      "status": "alive",
+      "bio": "端木奎门下实力最强弟子,师尊身死后占据巫山自立。",
+      "avatar_url": null
+    },
+    {
+      "id": 211,
+      "name": "许舒目",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "黎泾李家(许氏)",
+      "status": "alive",
+      "bio": "魔灾出力有功,受封骅中山峰幕。",
+      "avatar_url": null
+    },
+    {
+      "id": 212,
+      "name": "徐公鱼",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "黎泾李家(徐氏)",
+      "status": "alive",
+      "bio": "魔灾出力有功,受封乌涂山峰幕。",
+      "avatar_url": null
+    },
+    {
+      "id": 213,
+      "name": "路垦",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基中期",
+      "affiliation": "大黎山(妖将)",
+      "status": "alive",
+      "bio": "大黎山鹿妖,新任妖将,与李渊蛟结交并代寻血暾果。",
+      "avatar_url": null
+    },
+    {
+      "id": 214,
+      "name": "逍金真君",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "赵国颍华王家",
+      "status": "alive",
+      "bio": "王寻高祖,海内仅存三金真君之首,家学渊源深厚。",
+      "avatar_url": null
+    },
+    {
+      "id": 215,
+      "name": "郁成宜",
+      "aliases": [
+        "七公子"
+      ],
+      "gender": "male",
+      "generation": "成",
+      "realm": null,
+      "affiliation": "望月湖郁家",
+      "status": "alive",
+      "bio": "郁慕高第七子,性格软弱,父死后被长老郁萧棉架空,又遭青池宗元乌峰余肃法器胁迫被迫献宝,家族魔灾后颓败殆尽,系郁玉封四代后裔。",
+      "avatar_url": null
+    },
+    {
+      "id": 216,
+      "name": "鲁客卿",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "望月湖郁家(客卿)",
+      "status": "alive",
+      "bio": "郁家客卿,与族老郁萧棉合谋弑主郁慕高,伪称死于魔灾。",
+      "avatar_url": null
+    },
+    {
+      "id": 217,
+      "name": "郁萧棉",
+      "aliases": [],
+      "gender": "male",
+      "generation": "萧",
+      "realm": null,
+      "affiliation": "望月湖郁家(长老)",
+      "status": "alive",
+      "bio": "郁萧贵之弟,郁家长老,伙同鲁客卿弑侄郁慕高,后扶持郁成宜并复古族制。",
+      "avatar_url": null
+    },
+    {
+      "id": 218,
+      "name": "钱老翁",
+      "aliases": [
+        "钱氏"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "散修(受雇李家鉴宝)",
+      "status": "dead",
+      "bio": "九十八岁散修,受雇为李家鉴宝时触发储物袋巫道血术炸死。",
+      "avatar_url": null
+    },
+    {
+      "id": 219,
+      "name": "丁老翁",
+      "aliases": [
+        "丁氏"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "散修(受雇李家鉴宝)",
+      "status": "alive",
+      "bio": "散修鉴宝人,受雇为李家鉴宝,幸免于同伴钱老翁所遇之巫道血术。",
+      "avatar_url": null
+    },
+    {
+      "id": 220,
+      "name": "长宵子",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "长宵门",
+      "status": "unknown",
+      "bio": "韩适桢提及的由海外入海内立宗之人,长宵门相关,门派名或与名册\"长霄门\"同源异写。",
+      "avatar_url": null
+    },
+    {
+      "id": 221,
+      "name": "隋观真人",
+      "aliases": [
+        "隋观"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府后期",
+      "affiliation": "青池宗(自渌语天现身)",
+      "status": "alive",
+      "bio": "自神秘洞天渌语天现身,自称姓迟,奉命镇压青池宗内乱。",
+      "avatar_url": null
+    },
+    {
+      "id": 222,
+      "name": "韩适桢",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "东硫岛韩家(少家主)",
+      "status": "alive",
+      "bio": "东硫岛韩家少家主,与李渊蛟商定宛陵花销售分成。",
+      "avatar_url": null
+    },
+    {
+      "id": 223,
+      "name": "颍原真人",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "赵国颍华王家",
+      "status": "alive",
+      "bio": "王寻之父,赵国颍华王家真人,曾为其卜算求剑之路。",
+      "avatar_url": null
+    },
+    {
+      "id": 224,
+      "name": "李乌梢",
+      "aliases": [
+        "乌梢",
+        "钩蛇",
+        "乌梢前辈"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "黎泾/青杜李家(妖将)",
+      "status": "alive",
+      "bio": "东海出身钩蛇修士,被李渊蛟捕获驯服并拜服,获赐名李乌梢,受李家驱使掌理望月湖矿脉、看护要地并助战。",
+      "avatar_url": null
+    },
+    {
+      "id": 225,
+      "name": "余肃",
+      "aliases": [
+        "锦乌鼷"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基巅峰",
+      "affiliation": "青池宗(元乌峰)",
+      "status": "alive",
+      "bio": "青池宗元乌峰大师兄,号锦乌鼷,贪婪苛待附庸家族,受宗门差遣来黎泾李家收供奉,以法器胁迫郁家献宝。",
+      "avatar_url": null
+    },
+    {
+      "id": 226,
+      "name": "元修",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "青池宗",
+      "status": "alive",
+      "bio": "元素真人同门,近赴南疆历练。",
+      "avatar_url": null
+    },
+    {
+      "id": 227,
+      "name": "司徒末",
+      "aliases": [
+        "十六弟"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "镗金门(司徒家嫡系)",
+      "status": "alive",
+      "bio": "镗金门嫡系公子,骄狂无礼,与玄岳孔氏结怨,伏击李曦峻等人被击退后逃走。",
+      "avatar_url": null
+    },
+    {
+      "id": 228,
+      "name": "司徒镗",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "镗金门(先辈)",
+      "status": "dead",
+      "bio": "镗金门先辈,孔玉赞其\"一代人杰\"。",
+      "avatar_url": null
+    },
+    {
+      "id": 229,
+      "name": "司徒霍",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "镗金门",
+      "status": "alive",
+      "bio": "镗金门弟子,亦具镂金石根骨但不通丹道难圆满。",
+      "avatar_url": null
+    },
+    {
+      "id": 230,
+      "name": "宁和棉",
+      "aliases": [
+        "和棉"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "宁家→黎泾李家(李玄锋之妻)",
+      "status": "alive",
+      "bio": "宁家女子,经元素真人撮合嫁与李玄锋为妻,五六年后私下透露青池宗与渌语天秘辛。",
+      "avatar_url": null
+    },
+    {
+      "id": 231,
+      "name": "孔婷云",
+      "aliases": [
+        "婷云"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "玄岳门(云岳峰)",
+      "status": "alive",
+      "bio": "玄岳门云岳峰筑基修士,镇守入海口,与李家交好,应约为李家乌涂山开辟火脉。",
+      "avatar_url": null
+    },
+    {
+      "id": 232,
+      "name": "孔孤隼",
+      "aliases": [
+        "孤隼道友"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气巅峰",
+      "affiliation": "玄岳门",
+      "status": "alive",
+      "bio": "孔婷云师兄,奉命留驻李家疏理乌涂山地脉、看护火脉。",
+      "avatar_url": null
+    },
+    {
+      "id": 233,
+      "name": "孔暖梦",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "玄岳孔氏(嫁镗金门)",
+      "status": "dead",
+      "bio": "孔氏女,嫁司徒翌,后被司徒末一脉所杀。",
+      "avatar_url": null
+    },
+    {
+      "id": 234,
+      "name": "孔玉",
+      "aliases": [
+        "玄岳孔玉",
+        "小修孔玉"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "胎息巅峰(未破筑基)",
+      "affiliation": "玄岳门",
+      "status": "alive",
+      "bio": "玄岳门修士(长奚真人后人),与李玄宣结伴除魔,亦为玄岳门搬山术士,曾为李家迁移芮家峰、预言青杜山旁将有小峰隆起(后应验)。",
+      "avatar_url": null
+    },
+    {
+      "id": 235,
+      "name": "孟泰志",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气九层",
+      "affiliation": "散修→黎泾李家(客卿)",
+      "status": "alive",
+      "bio": "东海炼器散修,原元庭岛客卿,受萧元思引荐携女孟灼云投奔李家,献礁铸门传承换取庇护。",
+      "avatar_url": null
+    },
+    {
+      "id": 236,
+      "name": "孟灼云",
+      "aliases": [
+        "云儿",
+        "孟氏"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": "练气(近胎息)",
+      "affiliation": "散修(随父投黎泾李家)",
+      "status": "alive",
+      "bio": "孟泰志之女,具唤心火成丹的丹道天赋,夫婿被散修屠龙蹇所杀成寡,投李家习丹道,与李曦明生情。",
+      "avatar_url": null
+    },
+    {
+      "id": 237,
+      "name": "孟老",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": null,
+      "status": "dead",
+      "bio": "活至一百九十余岁,闭关突破三月后身亡,与孟灼云关系未明确(疑为父辈/祖辈)。",
+      "avatar_url": null
+    },
+    {
+      "id": 238,
+      "name": "屠龙蹇",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气初期",
+      "affiliation": "散修",
+      "status": "alive",
+      "bio": "天生身具命数的散修,以练气初期修为杀死孟灼云的练气巅峰夫婿,遭其记恨;李渊蛟曾获悉其闰阳法来源。",
+      "avatar_url": null
+    },
+    {
+      "id": 239,
+      "name": "张怀德",
+      "aliases": [
+        "血色宝镜之人"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气六层",
+      "affiliation": "魔修(狄绋老祖麾下)",
+      "status": "alive",
+      "bio": "魔修头目,持血鉴法器,御魔一役中以秘法遁走独自逃脱。",
+      "avatar_url": null
+    },
+    {
+      "id": 240,
+      "name": "龚姓修士",
+      "aliases": [
+        "黑袍修士"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气巅峰",
+      "affiliation": "魔修(北方入侵者)",
+      "status": "alive",
+      "bio": "潜入冠云峰坊市的练气巅峰魔修,以术雷诈骗未遂。",
+      "avatar_url": null
+    },
+    {
+      "id": 241,
+      "name": "李恩成",
+      "aliases": [
+        "壁水丹"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基巅峰",
+      "affiliation": "青池宗府辰峰(峰主,丹师)",
+      "status": "alive",
+      "bio": "青池宗府辰峰峰主,丹道大师,号壁水丹,性情孤僻,早年因夺传承与迟尉结怨(致迟尉重伤,因祸得福保住性命)。",
+      "avatar_url": null
+    },
+    {
+      "id": 242,
+      "name": "李七郎",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气三层",
+      "affiliation": "黎泾李家客卿",
+      "status": "alive",
+      "bio": "李家客卿,相貌憨厚,随军参战受伤轻微。",
+      "avatar_url": null
+    },
+    {
+      "id": 243,
+      "name": "李汶",
+      "aliases": [
+        "庭卫李汶",
+        "汶哥儿"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气三层",
+      "affiliation": "黎泾李家(旁支,玉庭卫)",
+      "status": "alive",
+      "bio": "黎泾李家旁支/外姓心腹族兵,玉庭卫出身,持双金瓜锤,自称木田老祖庶弟一脉,常与李曦峻切磋。",
+      "avatar_url": null
+    },
+    {
+      "id": 244,
+      "name": "安思危",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气",
+      "affiliation": "安家/黎泾李家",
+      "status": "alive",
+      "bio": "安鹧言与李妃若之子,安思明同胞兄弟,十三四岁修至胎息四层,后突破至练气,持剑侍奉玉庭峰。",
+      "avatar_url": null
+    },
+    {
+      "id": 245,
+      "name": "安思明",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气",
+      "affiliation": "安家/黎泾李家",
+      "status": "alive",
+      "bio": "安鹧言与李妃若之子,安思危同胞兄弟,后突破至练气,持枪佩剑侍从于李曦峻身侧。",
+      "avatar_url": null
+    },
+    {
+      "id": 246,
+      "name": "毕成鄄",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "衡祝道门(衡东郡)",
+      "status": "alive",
+      "bio": "衡祝道门弟子,为李玄宣安排宁清涤魔术祛心魔",
+      "avatar_url": null
+    },
+    {
+      "id": 247,
+      "name": "汲登玉",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "汲家(已灭)",
+      "status": "dead",
+      "bio": "汲登齐之妹,汲家灭门后绝望自尽,遗腹诞下司徒末",
+      "avatar_url": null
+    },
+    {
+      "id": 248,
+      "name": "李承淮",
+      "aliases": [
+        "淮儿"
+      ],
+      "gender": "male",
+      "generation": "承",
+      "realm": "凡人",
+      "affiliation": "黎泾李家(李曦治与杨宵儿之子)",
+      "status": "alive",
+      "bio": "李曦治与杨宵儿之子,尚在襁褓时由曾祖李玄宣抱回照看,十四岁时勤读史书尚未修行",
+      "avatar_url": null
+    },
+    {
+      "id": 249,
+      "name": "于富宇",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气巅峰",
+      "affiliation": "青池宗灵陡峰(于家断亲支系)",
+      "status": "alive",
+      "bio": "青池宗灵陡峰峰主,让出坐镇庶务玉牌予李曦治",
+      "avatar_url": null
+    },
+    {
+      "id": 250,
+      "name": "乌道人",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "练气四层",
+      "affiliation": "妖修(受袁护远血食供奉)",
+      "status": "alive",
+      "bio": "栖身泉屋山附近的鸟形妖物,自号乌道人,受袁护远血食供奉",
+      "avatar_url": null
+    },
+    {
+      "id": 251,
+      "name": "后绋真人",
+      "aliases": [
+        "后绋道人"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "大鸺葵观",
+      "status": "alive",
+      "bio": "大鸺葵观道人,新近突破紫府成就神通,好名,林沉胜之叔",
+      "avatar_url": null
+    },
+    {
+      "id": 252,
+      "name": "郭红瑶",
+      "aliases": [
+        "仙子"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "赤礁岛",
+      "status": "alive",
+      "bio": "赤礁岛筑基女修,南下欲带走许霄未果,与李清虹交手负伤逃离,夺得紫府灵器六丁并火令",
+      "avatar_url": null
+    },
+    {
+      "id": 253,
+      "name": "许霄",
+      "aliases": [
+        "许五郎",
+        "五郎"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "胎息三层",
+      "affiliation": "黎泾镇许家",
+      "status": "dead",
+      "bio": "许家子弟隐匿修为骤起,借紫府灵器'六丁并火令'暴涨,炸杀柳眙胁迫陈百户,后被李乌梢尾钩斩首诛杀于李清虹之手,揭示与青松观明阳金性有关,曾被李承辽赏识,并牵连陈百户/陈睦峰获罪",
+      "avatar_url": null
+    },
+    {
+      "id": 254,
+      "name": "柳凌真",
+      "aliases": [
+        "真儿"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": "胎息三层",
+      "affiliation": "黎泾镇柳家",
+      "status": "dead",
+      "bio": "柳家落魄之女,与许霄相恋却被许配李承辽,许霄被斩杀时坠亡",
+      "avatar_url": null
+    },
+    {
+      "id": 255,
+      "name": "陈百户",
+      "aliases": [
+        "陈姓庭卫"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气二层",
+      "affiliation": "黎泾镇陈家(李家治下,百户)",
+      "status": "dead",
+      "bio": "李家玉庭卫百户,遭许霄摄心胁迫放其暂离,后遭同族陈睦峰灭口",
+      "avatar_url": null
+    },
+    {
+      "id": 256,
+      "name": "柳眙",
+      "aliases": [
+        "柳老翁",
+        "柳家主"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "黎泾镇柳家(家主)",
+      "status": "dead",
+      "bio": "柳家家主,阻拦许霄未果,被其埋伏黑咒炸身而死,死状诡异凄惨",
+      "avatar_url": null
+    },
+    {
+      "id": 257,
+      "name": "宗彦",
+      "aliases": [
+        "岛主"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气",
+      "affiliation": "宗泉岛(岛主,水府治下,后归附李渊蛟兄妹)",
+      "status": "alive",
+      "bio": "宗泉岛岛主,地养子出身,竭力周旋庇护岛民,归附李渊蛟兄妹后掌岛务账目,义子欲拜空衡为师",
+      "avatar_url": null
+    },
+    {
+      "id": 258,
+      "name": "虺药",
+      "aliases": [
+        "藻中虺"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气九层",
+      "affiliation": "朱南蛟宫(巡海)/朱南水府",
+      "status": "alive",
+      "bio": "蛟宫巡海虺族,被李渊蛟以宛陵花及威势拿捏立誓让步,后收李家贿赂通风报信,协助擒获云蛸子",
+      "avatar_url": null
+    },
+    {
+      "id": 259,
+      "name": "鼎远龙子",
+      "aliases": [
+        "龙子"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "水府",
+      "status": "alive",
+      "bio": "水府治下龙子,统辖宗泉岛等岛屿征收人丁供奉",
+      "avatar_url": null
+    },
+    {
+      "id": 260,
+      "name": "摩诃",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "忿怒道统(北方)",
+      "status": "dead",
+      "bio": "北方忿怒道统之首,曾害死李玄岭与李通崖,后已陨落",
+      "avatar_url": null
+    },
+    {
+      "id": 261,
+      "name": "郭神通",
+      "aliases": [
+        "郭厄"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "赤礁岛",
+      "status": "alive",
+      "bio": "赤礁岛岛主,两百年前天命之子出身,后修成紫府,曾杀元乌峰前大师兄余修贤,道侣天宛仙子",
+      "avatar_url": null
+    },
+    {
+      "id": 262,
+      "name": "天宛仙子",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "金羽宗",
+      "status": "alive",
+      "bio": "金羽宗仙子,郭神通道侣",
+      "avatar_url": null
+    },
+    {
+      "id": 263,
+      "name": "长霄",
+      "aliases": [
+        "长霄真人"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "长霄门",
+      "status": "alive",
+      "bio": "长霄门创始人,两百年前天命之子出身,真名不可考",
+      "avatar_url": null
+    },
+    {
+      "id": 264,
+      "name": "陈告",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "兜玄山",
+      "status": "unknown",
+      "bio": "兜玄山人,《上衙笺注》作者,记载符箓延伸之法",
+      "avatar_url": null
+    },
+    {
+      "id": 265,
+      "name": "蒯离",
+      "aliases": [
+        "少阳魔君"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "少阳果位",
+      "affiliation": "上古魔道",
+      "status": "dead",
+      "bio": "上古少阳魔君,曾杀青松观兑金真君,被月华元府盈昃分尸封印,转世为三(北曜娘娘、西晏、晞阳龙君)",
+      "avatar_url": null
+    },
+    {
+      "id": 266,
+      "name": "北曜娘娘",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": "金丹",
+      "affiliation": "北溟",
+      "status": "alive",
+      "bio": "少阳魔君蒯离转世之一,北溟金丹真君,偶尔现身",
+      "avatar_url": null
+    },
+    {
+      "id": 267,
+      "name": "西晏",
+      "aliases": [
+        "魔头西晏"
+      ],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "大西塬",
+      "status": "unknown",
+      "bio": "传说中少阳魔君转世之一,魔头,真实存在与否未证实",
+      "avatar_url": null
+    },
+    {
+      "id": 268,
+      "name": "晞阳龙君",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "金丹",
+      "affiliation": "东海龙属",
+      "status": "alive",
+      "bio": "少阳魔君蒯离转世之一,被东海龙属收留,今为金丹龙君",
+      "avatar_url": null
+    },
+    {
+      "id": 269,
+      "name": "真螭",
+      "aliases": [
+        "妖帝"
+      ],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "道胎巅峰",
+      "affiliation": "东海妖宫(自建)",
+      "status": "dead",
+      "bio": "上古妖螭,自称妖帝,欲证龙位吞羽蛇后陨落,被九子瓜分,为东海蛟宫诸龙子始祖",
+      "avatar_url": null
+    },
+    {
+      "id": 270,
+      "name": "宁鼎伯",
+      "aliases": [
+        "老大"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "青池宗(宁家,随李玄锋)",
+      "status": "alive",
+      "bio": "宁家旁系,随李玄锋十余年,护送青池弟子赴分蒯岛",
+      "avatar_url": null
+    },
+    {
+      "id": 271,
+      "name": "安氏",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "安家(安鹧言之女)→黎泾李家",
+      "status": "alive",
+      "bio": "安鹧言之女,李曦明新婚妻子,举止恭谨",
+      "avatar_url": null
+    },
+    {
+      "id": 272,
+      "name": "程今铸",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气后期",
+      "affiliation": "万昱剑门(炼器师)",
+      "status": "alive",
+      "bio": "万昱剑门炼器师,为李家重铸定廪锋为筑基剑",
+      "avatar_url": null
+    },
+    {
+      "id": 273,
+      "name": "李恩熙",
+      "aliases": [],
+      "gender": "male",
+      "generation": "恩",
+      "realm": "筑基",
+      "affiliation": "宣元坊·府辰峰(魏李遗脉)",
+      "status": "alive",
+      "bio": "魏李遗脉筑基修士,李恩成之弟,热情结交李曦治,为兄求灵物向李承辽苦哀",
+      "avatar_url": null
+    },
+    {
+      "id": 274,
+      "name": "司徒礼",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "镗金门(长子一脉)",
+      "status": "dead",
+      "bio": "镗金门开山老祖长子,主事一脉,被弟弟司徒驽夺位杀害",
+      "avatar_url": null
+    },
+    {
+      "id": 275,
+      "name": "司徒驽",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "镗金门(次子一脉)",
+      "status": "dead",
+      "bio": "镗金门次子,杀兄夺位成就紫府,身亡后一脉几遭屠杀殆尽",
+      "avatar_url": null
+    },
+    {
+      "id": 276,
+      "name": "牟陀",
+      "aliases": [
+        "赤脸和尚",
+        "大和尚"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "法师(约当筑基)",
+      "affiliation": "秦玲寺(忿怒道统)→金兜岛",
+      "status": "dead",
+      "bio": "赵释法脉法师,司徒末帮手,被孔婷云金山镇伤肉身逃遁,转生金兜岛为司徒末所控,伏杀师兄垩无未遂,后被李玄锋一箭射杀",
+      "avatar_url": null
+    },
+    {
+      "id": 277,
+      "name": "垩无",
+      "aliases": [
+        "老僧"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "法师(约当筑基)",
+      "affiliation": "秦玲寺(忿怒道统)",
+      "status": "alive",
+      "bio": "秦玲寺忿怒法师,伏杀师兄牟陀未遂,反遭李玄锋重创后逃亡",
+      "avatar_url": null
+    },
+    {
+      "id": 278,
+      "name": "司徒耳",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "镗金门(金兜岛)",
+      "status": "dead",
+      "bio": "金兜岛修士,被垩无所杀夺容,首级遭悬挂诱敌",
+      "avatar_url": null
+    },
+    {
+      "id": 279,
+      "name": "富客卿",
+      "aliases": [
+        "富姓客卿"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "镗金门(金兜岛客卿)",
+      "status": "alive",
+      "bio": "金兜岛客卿之首,目睹李玄锋神威,代为传话恐吓司徒末",
+      "avatar_url": null
+    },
+    {
+      "id": 280,
+      "name": "宗客卿",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "镗金门(金兜岛客卿)",
+      "status": "alive",
+      "bio": "金兜岛客卿,冒失多言遭富客卿掌掴警示",
+      "avatar_url": null
+    },
+    {
+      "id": 281,
+      "name": "李渊钦",
+      "aliases": [
+        "钦儿"
+      ],
+      "gender": "male",
+      "generation": "渊",
+      "realm": "凡人",
+      "affiliation": "黎泾李家(南疆)",
+      "status": "alive",
+      "bio": "李玄锋与宁和棉之子,年幼随父居于南疆",
+      "avatar_url": null
+    },
+    {
+      "id": 282,
+      "name": "沈雁青",
+      "aliases": [
+        "雁青"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": "练气七层",
+      "affiliation": "紫烟门(修越沈家)",
+      "status": "alive",
+      "bio": "紫烟门雷修,修越沈家嫡系,紫霈真人弟子,与李清虹结识论雷法,引其拜访灵岩子并奉命镇守东海",
+      "avatar_url": null
+    },
+    {
+      "id": 283,
+      "name": "紫霈真人",
+      "aliases": [
+        "紫衣真人",
+        "师尊"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "紫烟门",
+      "status": "alive",
+      "bio": "紫烟门紫府真人,沈雁青之师,坐镇紫烟福地",
+      "avatar_url": null
+    },
+    {
+      "id": 284,
+      "name": "鲁姓客卿",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "望月湖郁家(外姓客卿)",
+      "status": "alive",
+      "bio": "郁家外姓客卿,权势颇大,曾怂恿郁慕高陷于阵外",
+      "avatar_url": null
+    },
+    {
+      "id": 285,
+      "name": "孟氏女郎",
+      "aliases": [
+        "孟氏"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "孟家(未知)",
+      "status": "unknown",
+      "bio": "李曦明昔日相识的孟家女子,如今已断绝联系",
+      "avatar_url": null
+    },
+    {
+      "id": 286,
+      "name": "王寻道",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": null,
+      "status": "alive",
+      "bio": "揭示血气丹药有碍雷修根基之真相的修士",
+      "avatar_url": null
+    },
+    {
+      "id": 287,
+      "name": "郭红迩",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "赤礁岛",
+      "status": "alive",
+      "bio": "赤礁岛修士,识破太阴月华身份后主动退让",
+      "avatar_url": null
+    },
+    {
+      "id": 288,
+      "name": "旬邑子",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "长霄门",
+      "status": "alive",
+      "bio": "长霄门修士,持紫檀拂尘,力图独占太阴月华未果",
+      "avatar_url": null
+    },
+    {
+      "id": 289,
+      "name": "钟谦",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "练气巅峰",
+      "affiliation": null,
+      "status": "unknown",
+      "bio": "东海散修,盗水猿宝药遭围困获李玄锋搭救,黑衣少年与李渊蛟有旧,青松洞天中主动放弃太阴月华离场,出洞天后失踪生死不明",
+      "avatar_url": null
+    },
+    {
+      "id": 290,
+      "name": "唐摄都",
+      "aliases": [
+        "长天戟"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基后期",
+      "affiliation": "元乌峰(青池宗)",
+      "status": "alive",
+      "bio": "元乌真人大弟子,持长戟【长天戟】,重创李渊蛟与屠龙蹇,为救师弟郁慕仙怒杀李渊蛟复仇,后遭青衣剑修沈溪挑战,结局未明",
+      "avatar_url": null
+    },
+    {
+      "id": 291,
+      "name": "余修贤",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "元乌峰(青池宗)",
+      "status": "dead",
+      "bio": "元乌峰前大师兄,当年死于郭神通(郭厄)之手,遗骸现于蜃镜洞天",
+      "avatar_url": null
+    },
+    {
+      "id": 292,
+      "name": "沈溪",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": null,
+      "status": "alive",
+      "bio": "青衣剑修,身份来历不明,唐摄都伤重时突然现身挑战,似有旧怨",
+      "avatar_url": null
+    },
+    {
+      "id": 293,
+      "name": "年懿",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "修越宗",
+      "status": "alive",
+      "bio": "修越宗青年才俊,驭风超群,主持开启大殿禁制",
+      "avatar_url": null
+    },
+    {
+      "id": 294,
+      "name": "庆濯",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "长怀山(吴国)",
+      "status": "alive",
+      "bio": "吴国长怀山修士,持祖传令牌【庆长怀】开启大殿禁制",
+      "avatar_url": null
+    },
+    {
+      "id": 295,
+      "name": "太元真君",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": "金丹",
+      "affiliation": "金羽宗(幕后)",
+      "status": "alive",
+      "bio": "金羽宗背后金丹强者,遥控取走【不语钟】,仅闻其名与手段",
+      "avatar_url": null
+    },
+    {
+      "id": 296,
+      "name": "苗邺",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "镗金门相关",
+      "status": "alive",
+      "bio": "持【沉云宝珠】与双铜钵雷法,青松洞天中与司徒郴争夺古兵器结怨,遭唐摄都突袭后求饶逃脱",
+      "avatar_url": null
+    },
+    {
+      "id": 297,
+      "name": "阚紫烟",
+      "aliases": [
+        "阚紫玉"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": null,
+      "status": "alive",
+      "bio": "青松洞天中与钟谦合力布阵,通阵法之道,随李玄锋同行入洞天,出洞天后盘膝疗伤",
+      "avatar_url": null
+    },
+    {
+      "id": 298,
+      "name": "司徒郴",
+      "aliases": [
+        "司徒家少主"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "镗金门(司徒家)",
+      "status": "dead",
+      "bio": "镗金门少主,持功法【焰中乌】,青松洞天中与苗邺缠斗结怨,遭李玄锋追杀虐杀,惨死金兜岛外(为徐三复仇)",
+      "avatar_url": null
+    },
+    {
+      "id": 299,
+      "name": "李乾元",
+      "aliases": [
+        "魏太祖"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "魏国(已灭)",
+      "status": "unknown",
+      "bio": "魏国开国太祖,首证明阳金性,金丹不灭已转世十九次,楚逸为其第十九次转世之身",
+      "avatar_url": null
+    },
+    {
+      "id": 300,
+      "name": "林沉胜",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "大鸺葵观",
+      "status": "alive",
+      "bio": "大鸺葵观天之骄子,后绋真人之侄,与毕钰妆自幼相识,随李玄锋同行入青松洞天负伤,伤愈后突破",
+      "avatar_url": null
+    },
+    {
+      "id": 301,
+      "name": "毕钰妆",
+      "aliases": [],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "衡祝道",
+      "status": "alive",
+      "bio": "衡祝道女修,精通阵法,与林沉胜自幼相识,随行辨识元乌峰死者余修贤",
+      "avatar_url": null
+    },
+    {
+      "id": 302,
+      "name": "盈昃",
+      "aliases": [
+        "盈昃仙人"
+      ],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "月华元府/蜃镜洞天创立者(青松道统始祖)",
+      "status": "dead",
+      "bio": "上古仙修,身具太阴太阳,月华元府上古仙人,曾擒杀少阳魔君蒯离并分尸转世,开创蜃镜洞天,寻超脱终身陨",
+      "avatar_url": null
+    },
+    {
+      "id": 303,
+      "name": "李周巍",
+      "aliases": [
+        "巍儿",
+        "世子",
+        "世子殿下"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "胎息二层(承明轮)",
+      "affiliation": "黎泾李家(世子)",
+      "status": "alive",
+      "bio": "李承辽与胡氏之子,天生暗金瞳,受符得五品紫府功法《明华煌元经》,不到两年修至胎息二层",
+      "avatar_url": null
+    },
+    {
+      "id": 304,
+      "name": "胡氏",
+      "aliases": [
+        "夫人"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": null,
+      "affiliation": "黎泾李家(李承辽正妻)",
+      "status": "alive",
+      "bio": "李承辽正妻,李周巍生母,对爱子暗金瞳心怀畏惧",
+      "avatar_url": null
+    },
+    {
+      "id": 305,
+      "name": "陈鸯",
+      "aliases": [
+        "鸯儿"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "胎息四层",
+      "affiliation": "陈家(陈睦峰长子)→黎泾李家中殿",
+      "status": "alive",
+      "bio": "陈睦峰与李夫人之长子,心机深沉天赋出众,败于世子李周巍后待拜师",
+      "avatar_url": null
+    },
+    {
+      "id": 306,
+      "name": "李夫人",
+      "aliases": [],
+      "gender": "female",
+      "generation": "曦",
+      "realm": null,
+      "affiliation": "陈家(陈睦峰正室)",
+      "status": "alive",
+      "bio": "李曦峸之妹,陈睦峰正室,陈鸯生母",
+      "avatar_url": null
+    },
+    {
+      "id": 307,
+      "name": "李承晦",
+      "aliases": [],
+      "gender": "male",
+      "generation": "承",
+      "realm": null,
+      "affiliation": "黎泾李家",
+      "status": "alive",
+      "bio": "李曦明之子,曾随刘长迭学习阵法",
+      "avatar_url": null
+    },
+    {
+      "id": 308,
+      "name": "袁护独",
+      "aliases": [],
+      "gender": "male",
+      "generation": "护",
+      "realm": "筑基",
+      "affiliation": "蕈林原袁家(现任家主)",
+      "status": "alive",
+      "bio": "袁护远之弟,现任袁家家主,暗投迟家操控甫尧联姻风波夺权,悔婚挑衅遭李玄锋重创未死",
+      "avatar_url": null
+    },
+    {
+      "id": 309,
+      "name": "袁甫尧",
+      "aliases": [
+        "甫尧",
+        "袁公子"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "练气前期",
+      "affiliation": "蕈林原袁家→寄居黎泾李家",
+      "status": "alive",
+      "bio": "袁成盾之子,寄居李家求联姻李月湘遭婉拒,袁家内乱后归家决裂,后悔婚转娶宋家女",
+      "avatar_url": null
+    },
+    {
+      "id": 310,
+      "name": "雨晴",
+      "aliases": [
+        "柳氏",
+        "胡柳氏",
+        "晴儿"
+      ],
+      "gender": "female",
+      "generation": null,
+      "realm": "玄景",
+      "affiliation": "胡府(胡客卿妾室)",
+      "status": "alive",
+      "bio": "刘长迭前世妻子,今世沦为胡客卿之妾,遭害掉胎,与刘长迭重逢未相认",
+      "avatar_url": null
+    },
+    {
+      "id": 311,
+      "name": "胡客卿",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "胡府",
+      "status": "alive",
+      "bio": "胡府之主,雨晴现任丈夫,谄媚逢迎筑基修士",
+      "avatar_url": null
+    },
+    {
+      "id": 312,
+      "name": "袁成照",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": null,
+      "affiliation": "袁家(李曦治同门师弟)",
+      "status": "alive",
+      "bio": "李曦治的师弟,闻袁家悔婚之事愤懑不解",
+      "avatar_url": null
+    },
+    {
+      "id": 313,
+      "name": "云蛸子",
+      "aliases": [
+        "鞍鼻老头"
+      ],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基后期",
+      "affiliation": "东海妖物(八爪妖)",
+      "status": "alive",
+      "bio": "东海筑基后期章鱼精,被空衡、李清虹擒获重创,留性命备用",
+      "avatar_url": null
+    },
+    {
+      "id": 314,
+      "name": "虺二",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "筑基",
+      "affiliation": "东海虺鱼一族",
+      "status": "alive",
+      "bio": "虺药之弟,东海虺鱼妖,协助擒获云蛸子",
+      "avatar_url": null
+    },
+    {
+      "id": 315,
+      "name": "古明阳",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "洞天旧人",
+      "status": "unknown",
+      "bio": "洞天旧人,遗有深金色长戟被李玄锋带回",
+      "avatar_url": null
+    },
+    {
+      "id": 316,
+      "name": "衡祝道",
+      "aliases": [],
+      "gender": "unknown",
+      "generation": null,
+      "realm": null,
+      "affiliation": "黎泾李家(旧事)",
+      "status": "unknown",
+      "bio": "曾为李玄宣布下镇压清心之阵",
+      "avatar_url": null
+    },
+    {
+      "id": 317,
+      "name": "东方游",
+      "aliases": [],
+      "gender": "male",
+      "generation": null,
+      "realm": "紫府",
+      "affiliation": "东海(合水一脉)",
+      "status": "dead",
+      "bio": "合水一脉修士,冲击金丹失败身死道消",
+      "avatar_url": null
     }
   ],
   "relationships": [
@@ -2432,6 +5114,1150 @@
       "type": "master",
       "parent_role": null,
       "note": "景恬教导无灵窍的渊云读书"
+    },
+    {
+      "id": 94,
+      "from_id": 67,
+      "to_id": 132,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "安鹧宇为安鹧言庶出弟,篡占安家家主之位"
+    },
+    {
+      "id": 95,
+      "from_id": 44,
+      "to_id": 143,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 96,
+      "from_id": 33,
+      "to_id": 143,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 97,
+      "from_id": 20,
+      "to_id": 144,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "新生次子,先天不足"
+    },
+    {
+      "id": 98,
+      "from_id": 65,
+      "to_id": 144,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "同为李玄宣与其正妻所生"
+    },
+    {
+      "id": 99,
+      "from_id": 109,
+      "to_id": 169,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 100,
+      "from_id": 169,
+      "to_id": 166,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 101,
+      "from_id": 109,
+      "to_id": 86,
+      "type": "master",
+      "parent_role": null,
+      "note": "李清虹寄居费家寒云峰,拜费望白为师习枪"
+    },
+    {
+      "id": 102,
+      "from_id": 109,
+      "to_id": 166,
+      "type": "master",
+      "parent_role": null,
+      "note": "据其与李清虹互称'师姐/师弟'推断同门师承费望白,文中未明说"
+    },
+    {
+      "id": 103,
+      "from_id": 7,
+      "to_id": 83,
+      "type": "parent",
+      "parent_role": "adoptive",
+      "note": "李渊蛟过继于已故四叔李尺泾名下"
+    },
+    {
+      "id": 104,
+      "from_id": 169,
+      "to_id": 167,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 105,
+      "from_id": 167,
+      "to_id": 166,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "费桐啸称费桐玉'玉哥'"
+    },
+    {
+      "id": 106,
+      "from_id": 20,
+      "to_id": 153,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "窦氏为李玄宣正妻"
+    },
+    {
+      "id": 107,
+      "from_id": 153,
+      "to_id": 65,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": "窦氏'失子'即指渊修身故"
+    },
+    {
+      "id": 108,
+      "from_id": 83,
+      "to_id": 160,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "萧元思为两家议定婚约,尚未完婚"
+    },
+    {
+      "id": 109,
+      "from_id": 159,
+      "to_id": 160,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "'归鸾正是舍妹'"
+    },
+    {
+      "id": 110,
+      "from_id": 97,
+      "to_id": 96,
+      "type": "parent",
+      "parent_role": "unknown",
+      "note": "徐公明为其操办丧事、称'我家老爷'、生前受其叮嘱,推测父子关系"
+    },
+    {
+      "id": 111,
+      "from_id": 83,
+      "to_id": 86,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "兄妹相称,共议'渊清辈'家族大局"
+    },
+    {
+      "id": 112,
+      "from_id": 151,
+      "to_id": 8,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "田有道为田芸胞弟"
+    },
+    {
+      "id": 113,
+      "from_id": 151,
+      "to_id": 152,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "田荣为田有道独子"
+    },
+    {
+      "id": 114,
+      "from_id": 20,
+      "to_id": 43,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "原文称李玄宣为'长兄'"
+    },
+    {
+      "id": 115,
+      "from_id": 67,
+      "to_id": 100,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "李妃若曾西嫁山越,此为再嫁安鹧言;李家强行安排,妻已怀孕"
+    },
+    {
+      "id": 116,
+      "from_id": 173,
+      "to_id": 125,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "合清为郁萧瓯亡妻,出身蒋家"
+    },
+    {
+      "id": 117,
+      "from_id": 93,
+      "to_id": 138,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "母为李家旁支所出之女,未具名"
+    },
+    {
+      "id": 118,
+      "from_id": 157,
+      "to_id": 158,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "文中明言萧宪'乃是萧久庆的嫡长子'"
+    },
+    {
+      "id": 119,
+      "from_id": 172,
+      "to_id": 40,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "邓予之自述'兄长邓求之与剑仙乃是至交,二人一并陨落南疆'"
+    },
+    {
+      "id": 120,
+      "from_id": 83,
+      "to_id": 142,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 121,
+      "from_id": 160,
+      "to_id": 142,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 122,
+      "from_id": 144,
+      "to_id": 83,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "文中反复称'两兄弟'"
+    },
+    {
+      "id": 123,
+      "from_id": 144,
+      "to_id": 143,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 124,
+      "from_id": 83,
+      "to_id": 143,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 125,
+      "from_id": 143,
+      "to_id": 158,
+      "type": "spouse",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 126,
+      "from_id": 136,
+      "to_id": 137,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 127,
+      "from_id": 128,
+      "to_id": 135,
+      "type": "master",
+      "parent_role": null,
+      "note": "堇莲摩诃自幼收养并教导明慧"
+    },
+    {
+      "id": 128,
+      "from_id": 85,
+      "to_id": 139,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "原文明确'李曦峸正是李渊云之子'"
+    },
+    {
+      "id": 129,
+      "from_id": 85,
+      "to_id": 140,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 130,
+      "from_id": 139,
+      "to_id": 140,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 131,
+      "from_id": 144,
+      "to_id": 141,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 132,
+      "from_id": 153,
+      "to_id": 154,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "窦邑称窦夫人为'姑姑',其父为窦老爷"
+    },
+    {
+      "id": 133,
+      "from_id": 154,
+      "to_id": 155,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 134,
+      "from_id": 109,
+      "to_id": 165,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "文中称费望江为费望白'唯一存世的兄弟'"
+    },
+    {
+      "id": 135,
+      "from_id": 23,
+      "to_id": 142,
+      "type": "master",
+      "parent_role": null,
+      "note": "李曦治拜入其门下,赴青穗峰修行"
+    },
+    {
+      "id": 136,
+      "from_id": 103,
+      "to_id": 106,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "郁萧贵与郁慕仙父子,郁慕仙叛家投效青池宗令其深受打击"
+    },
+    {
+      "id": 137,
+      "from_id": 83,
+      "to_id": 85,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "同辈从兄弟(李渊蛟为李玄宣之子,李渊云为李玄岭之子),以'自家兄弟'相称"
+    },
+    {
+      "id": 138,
+      "from_id": 153,
+      "to_id": 144,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 139,
+      "from_id": 85,
+      "to_id": 141,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "早年一度记作李渊平之子,或由叔父李渊平抚养如子"
+    },
+    {
+      "id": 140,
+      "from_id": 139,
+      "to_id": 190,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 141,
+      "from_id": 86,
+      "to_id": 144,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 142,
+      "from_id": 139,
+      "to_id": 141,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 143,
+      "from_id": 140,
+      "to_id": 141,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 144,
+      "from_id": 83,
+      "to_id": 177,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 145,
+      "from_id": 160,
+      "to_id": 177,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 146,
+      "from_id": 142,
+      "to_id": 192,
+      "type": "spouse",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 147,
+      "from_id": 18,
+      "to_id": 192,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 148,
+      "from_id": 67,
+      "to_id": 244,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 149,
+      "from_id": 67,
+      "to_id": 245,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 150,
+      "from_id": 100,
+      "to_id": 244,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 151,
+      "from_id": 100,
+      "to_id": 245,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 152,
+      "from_id": 244,
+      "to_id": 245,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 153,
+      "from_id": 32,
+      "to_id": 230,
+      "type": "spouse",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 154,
+      "from_id": 152,
+      "to_id": 197,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 155,
+      "from_id": 157,
+      "to_id": 206,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 156,
+      "from_id": 143,
+      "to_id": 206,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 157,
+      "from_id": 157,
+      "to_id": 143,
+      "type": "spouse",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 158,
+      "from_id": 102,
+      "to_id": 215,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 159,
+      "from_id": 103,
+      "to_id": 217,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 160,
+      "from_id": 69,
+      "to_id": 233,
+      "type": "spouse",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 161,
+      "from_id": 22,
+      "to_id": 141,
+      "type": "master",
+      "parent_role": null,
+      "note": "收其习丹两年倾囊相授"
+    },
+    {
+      "id": 162,
+      "from_id": 179,
+      "to_id": 180,
+      "type": "master",
+      "parent_role": null,
+      "note": "步梓真人称袁立成'是我一手带出来的'"
+    },
+    {
+      "id": 163,
+      "from_id": 83,
+      "to_id": 224,
+      "type": "master",
+      "parent_role": null,
+      "note": "擒服妖修主仆关系,原型钩蛇经此获赐名"
+    },
+    {
+      "id": 164,
+      "from_id": 235,
+      "to_id": 236,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 165,
+      "from_id": 115,
+      "to_id": 122,
+      "type": "master",
+      "parent_role": null,
+      "note": "端木奎麾下弟子(巫山山越)"
+    },
+    {
+      "id": 166,
+      "from_id": 115,
+      "to_id": 117,
+      "type": "master",
+      "parent_role": null,
+      "note": "端木奎麾下弟子(巫山山越)"
+    },
+    {
+      "id": 167,
+      "from_id": 115,
+      "to_id": 210,
+      "type": "master",
+      "parent_role": null,
+      "note": "端木奎麾下弟子,师尊身死后占据巫山"
+    },
+    {
+      "id": 168,
+      "from_id": 122,
+      "to_id": 200,
+      "type": "master",
+      "parent_role": null,
+      "note": "祝先为吠罗牙同门师弟,与伏代木同源端木奎门下"
+    },
+    {
+      "id": 169,
+      "from_id": 115,
+      "to_id": 207,
+      "type": "master",
+      "parent_role": null,
+      "note": "经伏代木举荐拜入巫山,称伏代木'师兄'"
+    },
+    {
+      "id": 170,
+      "from_id": 223,
+      "to_id": 196,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 171,
+      "from_id": 214,
+      "to_id": 196,
+      "type": "parent",
+      "parent_role": null,
+      "note": "王寻高祖,非直系父子"
+    },
+    {
+      "id": 172,
+      "from_id": 175,
+      "to_id": 234,
+      "type": "master",
+      "parent_role": null,
+      "note": "孔玉为长奚真人后人"
+    },
+    {
+      "id": 173,
+      "from_id": 175,
+      "to_id": 231,
+      "type": "master",
+      "parent_role": null,
+      "note": "孔婷云上级"
+    },
+    {
+      "id": 174,
+      "from_id": 231,
+      "to_id": 232,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "孔孤隼为孔婷云师兄"
+    },
+    {
+      "id": 175,
+      "from_id": 59,
+      "to_id": 208,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "袁护远称其为'族弟'"
+    },
+    {
+      "id": 176,
+      "from_id": 68,
+      "to_id": 182,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "迟灸云母族至亲"
+    },
+    {
+      "id": 177,
+      "from_id": 241,
+      "to_id": 42,
+      "type": "rival",
+      "parent_role": null,
+      "note": "早年因夺传承结怨,致迟尉重伤"
+    },
+    {
+      "id": 178,
+      "from_id": 195,
+      "to_id": 209,
+      "type": "master",
+      "parent_role": null,
+      "note": "麾下魔修"
+    },
+    {
+      "id": 179,
+      "from_id": 195,
+      "to_id": 239,
+      "type": "master",
+      "parent_role": null,
+      "note": "麾下魔修"
+    },
+    {
+      "id": 180,
+      "from_id": 195,
+      "to_id": 204,
+      "type": "master",
+      "parent_role": null,
+      "note": "麾下魔修"
+    },
+    {
+      "id": 181,
+      "from_id": 144,
+      "to_id": 139,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "据'跟在李渊平身后近十年'及李曦峸称李清虹'姑姑'推断"
+    },
+    {
+      "id": 182,
+      "from_id": 247,
+      "to_id": 227,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": "司徒末自述'我母亲是汲登玉'"
+    },
+    {
+      "id": 183,
+      "from_id": 31,
+      "to_id": 247,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "司徒末称汲登齐为'亲舅舅'"
+    },
+    {
+      "id": 184,
+      "from_id": 142,
+      "to_id": 248,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 185,
+      "from_id": 192,
+      "to_id": 248,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 186,
+      "from_id": 141,
+      "to_id": 271,
+      "type": "spouse",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 187,
+      "from_id": 67,
+      "to_id": 271,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 188,
+      "from_id": 140,
+      "to_id": 142,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "堂兄弟,以兄弟相称"
+    },
+    {
+      "id": 189,
+      "from_id": 142,
+      "to_id": 141,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "堂兄弟,以兄弟相称"
+    },
+    {
+      "id": 190,
+      "from_id": 142,
+      "to_id": 139,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "堂兄弟,以兄弟相称"
+    },
+    {
+      "id": 191,
+      "from_id": 228,
+      "to_id": 274,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 192,
+      "from_id": 228,
+      "to_id": 275,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 193,
+      "from_id": 274,
+      "to_id": 275,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 194,
+      "from_id": 69,
+      "to_id": 227,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "存疑,李曦治推测'应该是'"
+    },
+    {
+      "id": 195,
+      "from_id": 241,
+      "to_id": 273,
+      "type": "sibling",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 196,
+      "from_id": 140,
+      "to_id": 177,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "李曦峻为兄,李月湘为妹"
+    },
+    {
+      "id": 197,
+      "from_id": 190,
+      "to_id": 254,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "由家主李曦峸定下的未婚妻,尚未完婚"
+    },
+    {
+      "id": 198,
+      "from_id": 144,
+      "to_id": 15,
+      "type": "spouse",
+      "parent_role": null,
+      "note": null
+    },
+    {
+      "id": 199,
+      "from_id": 270,
+      "to_id": 130,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "宁家兄弟"
+    },
+    {
+      "id": 200,
+      "from_id": 144,
+      "to_id": 140,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "据同父奔丧、七哥/八弟称谓推断"
+    },
+    {
+      "id": 201,
+      "from_id": 32,
+      "to_id": 281,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "李玄锋抱子对话,钦儿唤其为爹"
+    },
+    {
+      "id": 202,
+      "from_id": 230,
+      "to_id": 130,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "文中称宁和远为李玄锋'妻弟'"
+    },
+    {
+      "id": 203,
+      "from_id": 141,
+      "to_id": 177,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "李月湘称李曦明'明哥儿'"
+    },
+    {
+      "id": 204,
+      "from_id": 283,
+      "to_id": 282,
+      "type": "master",
+      "parent_role": null,
+      "note": "师徒,紫烟门"
+    },
+    {
+      "id": 205,
+      "from_id": 276,
+      "to_id": 277,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "秦玲寺同门师兄弟(忿怒道统)"
+    },
+    {
+      "id": 206,
+      "from_id": 32,
+      "to_id": 43,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "仲父李玄锋与父亲李玄岭,推断为兄弟"
+    },
+    {
+      "id": 207,
+      "from_id": 261,
+      "to_id": 262,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "道侣"
+    },
+    {
+      "id": 208,
+      "from_id": 86,
+      "to_id": 65,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "大哥,已早逝,嫡堂关系未明确"
+    },
+    {
+      "id": 209,
+      "from_id": 32,
+      "to_id": 56,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "宁和远称李玄锋'姐夫',暗示李玄锋已娶宁婉(本块未直接点名,系推断)"
+    },
+    {
+      "id": 210,
+      "from_id": 130,
+      "to_id": 56,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "宁和远称李玄锋'姐夫',暗示宁婉为其姐(推断)"
+    },
+    {
+      "id": 211,
+      "from_id": 228,
+      "to_id": 298,
+      "type": "parent",
+      "parent_role": "unknown",
+      "note": "苗邺言语暗示二人关系密切,司徒郴称'少主'疑为司徒镗之子,未明确点明,系推断"
+    },
+    {
+      "id": 212,
+      "from_id": 126,
+      "to_id": 106,
+      "type": "master",
+      "parent_role": null,
+      "note": "郁慕仙八岁被唐元乌收为徒,以灵识常年监视"
+    },
+    {
+      "id": 213,
+      "from_id": 32,
+      "to_id": 20,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "李玄锋称李玄宣'大哥'"
+    },
+    {
+      "id": 214,
+      "from_id": 126,
+      "to_id": 290,
+      "type": "master",
+      "parent_role": null,
+      "note": "唐摄都为元乌真人徒弟"
+    },
+    {
+      "id": 215,
+      "from_id": 106,
+      "to_id": 290,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "同门师兄弟(非血亲),郁慕仙称唐摄都'师兄'"
+    },
+    {
+      "id": 216,
+      "from_id": 126,
+      "to_id": 80,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "同门师兄弟(非血亲),元素真人称元乌真人'师兄'"
+    },
+    {
+      "id": 217,
+      "from_id": 86,
+      "to_id": 143,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "互称长姐/小妹"
+    },
+    {
+      "id": 218,
+      "from_id": 190,
+      "to_id": 303,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "引见李曦治为'三叔公',确认为其子"
+    },
+    {
+      "id": 219,
+      "from_id": 142,
+      "to_id": 177,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "互称兄妹/小妹"
+    },
+    {
+      "id": 220,
+      "from_id": 177,
+      "to_id": 224,
+      "type": "master",
+      "parent_role": null,
+      "note": "性灵重新摄出后交由月湘掌管"
+    },
+    {
+      "id": 221,
+      "from_id": 208,
+      "to_id": 309,
+      "type": "parent",
+      "parent_role": "father",
+      "note": "袁甫尧自称其父,后确认名为袁成盾"
+    },
+    {
+      "id": 222,
+      "from_id": 106,
+      "to_id": 104,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "李清虹回忆郁家兄弟"
+    },
+    {
+      "id": 223,
+      "from_id": 304,
+      "to_id": 303,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": "十一月怀胎生下李周巍"
+    },
+    {
+      "id": 224,
+      "from_id": 190,
+      "to_id": 304,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "胡氏为李承辽之妻"
+    },
+    {
+      "id": 225,
+      "from_id": 59,
+      "to_id": 308,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "护远称护独为'我那弟弟'"
+    },
+    {
+      "id": 226,
+      "from_id": 227,
+      "to_id": 298,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "排行称十六弟/七哥,司徒郴称'自家人';疑同父异母(主脉曾害其母)"
+    },
+    {
+      "id": 227,
+      "from_id": 139,
+      "to_id": 306,
+      "type": "sibling",
+      "parent_role": null,
+      "note": "文中明确'李夫人乃李曦峸之妹'"
+    },
+    {
+      "id": 228,
+      "from_id": 98,
+      "to_id": 305,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 229,
+      "from_id": 306,
+      "to_id": 305,
+      "type": "parent",
+      "parent_role": "mother",
+      "note": null
+    },
+    {
+      "id": 230,
+      "from_id": 98,
+      "to_id": 306,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "陈睦峰正室"
+    },
+    {
+      "id": 231,
+      "from_id": 20,
+      "to_id": 303,
+      "type": "parent",
+      "parent_role": "unknown",
+      "note": "玄宣称'我家世子'并抚其头,暗示父子,亦可能为祖孙/监护关系,存疑"
+    },
+    {
+      "id": 232,
+      "from_id": 141,
+      "to_id": 307,
+      "type": "parent",
+      "parent_role": "father",
+      "note": null
+    },
+    {
+      "id": 233,
+      "from_id": 82,
+      "to_id": 307,
+      "type": "master",
+      "parent_role": null,
+      "note": "教授阵法"
+    },
+    {
+      "id": 234,
+      "from_id": 44,
+      "to_id": 98,
+      "type": "master",
+      "parent_role": null,
+      "note": "陈睦峰称其为师尊"
+    },
+    {
+      "id": 235,
+      "from_id": 82,
+      "to_id": 310,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "前世夫妻,今世刘长迭未娶未相认,雨晴现为胡客卿之妾"
+    },
+    {
+      "id": 236,
+      "from_id": 311,
+      "to_id": 310,
+      "type": "spouse",
+      "parent_role": null,
+      "note": "雨晴为胡客卿妾室"
     }
   ]
 }
