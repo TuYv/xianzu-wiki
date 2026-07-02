@@ -22,9 +22,11 @@ function unionId(a: number, b: number): string {
 }
 
 /**
- * 以 focusId 为中心,沿 parent 边上/下各 depth 代 BFS 收集人物,
- * 为每组 spouse 生成一个可见的 union 连接节点(配偶→union、union→子女、单亲直连),
- * 用 dagre rankdir=TB 计算坐标。visited 去重防环死循环。
+ * 以 focusId 为中心,沿 parent 边收集人物(直系模式限 depth 代,整族模式不限代数),
+ * 再把已收集者的配偶补为终端节点——配偶本人显示,但不沿配偶继续扩散到其原生家族,
+ * 避免姻亲家族被一路带进整张图。为每组 spouse 生成一个可见的 union 连接节点
+ * (配偶→union、union→子女、单亲直连),用 dagre rankdir=TB 计算坐标。
+ * visited 去重防环死循环。
  * 注意:union 节点必须可见(type='union'),否则 React Flow 会隐藏连到它的所有边。
  */
 export function buildFamilyGraph(
@@ -55,14 +57,16 @@ export function buildFamilyGraph(
   if (byId.has(focusId)) visited.add(focusId);
 
   if (whole) {
-    // 整族:经 parent(任意方向)/spouse 相连的整个连通家族,不限代数。
+    // 整族:经 parent(任意方向)相连的整个血亲家族,不限代数。
+    // 只沿血缘扩散,不沿 spouse 扩散——否则姻亲的原生家族会被一路带进来,
+    // 配偶本人由下方"补进配偶"步骤作为终端节点加入,不再继续从配偶扩散。
     const adj = new Map<number, number[]>();
     const link = (a: number, b: number) => {
       (adj.get(a) ?? adj.set(a, []).get(a)!).push(b);
       (adj.get(b) ?? adj.set(b, []).get(b)!).push(a);
     };
     for (const r of relationships) {
-      if (r.type === 'parent' || r.type === 'spouse') link(r.from_id, r.to_id);
+      if (r.type === 'parent') link(r.from_id, r.to_id);
     }
     const queue = byId.has(focusId) ? [focusId] : [];
     while (queue.length) {
